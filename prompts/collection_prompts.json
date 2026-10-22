@@ -1,0 +1,5708 @@
+[
+ {
+  "prompt_id": "p0001",
+  "text": "башка",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0002",
+  "text": "башкы",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0003",
+  "text": "жылдан",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0004",
+  "text": "жылдын",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0005",
+  "text": "калган",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0006",
+  "text": "кылган",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0007",
+  "text": "анан",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0008",
+  "text": "анын",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0009",
+  "text": "ара",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0010",
+  "text": "ары",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0011",
+  "text": "кызматынан",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0012",
+  "text": "кызматынын",
+  "category": "A minimal pair",
+  "target": "а/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0013",
+  "text": "бут",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0014",
+  "text": "бүт",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0015",
+  "text": "у",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0016",
+  "text": "ү",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0017",
+  "text": "ун",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0018",
+  "text": "үн",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0019",
+  "text": "уй",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0020",
+  "text": "үй",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0021",
+  "text": "туз",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0022",
+  "text": "түз",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0023",
+  "text": "тур",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0024",
+  "text": "түр",
+  "category": "A minimal pair",
+  "target": "у/ү",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0025",
+  "text": "ак",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0026",
+  "text": "ок",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0027",
+  "text": "га",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0028",
+  "text": "го",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0029",
+  "text": "ай",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0030",
+  "text": "ой",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0031",
+  "text": "а",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0032",
+  "text": "о",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0033",
+  "text": "ат",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0034",
+  "text": "от",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0035",
+  "text": "баш",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0036",
+  "text": "бош",
+  "category": "A minimal pair",
+  "target": "а/о",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0037",
+  "text": "бери",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0038",
+  "text": "бири",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0039",
+  "text": "менен",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0040",
+  "text": "менин",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0041",
+  "text": "ден",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0042",
+  "text": "дин",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0043",
+  "text": "эске",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0044",
+  "text": "эски",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0045",
+  "text": "бизде",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0046",
+  "text": "бизди",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0047",
+  "text": "эле",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0048",
+  "text": "эли",
+  "category": "A minimal pair",
+  "target": "е/и",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0049",
+  "text": "март",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0050",
+  "text": "шарт",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0051",
+  "text": "мартта",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0052",
+  "text": "шартта",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0053",
+  "text": "м",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0054",
+  "text": "ш",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0055",
+  "text": "чыгым",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0056",
+  "text": "чыгыш",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0057",
+  "text": "мартында",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0058",
+  "text": "шартында",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0059",
+  "text": "кум",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0060",
+  "text": "куш",
+  "category": "A minimal pair",
+  "target": "м/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0061",
+  "text": "жон",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0062",
+  "text": "жөн",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0063",
+  "text": "кол",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0064",
+  "text": "көл",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0065",
+  "text": "дон",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0066",
+  "text": "дөн",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0067",
+  "text": "топ",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0068",
+  "text": "төп",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0069",
+  "text": "до",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0070",
+  "text": "дө",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0071",
+  "text": "кор",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0072",
+  "text": "көр",
+  "category": "A minimal pair",
+  "target": "о/ө",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0073",
+  "text": "кыргызстандык",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0074",
+  "text": "кыргызстандын",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0075",
+  "text": "элдик",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0076",
+  "text": "элдин",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0077",
+  "text": "президенттик",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0078",
+  "text": "президенттин",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0079",
+  "text": "мамлекеттик",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0080",
+  "text": "мамлекеттин",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0081",
+  "text": "парламенттик",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0082",
+  "text": "парламенттин",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0083",
+  "text": "шаардык",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0084",
+  "text": "шаардын",
+  "category": "A minimal pair",
+  "target": "к/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0085",
+  "text": "июлда",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0086",
+  "text": "июнда",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0087",
+  "text": "дал",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0088",
+  "text": "дан",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0089",
+  "text": "июль",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0090",
+  "text": "июнь",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0091",
+  "text": "деле",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0092",
+  "text": "дене",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0093",
+  "text": "абалын",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0094",
+  "text": "абанын",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0095",
+  "text": "калат",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0096",
+  "text": "канат",
+  "category": "A minimal pair",
+  "target": "л/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0097",
+  "text": "он",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0098",
+  "text": "оң",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0099",
+  "text": "тен",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0100",
+  "text": "тең",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0101",
+  "text": "тан",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0102",
+  "text": "таң",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0103",
+  "text": "кен",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0104",
+  "text": "кең",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0105",
+  "text": "жаны",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0106",
+  "text": "жаңы",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0107",
+  "text": "өзүн",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0108",
+  "text": "өзүң",
+  "category": "A minimal pair",
+  "target": "н/ң",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0109",
+  "text": "айыл",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0110",
+  "text": "айым",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0111",
+  "text": "тил",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0112",
+  "text": "тим",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0113",
+  "text": "сол",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0114",
+  "text": "сом",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0115",
+  "text": "өкүл",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0116",
+  "text": "өкүм",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0117",
+  "text": "келе",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0118",
+  "text": "кеме",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0119",
+  "text": "мүлкүн",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0120",
+  "text": "мүмкүн",
+  "category": "A minimal pair",
+  "target": "л/м",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0121",
+  "text": "жеңил",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0122",
+  "text": "жеңиш",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0123",
+  "text": "коло",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0124",
+  "text": "кошо",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0125",
+  "text": "берилет",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0126",
+  "text": "беришет",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0127",
+  "text": "алып",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0128",
+  "text": "ашып",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0129",
+  "text": "айтылууда",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0130",
+  "text": "айтышууда",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0131",
+  "text": "айтылат",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0132",
+  "text": "айтышат",
+  "category": "A minimal pair",
+  "target": "л/ш",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0133",
+  "text": "улам",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0134",
+  "text": "улан",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0135",
+  "text": "кийим",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0136",
+  "text": "кийин",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0137",
+  "text": "кам",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0138",
+  "text": "кан",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0139",
+  "text": "алдым",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0140",
+  "text": "алдын",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0141",
+  "text": "кызым",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0142",
+  "text": "кызын",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0143",
+  "text": "кемин",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0144",
+  "text": "кенин",
+  "category": "A minimal pair",
+  "target": "м/н",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0145",
+  "text": "аида",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0146",
+  "text": "айда",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0147",
+  "text": "маи",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0148",
+  "text": "май",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0149",
+  "text": "и",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0150",
+  "text": "й",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0151",
+  "text": "таиланд",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0152",
+  "text": "тайланд",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0153",
+  "text": "иа",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0154",
+  "text": "йа",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0155",
+  "text": "ие",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0156",
+  "text": "йе",
+  "category": "A minimal pair",
+  "target": "и/й",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0157",
+  "text": "юшенко",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0158",
+  "text": "ющенко",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0159",
+  "text": "швейцария",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0160",
+  "text": "щвейцария",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0161",
+  "text": "батькившина",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0162",
+  "text": "батькивщина",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0163",
+  "text": "шербет",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0164",
+  "text": "щербет",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0165",
+  "text": "швейцариянын",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0166",
+  "text": "щвейцариянын",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0167",
+  "text": "дешица",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0168",
+  "text": "дещица",
+  "category": "A minimal pair",
+  "target": "ш/щ",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0169",
+  "text": "е",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0170",
+  "text": "э",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0171",
+  "text": "бек",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0172",
+  "text": "бэк",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0173",
+  "text": "бектин",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0174",
+  "text": "бэктин",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0175",
+  "text": "кер",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0176",
+  "text": "кэр",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0177",
+  "text": "дер",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0178",
+  "text": "дэр",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0179",
+  "text": "ерлан",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0180",
+  "text": "эрлан",
+  "category": "A minimal pair",
+  "target": "е/э",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0181",
+  "text": "тартип",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0182",
+  "text": "тартып",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0183",
+  "text": "саясий",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0184",
+  "text": "саясый",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0185",
+  "text": "си",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0186",
+  "text": "сы",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0187",
+  "text": "тиш",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0188",
+  "text": "тыш",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0189",
+  "text": "тайип",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0190",
+  "text": "тайып",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0191",
+  "text": "ин",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0192",
+  "text": "ын",
+  "category": "A minimal pair",
+  "target": "и/ы",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0193",
+  "text": "объективдүү",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0194",
+  "text": "обьективдүү",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0195",
+  "text": "объект",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0196",
+  "text": "обьект",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0197",
+  "text": "объектилерди",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0198",
+  "text": "обьектилерди",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0199",
+  "text": "объектилердин",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0200",
+  "text": "обьектилердин",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0201",
+  "text": "объектилер",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0202",
+  "text": "обьектилер",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0203",
+  "text": "объектиси",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0204",
+  "text": "обьектиси",
+  "category": "A minimal pair",
+  "target": "ъ/ь",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0205",
+  "text": "адамсың",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0206",
+  "text": "аман",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0207",
+  "text": "андерсон",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0208",
+  "text": "ар",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0209",
+  "text": "бизге",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0210",
+  "text": "биздин",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0211",
+  "text": "бир",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0212",
+  "text": "биримдиктүү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0213",
+  "text": "болгур",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0214",
+  "text": "гүл",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0215",
+  "text": "гүлбарчын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0216",
+  "text": "дайым",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0217",
+  "text": "дешсе",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0218",
+  "text": "жана",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0219",
+  "text": "жетекчилигине",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0220",
+  "text": "жетүүчү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0221",
+  "text": "жогорку",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0222",
+  "text": "жолборс",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0223",
+  "text": "жылдыруу",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0224",
+  "text": "заң",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0225",
+  "text": "иибине",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0226",
+  "text": "илинип",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0227",
+  "text": "кари",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0228",
+  "text": "кафедранын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0229",
+  "text": "кетсе",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0230",
+  "text": "ким",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0231",
+  "text": "кулк",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0232",
+  "text": "кылсам",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0233",
+  "text": "кылышат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0234",
+  "text": "күкүк",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0235",
+  "text": "лар",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0236",
+  "text": "молдо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0237",
+  "text": "неме",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0238",
+  "text": "озунорду",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0239",
+  "text": "оокумда",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0240",
+  "text": "орусия",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0241",
+  "text": "ошол",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0242",
+  "text": "партиясынан",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0243",
+  "text": "педагогикалык",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0244",
+  "text": "программалоого",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0245",
+  "text": "самсы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0246",
+  "text": "сараң",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0247",
+  "text": "силерди",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0248",
+  "text": "сс",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0249",
+  "text": "сүйүү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0250",
+  "text": "тартышат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0251",
+  "text": "тинтип",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0252",
+  "text": "тунук",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0253",
+  "text": "түтүн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0254",
+  "text": "университетин",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0255",
+  "text": "факультетке",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0256",
+  "text": "чакыр",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0257",
+  "text": "чечип",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0258",
+  "text": "чындыгын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0259",
+  "text": "ырахат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0260",
+  "text": "экенинизди",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0261",
+  "text": "эшигинен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0262",
+  "text": "өзгөчө",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0263",
+  "text": "ала",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0264",
+  "text": "аткаруучу",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0265",
+  "text": "башкармалыгына",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0266",
+  "text": "болгонуна",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0267",
+  "text": "болсо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0268",
+  "text": "боорукер",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0269",
+  "text": "дезертир",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0270",
+  "text": "доценти",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0271",
+  "text": "европанын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0272",
+  "text": "жазуумдун",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0273",
+  "text": "жакасындагы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0274",
+  "text": "жакшы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0275",
+  "text": "жалбырагынын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0276",
+  "text": "жалпы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0277",
+  "text": "жашаган",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0278",
+  "text": "жашоо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0279",
+  "text": "жашы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0280",
+  "text": "жен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0281",
+  "text": "жетем",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0282",
+  "text": "жилик",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0283",
+  "text": "жоготуусу",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0284",
+  "text": "жолугат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0285",
+  "text": "жолуң",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0286",
+  "text": "жылынын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0287",
+  "text": "зым",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0288",
+  "text": "ийгилик",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0289",
+  "text": "исмаил",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0290",
+  "text": "ички",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0291",
+  "text": "келет",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0292",
+  "text": "кошуналарымдын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0293",
+  "text": "кыз",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0294",
+  "text": "кыргызстанды",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0295",
+  "text": "кээде",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0296",
+  "text": "көп",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0297",
+  "text": "көрүнүшү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0298",
+  "text": "лагман",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0299",
+  "text": "максаттарга",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0300",
+  "text": "манты",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0301",
+  "text": "медициналык",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0302",
+  "text": "мүчөлүгүнөн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0303",
+  "text": "нерсе",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0304",
+  "text": "ниети",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0305",
+  "text": "омур",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0306",
+  "text": "реалдуулук",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0307",
+  "text": "талапкер",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0308",
+  "text": "тескерисинче",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0309",
+  "text": "турган",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0310",
+  "text": "туруктуулуктун",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0311",
+  "text": "тушап",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0312",
+  "text": "факультетинен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0313",
+  "text": "франческо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0314",
+  "text": "чымыр",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0315",
+  "text": "шаарында",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0316",
+  "text": "шартыма",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0317",
+  "text": "ысык-көл",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0318",
+  "text": "эмес",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0319",
+  "text": "эсептөөнү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0320",
+  "text": "ээрчитип",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0321",
+  "text": "үй-бүлөсүн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0322",
+  "text": "үйрөтүү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0323",
+  "text": "адамдын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0324",
+  "text": "айрыкча",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0325",
+  "text": "албасаңар",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0326",
+  "text": "алтын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0327",
+  "text": "аныктоо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0328",
+  "text": "ата-энеси",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0329",
+  "text": "аяш",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0330",
+  "text": "аңкилдек",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0331",
+  "text": "багындырууга",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0332",
+  "text": "бакыт",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0333",
+  "text": "баласагын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0334",
+  "text": "балким",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0335",
+  "text": "башкалар",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0336",
+  "text": "башкаруу",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0337",
+  "text": "бетер",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0338",
+  "text": "билбейм",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0339",
+  "text": "билдирбестен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0340",
+  "text": "бирок",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0341",
+  "text": "болгонго",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0342",
+  "text": "бөлүм",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0343",
+  "text": "грек",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0344",
+  "text": "достук",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0345",
+  "text": "жакшыра",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0346",
+  "text": "жалатылган",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0347",
+  "text": "жалаң",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0348",
+  "text": "жамбаштап",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0349",
+  "text": "жанына",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0350",
+  "text": "жарык",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0351",
+  "text": "жасаган",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0352",
+  "text": "жат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0353",
+  "text": "жатканда",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0354",
+  "text": "жашайбыз",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0355",
+  "text": "жашоого",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0356",
+  "text": "жеди",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0357",
+  "text": "желе",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0358",
+  "text": "жоготот",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0359",
+  "text": "жолдошбек",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0360",
+  "text": "жоопкерчиликтен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0361",
+  "text": "жылытат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0362",
+  "text": "жөжө",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0363",
+  "text": "кайрадан",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0364",
+  "text": "калбашы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0365",
+  "text": "капшытында",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0366",
+  "text": "келгенмин",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0367",
+  "text": "келечек",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0368",
+  "text": "керемети",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0369",
+  "text": "кесибим",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0370",
+  "text": "кинолордон",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0371",
+  "text": "кичүү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0372",
+  "text": "классында",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0373",
+  "text": "клер",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0374",
+  "text": "койбодумбу",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0375",
+  "text": "которууга",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0376",
+  "text": "кулжа",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0377",
+  "text": "курабыз",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0378",
+  "text": "куржун",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0379",
+  "text": "кыдырып",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0380",
+  "text": "күбөлүк",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0381",
+  "text": "күч",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0382",
+  "text": "мекен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0383",
+  "text": "мингин",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0384",
+  "text": "мээрим",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0385",
+  "text": "онлайн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0386",
+  "text": "ортосунда",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0387",
+  "text": "орус",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0388",
+  "text": "ошончо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0389",
+  "text": "падыша",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0390",
+  "text": "партиянын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0391",
+  "text": "партиясы",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0392",
+  "text": "программалоо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0393",
+  "text": "роль",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0394",
+  "text": "сентябрь",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0395",
+  "text": "созула",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0396",
+  "text": "сокур",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0397",
+  "text": "суранам",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0398",
+  "text": "сынагына",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0399",
+  "text": "сөздөр",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0400",
+  "text": "тааныштык",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0401",
+  "text": "тарабынын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 1,
+  "samples_target": 30,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0402",
+  "text": "ташмат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0403",
+  "text": "теңдешкен",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0404",
+  "text": "тоголок",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0405",
+  "text": "тоо",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0406",
+  "text": "турат",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0407",
+  "text": "убактысынан",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0408",
+  "text": "укук",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0409",
+  "text": "физика",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0410",
+  "text": "чыгармалары",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0411",
+  "text": "чындыктын",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0412",
+  "text": "шыпырып",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0413",
+  "text": "эгерде",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0414",
+  "text": "экөөбүздү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0415",
+  "text": "экөөнүн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0416",
+  "text": "элек",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0417",
+  "text": "эмесе",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0418",
+  "text": "үч",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0419",
+  "text": "үчүн",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0420",
+  "text": "өздөрү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0421",
+  "text": "өнүктүрүү",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0422",
+  "text": "өрнөк",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0423",
+  "text": "өткөрүлө",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0424",
+  "text": "өтүп",
+  "category": "B failed word",
+  "target": "",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0425",
+  "text": "объектинин",
+  "category": "C rare letter",
+  "target": "ъ",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0426",
+  "text": "объекттер",
+  "category": "C rare letter",
+  "target": "ъ",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0427",
+  "text": "объектини",
+  "category": "C rare letter",
+  "target": "ъ",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0428",
+  "text": "субъект",
+  "category": "C rare letter",
+  "target": "ъ",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0429",
+  "text": "объекттин",
+  "category": "C rare letter",
+  "target": "ъ",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0430",
+  "text": "социалдык",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0431",
+  "text": "милиция",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0432",
+  "text": "полиция",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0433",
+  "text": "операция",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0434",
+  "text": "милициянын",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0435",
+  "text": "коррупция",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0436",
+  "text": "оппозиция",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0437",
+  "text": "медицина",
+  "category": "C rare letter",
+  "target": "ц",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0438",
+  "text": "боюнча",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0439",
+  "text": "тыюу",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0440",
+  "text": "коюлган",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0441",
+  "text": "уюмунун",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0442",
+  "text": "коюп",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0443",
+  "text": "бою",
+  "category": "C rare letter",
+  "target": "ю",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0444",
+  "text": "февралда",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0445",
+  "text": "августта",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0446",
+  "text": "москва",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0447",
+  "text": "европа",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0448",
+  "text": "январда",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0449",
+  "text": "владимир",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0450",
+  "text": "видео",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0451",
+  "text": "январь",
+  "category": "C rare letter",
+  "target": "в",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0452",
+  "text": "орусиянын",
+  "category": "C rare letter",
+  "target": "я",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0453",
+  "text": "окуя",
+  "category": "C rare letter",
+  "target": "я",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0454",
+  "text": "сыяктуу",
+  "category": "C rare letter",
+  "target": "я",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0455",
+  "text": "россия",
+  "category": "C rare letter",
+  "target": "я",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0456",
+  "text": "азия",
+  "category": "C rare letter",
+  "target": "я",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0457",
+  "text": "телефон",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0458",
+  "text": "футбол",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0459",
+  "text": "февраль",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0460",
+  "text": "финансы",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0461",
+  "text": "факты",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0462",
+  "text": "фонду",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0463",
+  "text": "финансылык",
+  "category": "C rare letter",
+  "target": "ф",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0464",
+  "text": "техникалык",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0465",
+  "text": "тарыхый",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0466",
+  "text": "тарых",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0467",
+  "text": "хан",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0468",
+  "text": "химиялык",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0469",
+  "text": "техника",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0470",
+  "text": "тарыхы",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0471",
+  "text": "михаил",
+  "category": "C rare letter",
+  "target": "х",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0472",
+  "text": "чейин",
+  "category": "C rare letter",
+  "target": "и",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0473",
+  "text": "билдирди",
+  "category": "C rare letter",
+  "target": "и",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0474",
+  "text": "эки",
+  "category": "C rare letter",
+  "target": "и",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0475",
+  "text": "эми",
+  "category": "C rare letter",
+  "target": "и",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0476",
+  "text": "бишкек",
+  "category": "C rare letter",
+  "target": "и",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0477",
+  "text": "декабрь",
+  "category": "C rare letter",
+  "target": "ь",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0478",
+  "text": "октябрь",
+  "category": "C rare letter",
+  "target": "ь",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0479",
+  "text": "апрель",
+  "category": "C rare letter",
+  "target": "ь",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0480",
+  "text": "ноябрь",
+  "category": "C rare letter",
+  "target": "ь",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0481",
+  "text": "маалымат",
+  "category": "C rare letter",
+  "target": "м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0482",
+  "text": "адам",
+  "category": "C rare letter",
+  "target": "м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0483",
+  "text": "миң",
+  "category": "C rare letter",
+  "target": "м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0484",
+  "text": "айтымында",
+  "category": "C rare letter",
+  "target": "м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0485",
+  "text": "мындай",
+  "category": "C rare letter",
+  "target": "м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0486",
+  "text": "болгон",
+  "category": "C rare letter",
+  "target": "н",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0487",
+  "text": "деген",
+  "category": "C rare letter",
+  "target": "н",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0488",
+  "text": "бул",
+  "category": "C rare letter",
+  "target": "л",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0489",
+  "text": "тууралуу",
+  "category": "C rare letter",
+  "target": "л",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0490",
+  "text": "болуп",
+  "category": "C rare letter",
+  "target": "л",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0491",
+  "text": "учурда",
+  "category": "C rare letter",
+  "target": "ч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0492",
+  "text": "чек",
+  "category": "C rare letter",
+  "target": "ч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0493",
+  "text": "биринчи",
+  "category": "C rare letter",
+  "target": "ч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0494",
+  "text": "ичинде",
+  "category": "C rare letter",
+  "target": "ч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0495",
+  "text": "башчысы",
+  "category": "C rare letter",
+  "target": "ч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0496",
+  "text": "кыргыз",
+  "category": "C rare letter",
+  "target": "г",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0497",
+  "text": "дагы",
+  "category": "C rare letter",
+  "target": "г",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0498",
+  "text": "гана",
+  "category": "C rare letter",
+  "target": "г",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0499",
+  "text": "кыргызстан",
+  "category": "C rare letter",
+  "target": "г",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0500",
+  "text": "миллион",
+  "category": "D letter pair",
+  "target": "лл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0501",
+  "text": "доллар",
+  "category": "D letter pair",
+  "target": "лл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0502",
+  "text": "миллиард",
+  "category": "D letter pair",
+  "target": "лл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0503",
+  "text": "долларга",
+  "category": "D letter pair",
+  "target": "лл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0504",
+  "text": "ысык-көлдө",
+  "category": "D letter pair",
+  "target": "к-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0505",
+  "text": "азык-түлүк",
+  "category": "D letter pair",
+  "target": "к-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0506",
+  "text": "тамак-аш",
+  "category": "D letter pair",
+  "target": "к-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0507",
+  "text": "тоо-кен",
+  "category": "D letter pair",
+  "target": "-к",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0508",
+  "text": "кызыл-кыя",
+  "category": "D letter pair",
+  "target": "-к",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0509",
+  "text": "жалал-абад",
+  "category": "D letter pair",
+  "target": "-а",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0510",
+  "text": "чолпон-ата",
+  "category": "D letter pair",
+  "target": "-а",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0511",
+  "text": "ала-арча",
+  "category": "D letter pair",
+  "target": "-а",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0512",
+  "text": "кара-суу",
+  "category": "D letter pair",
+  "target": "а-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0513",
+  "text": "ала-тоо",
+  "category": "D letter pair",
+  "target": "а-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0514",
+  "text": "ата-журт",
+  "category": "D letter pair",
+  "target": "а-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0515",
+  "text": "үй-бүлө",
+  "category": "D letter pair",
+  "target": "-б",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0516",
+  "text": "үй-бүлөлүк",
+  "category": "D letter pair",
+  "target": "-б",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0517",
+  "text": "үй-бүлөсү",
+  "category": "D letter pair",
+  "target": "-б",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0518",
+  "text": "ат-башы",
+  "category": "D letter pair",
+  "target": "-б",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0519",
+  "text": "евразия",
+  "category": "D letter pair",
+  "target": "вр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0520",
+  "text": "түздөн-түз",
+  "category": "D letter pair",
+  "target": "-т",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0521",
+  "text": "күнү-түнү",
+  "category": "D letter pair",
+  "target": "-т",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0522",
+  "text": "коюлду",
+  "category": "D letter pair",
+  "target": "юл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0523",
+  "text": "сөзсүз",
+  "category": "D letter pair",
+  "target": "зс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0524",
+  "text": "негизсиз",
+  "category": "D letter pair",
+  "target": "зс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0525",
+  "text": "түзсө",
+  "category": "D letter pair",
+  "target": "зс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0526",
+  "text": "ар-намыс",
+  "category": "D letter pair",
+  "target": "р-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0527",
+  "text": "камбар-ата",
+  "category": "D letter pair",
+  "target": "р-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0528",
+  "text": "бир-эки",
+  "category": "D letter pair",
+  "target": "р-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0529",
+  "text": "нур-султан",
+  "category": "D letter pair",
+  "target": "р-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0530",
+  "text": "новости",
+  "category": "D letter pair",
+  "target": "во",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0531",
+  "text": "адвокат",
+  "category": "D letter pair",
+  "target": "во",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0532",
+  "text": "адвокаты",
+  "category": "D letter pair",
+  "target": "во",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0533",
+  "text": "искусство",
+  "category": "D letter pair",
+  "target": "во",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0534",
+  "text": "маал-маалы",
+  "category": "D letter pair",
+  "target": "л-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0535",
+  "text": "айыл-чарба",
+  "category": "D letter pair",
+  "target": "л-",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0536",
+  "text": "э-мейл",
+  "category": "D letter pair",
+  "target": "-м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0537",
+  "text": "вице-мэри",
+  "category": "D letter pair",
+  "target": "-м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0538",
+  "text": "вице-мэр",
+  "category": "D letter pair",
+  "target": "-м",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0539",
+  "text": "министри",
+  "category": "D letter pair",
+  "target": "тр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0540",
+  "text": "электр",
+  "category": "D letter pair",
+  "target": "тр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0541",
+  "text": "министрлер",
+  "category": "D letter pair",
+  "target": "тр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0542",
+  "text": "метрге",
+  "category": "D letter pair",
+  "target": "тр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0543",
+  "text": "украинанын",
+  "category": "D letter pair",
+  "target": "кр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0544",
+  "text": "украина",
+  "category": "D letter pair",
+  "target": "кр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0545",
+  "text": "украин",
+  "category": "D letter pair",
+  "target": "кр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0546",
+  "text": "крнын",
+  "category": "D letter pair",
+  "target": "кр",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0547",
+  "text": "радиосунун",
+  "category": "D letter pair",
+  "target": "ио",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0548",
+  "text": "чемпиону",
+  "category": "D letter pair",
+  "target": "ио",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0549",
+  "text": "радиосуна",
+  "category": "D letter pair",
+  "target": "ио",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0550",
+  "text": "катчысы",
+  "category": "D letter pair",
+  "target": "тч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0551",
+  "text": "саясатчы",
+  "category": "D letter pair",
+  "target": "тч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0552",
+  "text": "спортчу",
+  "category": "D letter pair",
+  "target": "тч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0553",
+  "text": "акыйкатчы",
+  "category": "D letter pair",
+  "target": "тч",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0554",
+  "text": "саясат",
+  "category": "D letter pair",
+  "target": "яс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0555",
+  "text": "компаниясы",
+  "category": "D letter pair",
+  "target": "яс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0556",
+  "text": "август",
+  "category": "D letter pair",
+  "target": "ав",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0557",
+  "text": "автоунаа",
+  "category": "D letter pair",
+  "target": "ав",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0558",
+  "text": "автору",
+  "category": "D letter pair",
+  "target": "ав",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0559",
+  "text": "алмазбек",
+  "category": "D letter pair",
+  "target": "зб",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0560",
+  "text": "өзбекстан",
+  "category": "D letter pair",
+  "target": "зб",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0561",
+  "text": "өзбек",
+  "category": "D letter pair",
+  "target": "зб",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0562",
+  "text": "киргизбей",
+  "category": "D letter pair",
+  "target": "зб",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0563",
+  "text": "кызматы",
+  "category": "D letter pair",
+  "target": "зм",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0564",
+  "text": "кызмат",
+  "category": "D letter pair",
+  "target": "зм",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0565",
+  "text": "мыйзамсыз",
+  "category": "D letter pair",
+  "target": "мс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0566",
+  "text": "камсыз",
+  "category": "D letter pair",
+  "target": "мс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0567",
+  "text": "камсыздоо",
+  "category": "D letter pair",
+  "target": "мс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0568",
+  "text": "тынымсыз",
+  "category": "D letter pair",
+  "target": "мс",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0569",
+  "text": "мыйзам",
+  "category": "D letter pair",
+  "target": "йз",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0570",
+  "text": "мыйзамга",
+  "category": "D letter pair",
+  "target": "йз",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0571",
+  "text": "мыйзамдын",
+  "category": "D letter pair",
+  "target": "йз",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0572",
+  "text": "аскер",
+  "category": "D letter pair",
+  "target": "ск",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0573",
+  "text": "аскердик",
+  "category": "D letter pair",
+  "target": "ск",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0574",
+  "text": "уюму",
+  "category": "D letter pair",
+  "target": "юм",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0575",
+  "text": "уюмдун",
+  "category": "D letter pair",
+  "target": "юм",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0576",
+  "text": "уюмдар",
+  "category": "D letter pair",
+  "target": "юм",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0577",
+  "text": "каражат",
+  "category": "D letter pair",
+  "target": "аж",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0578",
+  "text": "бажы",
+  "category": "D letter pair",
+  "target": "аж",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0579",
+  "text": "тажик",
+  "category": "D letter pair",
+  "target": "аж",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0580",
+  "text": "тажикстан",
+  "category": "D letter pair",
+  "target": "аж",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0581",
+  "text": "кабарлады",
+  "category": "D letter pair",
+  "target": "рл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0582",
+  "text": "парламент",
+  "category": "D letter pair",
+  "target": "рл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0583",
+  "text": "дээрлик",
+  "category": "D letter pair",
+  "target": "рл",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0584",
+  "text": "өкмөт",
+  "category": "D letter pair",
+  "target": "км",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0585",
+  "text": "өкмөттүн",
+  "category": "D letter pair",
+  "target": "км",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0586",
+  "text": "укмкнын",
+  "category": "D letter pair",
+  "target": "км",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0587",
+  "text": "өкмөтү",
+  "category": "D letter pair",
+  "target": "км",
+  "priority": 2,
+  "samples_target": 20,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0588",
+  "text": "байланыштуу",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0589",
+  "text": "кыргызстанда",
+  "category": "E long word",
+  "target": "12 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0590",
+  "text": "республикасынын",
+  "category": "E long word",
+  "target": "15 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0591",
+  "text": "жергиликтүү",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0592",
+  "text": "президенти",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0593",
+  "text": "коопсуздук",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0594",
+  "text": "маалыматка",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0595",
+  "text": "министрлиги",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0596",
+  "text": "кызматкерлери",
+  "category": "E long word",
+  "target": "13 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0597",
+  "text": "экономикалык",
+  "category": "E long word",
+  "target": "12 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0598",
+  "text": "министрлигинин",
+  "category": "E long word",
+  "target": "14 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0599",
+  "text": "билдиришти",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0600",
+  "text": "кыргызстанга",
+  "category": "E long word",
+  "target": "12 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0601",
+  "text": "ошондуктан",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0602",
+  "text": "кошумчалады",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0603",
+  "text": "максатында",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0604",
+  "text": "кыргызстандагы",
+  "category": "E long word",
+  "target": "14 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0605",
+  "text": "туурасында",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0606",
+  "text": "шаарындагы",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0607",
+  "text": "райондордо",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0608",
+  "text": "ортосундагы",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0609",
+  "text": "премьер-министр",
+  "category": "E long word",
+  "target": "15 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0610",
+  "text": "башкармалыгынын",
+  "category": "E long word",
+  "target": "15 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0611",
+  "text": "маалыматты",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0612",
+  "text": "бишкектеги",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0613",
+  "text": "маалыматына",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0614",
+  "text": "казакстандын",
+  "category": "E long word",
+  "target": "12 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0615",
+  "text": "маалыматта",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0616",
+  "text": "белгиленген",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0617",
+  "text": "адамдардын",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0618",
+  "text": "партиясынын",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0619",
+  "text": "республикалык",
+  "category": "E long word",
+  "target": "13 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0620",
+  "text": "жаан-чачын",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0621",
+  "text": "саламаттык",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0622",
+  "text": "агенттигине",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0623",
+  "text": "температурасы",
+  "category": "E long word",
+  "target": "13 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0624",
+  "text": "маалыматтар",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0625",
+  "text": "коронавирус",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0626",
+  "text": "кызматкери",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0627",
+  "text": "тажикстандын",
+  "category": "E long word",
+  "target": "12 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0628",
+  "text": "районундагы",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0629",
+  "text": "керектигин",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0630",
+  "text": "ооруканага",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0631",
+  "text": "америкалык",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0632",
+  "text": "комитетинин",
+  "category": "E long word",
+  "target": "11 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0633",
+  "text": "жалпысынан",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ },
+ {
+  "prompt_id": "p0634",
+  "text": "депутаттар",
+  "category": "E long word",
+  "target": "10 letters",
+  "priority": 3,
+  "samples_target": 10,
+  "max_per_writer": 2
+ }
+]

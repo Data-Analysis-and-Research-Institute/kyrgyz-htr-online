@@ -1,0 +1,28 @@
+rules_version = '2';
+// Firestore security rules for the handwriting collection (paste into Firebase console ->
+// Firestore Database -> Rules, or deploy with the Firebase CLI).
+// Contributors sign in anonymously; they can only CREATE their own consent record and samples.
+// Nobody can read data from the browser — export it with webapp/tools/export_firebase.py (admin SDK).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /consents/{uid} {
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.consent_version is string
+        && request.resource.data.agreed == true
+        && request.resource.data.age_16_plus == true;
+      allow read, delete: if false;
+    }
+
+    match /submissions/{id} {
+      allow create: if request.auth != null
+        && request.resource.data.writer_id == request.auth.uid
+        && exists(/databases/$(database)/documents/consents/$(request.auth.uid))
+        && request.resource.data.text is string && request.resource.data.text.size() <= 64
+        && request.resource.data.prompt_id is string
+        && request.resource.data.png is string && request.resource.data.png.size() < 900000
+        && request.resource.data.strokes is string && request.resource.data.strokes.size() < 400000;
+      allow read, update, delete: if false;
+    }
+  }
+}

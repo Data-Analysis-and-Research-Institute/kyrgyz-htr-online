@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ky" data-ui="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyrgyz Handwriting Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Кол жазма чогултуу · Сбор почерка · Handwriting collection</h1>
+    <nav><a href="index.html">Таануу / Recognize</a><a href="collect.html" class="active">Маалымат берүү / Contribute</a></nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-set-lang="ky">Кыргызча</button><button data-set-lang="ru">Русский</button><button data-set-lang="en">English</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="demo-banner" class="card notice" hidden>
+    <span data-lang="ky"><b>Демо режим.</b> Маалымат базасы туташтырылган эмес, ошондуктан эч нерсе жөнөтүлбөйт. Үлгүлөрүңүз ушул браузерде калат, аларды аягында файл катары жүктөп алсаңыз болот.</span>
+    <span data-lang="ru"><b>Демо-режим.</b> База данных не подключена, поэтому ничего не отправляется. Ваши образцы остаются в этом браузере, в конце их можно скачать файлом.</span>
+    <span data-lang="en"><b>Demo mode.</b> No database is connected, so nothing is uploaded. Your samples stay in this browser and you can download them as a file at the end.</span>
+  </div>
+
+  <!-- step 1: consent.
+       The Kyrgyz and Russian texts are translations of the English version and must be reviewed by
+       native speakers / the institution's ethics process before real data collection. -->
+  <section id="consent" class="card">
+    <div data-lang="ky">
+      <h2>Баштоодон мурун</h2>
+      <p>Биз ачык кол жазманы таануу моделдерин үйрөтүү жана текшерүү үчүн кыргыз тилинде кол менен жазылган
+        сөздөрдү чогултуп жатабыз. Сизге сөздөр бир-бирден көрсөтүлөт; ар бир сөздү жазуу аянтына стилус, манжа
+        же чычкан менен жазыңыз.</p>
+      <ul>
+        <li><b>Эмне сакталат:</b> кол жазмаңыздын сүрөттөрү, калемдин кыймылы (сызыктардын координаттары жана
+          убактысы), калемдин түрү, сизден жазуу суралган сөз, кокустан түзүлгөн анонимдүү идентификатор жана
+          төмөндөгү милдеттүү эмес жоопторуңуз. Аты-жөнүңүз, электрондук почтаңыз же IP-дарегиңиз боюнча
+          инсандыгыңызды аныктай турган маалымат сакталбайт.</li>
+        <li><b>Кантип колдонулат:</b> илимий изилдөө жана окутуу үчүн, ошондой эле <span class="js-licence"></span>
+          лицензиясы менен маалымат топтомунун бир бөлүгү катары ачык жарыяланат.</li>
+        <li><b>Ыктыярдуу:</b> каалаган убакта токтото аласыз. Үлгүлөрүңүздү өчүрүү үчүн
+          <span class="js-contact"></span> дарегине жазып, анонимдүү идентификаторуңузду көрсөтүңүз
+          (ал сессия учурунда экранда көрүнөт).</li>
+        <li>Сураныч, көрсөтүлгөн сөздөрдөн башка жеке маалыматты (ысымдарды, даректерди, телефон номерлерин) жазбаңыз.</li>
+      </ul>
+    </div>
+    <div data-lang="ru">
+      <h2>Перед началом</h2>
+      <p>Мы собираем рукописные слова на кыргызском языке, чтобы обучать и проверять открытые модели распознавания
+        рукописного текста. Вам будут показывать слова по одному; напишите каждое слово в поле для письма стилусом,
+        пальцем или мышью.</p>
+      <ul>
+        <li><b>Что сохраняется:</b> изображения вашего почерка, движения пера (координаты и время штрихов), тип пера,
+          слово, которое вас попросили написать, случайный анонимный идентификатор и ваши необязательные ответы ниже.
+          Имя, адрес электронной почты и данные, позволяющие установить вашу личность по IP-адресу, не сохраняются.</li>
+        <li><b>Как используются данные:</b> для научных исследований и обучения, а также публикуются в открытом доступе
+          в составе набора данных под лицензией <span class="js-licence"></span>.</li>
+        <li><b>Участие добровольное:</b> вы можете прекратить в любой момент. Чтобы удалить ваши образцы, напишите на
+          <span class="js-contact"></span> и укажите свой анонимный идентификатор (он показан на экране во время сессии).</li>
+        <li>Пожалуйста, не пишите личную информацию (имена, адреса, номера телефонов), кроме показанных слов.</li>
+      </ul>
+    </div>
+    <div data-lang="en">
+      <h2>Before you start</h2>
+      <p>We are collecting handwritten Kyrgyz words to train and test open handwriting-recognition models.
+        You will be shown one word at a time; please write each word in the writing area with a stylus, finger or mouse.</p>
+      <ul>
+        <li><b>What is stored:</b> the images of your writing, the pen movements (stroke coordinates and timing),
+          the pen style, the word you were asked to write, a random anonymous ID, and your optional answers below.
+          No name, e-mail address or IP-based identity is stored.</li>
+        <li><b>How it is used:</b> for research and teaching, and public release as part of a dataset under the
+          <span class="js-licence"></span> licence.</li>
+        <li><b>Voluntary:</b> you can stop at any time. To have your samples removed, write to
+          <span class="js-contact"></span> and quote your anonymous ID (shown on screen during the session).</li>
+        <li>Please do not write personal information (names, addresses, phone numbers) other than the shown words.</li>
+      </ul>
+    </div>
+
+    <label class="check"><input type="checkbox" id="c-age">
+      <span data-lang="ky">Мен 16 жаштамын же андан улуумун, же ата-энем/камкорчум макулдугун берди.</span>
+      <span data-lang="ru">Мне 16 лет или больше, либо мой родитель/опекун дал согласие.</span>
+      <span data-lang="en">I am 16 years or older, or my parent/guardian has agreed.</span></label>
+    <label class="check"><input type="checkbox" id="c-agree">
+      <span data-lang="ky">Кол жазмамдын жогоруда жазылгандай чогултулушуна жана жарыяланышына макулмун.</span>
+      <span data-lang="ru">Я согласен(на) на сбор и публикацию моего почерка, как описано выше.</span>
+      <span data-lang="en">I agree that my handwriting is collected and released as described above.</span></label>
+    <div class="row">
+      <label><span data-lang="ky">Жаш курагы</span><span data-lang="ru">Возраст</span><span data-lang="en">Age range</span>
+        <select id="q-age"><option value="">—</option><option>16-17</option><option>18-24</option><option>25-34</option><option>35-49</option><option>50+</option></select></label>
+      <label><span data-lang="ky">Жазган кол</span><span data-lang="ru">Пишущая рука</span><span data-lang="en">Writing hand</span>
+        <select id="q-hand"><option value="">—</option><option value="right">оң / правая / right</option><option value="left">сол / левая / left</option></select></label>
+      <label><span data-lang="ky">Эне тили</span><span data-lang="ru">Родной язык</span><span data-lang="en">First language</span>
+        <select id="q-lang"><option value="">—</option><option value="Kyrgyz">кыргыз / кыргызский / Kyrgyz</option><option value="Russian">орус / русский / Russian</option><option value="other">башка / другой / other</option></select></label>
+    </div>
+    <p class="muted"><span data-lang="ky">Бул суроолор милдеттүү эмес («—» = көрсөтпөйм).</span><span data-lang="ru">Эти вопросы необязательны («—» = не указывать).</span><span data-lang="en">These questions are optional ("—" = prefer not to say).</span></p>
+    <div class="row"><button id="start" class="primary" disabled>
+      <span data-lang="ky">Макулмун — баштоо</span><span data-lang="ru">Я согласен(на) — начать</span><span data-lang="en">I agree — start</span></button></div>
+  </section>
+
+  <!-- step 2: writing session -->
+  <section id="session" class="card" hidden>
+    <div class="row"><span class="muted"><span data-lang="ky">Жазыңыз:</span><span data-lang="ru">Напишите:</span><span data-lang="en">Please write:</span></span>
+      <span class="spacer"></span><span class="muted">ID: <code id="writer"></code></span></div>
+    <div class="prompt" id="prompt">…</div>
+    <canvas id="draw" class="draw" aria-label="Writing area"></canvas>
+    <div class="row">
+      <span class="muted" id="brush-info"></span>
+      <span class="spacer"></span>
+      <button id="undo">↶</button>
+      <button id="clear"><span data-lang="ky">Тазалоо</span><span data-lang="ru">Очистить</span><span data-lang="en">Clear</span></button>
+    </div>
+    <div class="row">
+      <label class="muted"><span data-lang="ky">Эмне жаздыңыз (башкача жазсаңыз гана оңдоңуз):</span><span data-lang="ru">Что вы написали (исправьте, только если написали иначе):</span><span data-lang="en">What you wrote (edit only if different):</span>
+        <input type="text" id="written" autocomplete="off" spellcheck="false"></label>
+    </div>
+    <div class="row">
+      <button id="skip"><span data-lang="ky">Өткөрүү</span><span data-lang="ru">Пропустить</span><span data-lang="en">Skip</span></button>
+      <span class="spacer"></span>
+      <button id="submit" class="primary"><span data-lang="ky">Жөнөтүү</span><span data-lang="ru">Отправить</span><span data-lang="en">Submit</span></button>
+    </div>
+    <div class="row"><span class="muted" id="feedback"></span></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="row"><span class="muted" id="count"></span><span class="spacer"></span>
+      <button id="download" hidden><span data-lang="ky">Үлгүлөрүмдү жүктөп алуу (JSON)</span><span data-lang="ru">Скачать мои образцы (JSON)</span><span data-lang="en">Download my samples (JSON)</span></button></div>
+  </section>
+</main>
+<footer>Рахмат! · Спасибо! · Thank you for contributing to open Kyrgyz language technology.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/preprocess.js"></script>
+<script src="js/decoder.js"></script>
+<script src="js/brush.js"></script>
+<script src="js/recognizer.js"></script>
+<script type="module" src="js/collect.js"></script>
+</body>
+</html>

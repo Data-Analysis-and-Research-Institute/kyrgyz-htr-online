@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body>
+<iframe id="f" src="../collect.html" style="width:900px;height:1400px"></iframe>
+<pre id="out">START</pre>
+<script>
+const log = (s) => { document.getElementById('out').textContent += '\n' + s; };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+document.getElementById('f').onload = async () => {
+  try {
+    const w = document.getElementById('f').contentWindow, d = w.document, $ = (id) => d.getElementById(id);
+    await sleep(500);
+    $('c-age').click(); $('c-agree').click();
+    log('start enabled after consent: ' + !$('start').disabled);
+    $('start').click();
+    await sleep(1500);
+    log('session visible: ' + !$('session').hidden + ' | prompt: ' + $('prompt').textContent + ' | ' + $('brush-info').textContent + ' | writer: ' + $('writer').textContent);
+    $('submit').click(); await sleep(300);
+    log('empty submit feedback: ' + $('feedback').textContent);
+    const cv = $('draw'), r = cv.getBoundingClientRect();
+    const fire = (type, x, y) => cv.dispatchEvent(new w.PointerEvent(type, { bubbles: true, clientX: r.left + x, clientY: r.top + y,
+      pointerId: 7, pointerType: 'mouse', button: 0, pressure: 0.5 }));
+    for (let k = 0; k < 2; k++) {
+      fire('pointerdown', 40, 100);
+      for (let i = 1; i < 120; i++) { fire('pointermove', 40 + i * 3, 100 - 30 * Math.sin(i / 8)); await sleep(2); }
+      fire('pointerup', 400, 100);
+      await sleep(200);
+      const prompt1 = $('prompt').textContent;
+      $('submit').click();
+      await sleep(4000);
+      log(`submit ${k + 1}: feedback="${$('feedback').textContent}" | count="${$('count').textContent}" | next prompt: ${$('prompt').textContent} (was ${prompt1}) | download visible: ${!$('download').hidden}`);
+    }
+    log('localStorage done-count entries: ' + Object.keys(JSON.parse(w.localStorage.getItem('khtr_done') || '{}')).length);
+    log('DONE');
+  } catch (e) { log('ERROR ' + (e.stack || e)); }
+};
+</script></body></html>

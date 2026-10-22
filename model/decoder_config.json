@@ -1,0 +1,16 @@
+{
+ "nu": 1.0,
+ "beta": 0,
+ "gamma": -20,
+ "lexicon_min_count": 30,
+ "lexicon_words": 100506,
+ "domain_mix": {
+  "train": 0.05,
+  "literary": 0.1
+ },
+ "test": {
+  "greedy_cer": 6.256278670494356,
+  "cer": 4.343099257314942,
+  "word_acc": 87.90849673202614
+ }
+}
