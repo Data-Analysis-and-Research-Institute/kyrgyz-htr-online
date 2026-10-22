@@ -1,6 +1,7 @@
 # Kyrgyz handwriting recognition — web app (GitHub Pages)
 
-A static website with four pages:
+A static website with five pages. **Everyone signs in with Google** to contribute or validate (recognition
+needs no sign-in):
 
 * **`index.html` — Recognize.** Write a Kyrgyz word on the canvas (pen / brush / ink) or upload a photo
   (optional crop), or click one of 12 **example photos**; a CTC recogniser runs **in the browser**
@@ -15,8 +16,16 @@ A static website with four pages:
   or link directly with `collect.html?lang=ky|ru|en`), then one prompt at a time from the "most confused words"
   list (`prompts/collection_prompts.json`). Each sample is stored in **Firebase Firestore**: the rendered
   PNG, raw strokes (x, y, t, pressure, width), brush style, prompt, what was written and the model's
-  reading. Without a Firebase config it runs in **demo mode** (local JSON download, nothing uploaded).
-* **`validate.html` — Validate.** Anyone signed in with Google can review collected samples (no approval step).
+  reading. Contributors sign in with Google when they accept the consent form; their name and e-mail are kept in
+  a separate admin-only `profiles` collection and are never exported with the data.
+  Without a Firebase config it runs in **demo mode** (local JSON download, nothing uploaded).
+* **`admin.html` — Ranking (admin only).** Contributors ranked by accepted samples (also samples, rejected,
+  awaiting votes, acceptance rate, distinct words, last active) and validators ranked by votes (also agreement
+  with the final decisions, corrections); summary tiles, period filter (all / 30 / 7 days / 24 h), sortable
+  columns, CSV export. Open to the Google accounts listed in the Firestore collection `admins`. Not in the
+  site navigation (linked from the validation page footer); shows personal data — do not share screenshots.
+* **`validate.html` — Validate.** Anyone signed in with Google can review collected samples (no approval step;
+  nobody is shown their own samples).
   Every sample needs **at least 2 agreeing votes**; the queue serves samples waiting for a second vote first,
   then disputed ones, then new ones (model/label disagreements first). Validators see how many votes a sample
   has, not what they were. Keys: **1** correct, **2** wrong label
@@ -75,23 +84,30 @@ python -m http.server 8000      # then open http://localhost:8000
 
 1. <https://console.firebase.google.com> → **Add project** (the free *Spark* plan is enough:
    only Firestore and Authentication are used, images are stored inside Firestore documents).
-2. **Build → Authentication → Get started → Sign-in method → Anonymous → Enable.**
+2. **Build → Authentication → Get started → Sign-in method → Google → Enable** (support e-mail: the project
+   contact). Anonymous sign-in is no longer used and can be disabled.
 3. **Authentication → Settings → Authorized domains → Add domain:** `<user>.github.io`.
 4. **Build → Firestore Database → Create database** (production mode, a region near your contributors).
-5. **Firestore → Rules:** paste `firebase/firestore.rules` and publish. Contributors can only *create*
-   their own consent record and samples; nobody can read data from the browser.
+5. **Firestore → Rules:** paste `firebase/firestore.rules` and publish. Contributors can only *create* their
+   own consent record and samples; signed-in users can read samples and votes (to validate) but not profiles
+   or consents; admins can read everything needed for the ranking.
 6. **Project settings → Your apps → Add app → Web** → copy the `firebaseConfig` object into
    `js/firebase-config.js` (`window.FIREBASE_CONFIG = {...}`). These keys are not secret; access is
    controlled by the rules above.
 7. Fill in `js/firebase-config.js → COLLECTION_SETTINGS`: contact e-mail, licence, consent version.
 8. Recommended against abuse: enable **App Check** (reCAPTCHA) for Firestore and set a **budget alert**.
 
-### Validators (`validate.html`)
+### Admins (`admin.html`)
 
-1. **Authentication → Sign-in method → Google → Enable** (anonymous sign-in stays on for contributors).
-2. Publish the current `firebase/firestore.rules`: any Google-signed-in user may read samples and votes and
-   cast one vote per sample (`reviews/{submission}_{uid}`); anonymous contributor accounts cannot read anything.
-3. `tools/export_firebase.py` turns the votes into `review_status` / `final_text` in `labels.csv`:
+**Firestore → Start collection** `admins` → one document per admin whose **document ID is the admin's Google
+e-mail address** exactly as Google reports it (e.g. `someone@gmail.com`), with any field (e.g. `role: "admin"`).
+Delete the document to remove an admin. The addresses live only in your Firestore, not in this public repository.
+
+### Validation (`validate.html`)
+
+1. Any Google-signed-in user may read samples and votes and cast one vote per sample
+   (`reviews/{submission}_{uid}`), never on their own samples (enforced by the rules).
+2. `tools/export_firebase.py` turns the votes into `review_status` / `final_text` in `labels.csv`:
    `accepted` (≥ 2 agreeing *correct* votes, or ≥ 2 *wrong label* votes with the same corrected text, and a
    majority), `rejected` (≥ 2 *illegible / not Kyrgyz*), `disputed` (≥ 2 votes, no agreement — stays in the
    queue), `pending` (1 vote), `unreviewed`, and `excluded_pii` (a single *personal information* flag is enough,
@@ -114,21 +130,23 @@ training (all samples of a writer in the same split).
   reviewed by native speakers and by your institution's ethics process.
 * Licence of the collected data: MIT; contact: ruslan.isaev@alatoo.edu.kg (both in `js/firebase-config.js`).
 * Firebase project `kyrgyz-htr-data-collection` is configured in `js/firebase-config.js`; complete steps 2–5
-  and 8 of the Firebase setup above (Anonymous sign-in, authorized domain, Firestore + rules, App Check).
-* Validation: enable the Google sign-in provider and publish the updated rules.
+  and 8 of the Firebase setup above (Google sign-in, authorized domain, Firestore + rules, App Check), and add
+  the `admins` documents.
+* The consent text changed for Google sign-in (consent version `2026-10-v2`): have the ky/ru versions reviewed.
 * Decide whether contributors' optional answers (age range, writing hand, first language) are needed.
 
 ## Files
 
 ```
-index.html, page.html, collect.html, validate.html, css/style.css
+index.html, page.html, collect.html, validate.html, admin.html, css/style.css
 js/preprocess.js     image -> 64-px ink map (port of the training preprocessing)
 js/decoder.js        CTC greedy / prefix beam / forward algorithm + lexicon re-scoring
 js/recognizer.js     onnxruntime-web session, ties preprocessing + model + decoder together
 js/brush.js          canvas brush engine: pen, calligraphic brush (bold, sharp edges), ink with diffusion
 js/app.js            recognition page;  js/collect.js  collection page (Firebase or demo mode)
 js/page.js           page segmentation (deskew, line paths, words);  js/page-app.js  page UI
-js/validate.js       validation page (Firebase or local file)
+js/validate.js       validation page (Firebase or local file);  js/admin.js  ranking dashboard
+js/fb.js             Google sign-in + private profile;  js/votes.js  votes -> decision (mirrors export_firebase.py)
 js/firebase-config.js  your Firebase config + collection settings
 model/               ONNX model, charset, decoder settings, lexicon
 prompts/             collection prompts (from make_collection_list.py)
@@ -136,7 +154,8 @@ firebase/firestore.rules
 tools/               web_pipeline.py (Python mirror), build_web_assets.py (need the full research project to run),
                      export_firebase.py (standalone; merges validator reviews), make_validation_set.py
 examples/            12 example photos of handwritten words (examples.json: file, expected text, print/cursive)
-tests/               headless browser tests: collection flow (demo mode), examples + word-list switch
+tests/               headless browser tests: collection flow (demo mode), examples + word-list switch,
+                     admin rankings (synthetic data)
                      (the validation and page tests use unreleased images and are kept out of this repository)
 ```
 Rebuild the model assets after retraining: export the ONNX model (see the project notes) and run

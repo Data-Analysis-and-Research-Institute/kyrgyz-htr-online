@@ -1,13 +1,14 @@
 /* Collection page: consent -> random weighted prompts -> canvas -> Firestore (or local demo mode).
  * Each submission stores the rendered PNG (cropped to the ink), the raw strokes (JSON), the brush style,
  * the prompt and what was actually written, and the in-browser model's reading of it. */
-const FB_VERSION = '10.12.2';
+import { signIn, loadFirebase } from './fb.js';
+
 const S = window.COLLECTION_SETTINGS;
 const $ = (id) => document.getElementById(id);
 const PRIORITY_WEIGHT = { 1: 3, 2: 2, 3: 1 };
-const APP_VERSION = 'collect-1.0';
+const APP_VERSION = 'collect-1.1';
 
-let fb = null;            // {db, uid, fs: firestore module} when Firebase is configured
+let fb = null;            // {db, uid, fs, user} when Firebase is configured (Google sign-in)
 let writerId = null;
 let prompts = [];
 let current = null;
@@ -40,16 +41,6 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } },
 };
-
-async function initFirebase() {
-  if (!window.FIREBASE_CONFIG) return null;
-  const app = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-app.js`);
-  const auth = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-auth.js`);
-  const fs = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-firestore.js`);
-  const a = app.initializeApp(window.FIREBASE_CONFIG);
-  const cred = await auth.signInAnonymously(auth.getAuth(a));   // enable "Anonymous" sign-in in the console
-  return { db: fs.getFirestore(a), uid: cred.user.uid, fs };
-}
 
 function pickPrompt() {
   const done = store.get('khtr_done', {});
@@ -139,7 +130,7 @@ async function start() {
   $('start').disabled = true;
   $('start').textContent = T('starting');
   try {
-    fb = await initFirebase();
+    fb = await signIn();      // Google sign-in; name + e-mail go to the admin-only profiles/{uid}
   } catch (e) {
     console.error(e);
     alert(T('dbError') + e.message);
@@ -155,7 +146,7 @@ async function start() {
   };
   if (fb) await fb.fs.setDoc(fb.fs.doc(fb.db, 'consents', writerId), { ...consent, agreed_at: fb.fs.serverTimestamp() });
   store.set('khtr_consent', { ...consent, writer_id: writerId });
-  $('writer').textContent = writerId.slice(0, 10);
+  $('writer').textContent = fb ? fb.user.email : writerId.slice(0, 16);
   $('consent').hidden = true;
   $('session').hidden = false;
   ink.resize();
@@ -182,6 +173,7 @@ const urlLang = new URLSearchParams(location.search).get('lang');   // e.g. coll
 setLang(['ky', 'ru', 'en'].includes(urlLang) ? urlLang
   : store.get('khtr_lang', (navigator.language || '').toLowerCase().startsWith('ru') ? 'ru' : 'ky'));
 $('demo-banner').hidden = !!window.FIREBASE_CONFIG;
+loadFirebase().catch(() => {});   // preload the SDK so the sign-in popup opens directly from the click
 $('c-age').onchange = updateStart;
 $('c-agree').onchange = updateStart;
 $('start').onclick = start;

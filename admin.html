@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Kyrgyz HTR Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Рейтинг · Ranking (admin)</h1>
+    <nav><a href="index.html">Таануу / Recognize</a><a href="page.html">Барак / Page</a><a href="collect.html">Маалымат берүү / Contribute</a><a href="validate.html">Текшерүү / Validate</a><a href="admin.html" class="active">Admin</a></nav>
+  </div>
+</header>
+<main>
+  <section id="start" class="card">
+    <h2>Admin dashboard</h2>
+    <p>Rankings of contributors and validators. Only Google accounts listed by e-mail in the Firestore
+      collection <code>admins</code> can open it.</p>
+    <div class="row"><button id="signin" class="primary">Sign in with Google</button></div>
+    <p class="muted" id="auth-info"></p>
+  </section>
+
+  <section id="dash" hidden>
+    <div class="card">
+      <div class="row" style="margin-top:0">
+        <span class="muted" id="who"></span><span class="spacer"></span>
+        <label class="muted">Period
+          <select id="period"><option value="0">all time</option><option value="30">last 30 days</option><option value="7">last 7 days</option><option value="1">last 24 hours</option></select></label>
+        <button id="reload">↻ Reload</button>
+      </div>
+      <div class="tiles" id="tiles"></div>
+      <p class="muted" id="loaded"></p>
+    </div>
+
+    <div class="card">
+      <div class="row" style="margin-top:0"><h2 class="h-inline">Contributors</h2><span class="spacer"></span>
+        <button data-csv="contributors">CSV</button></div>
+      <p class="muted">Ranked by accepted samples (≥ 2 agreeing votes). Acceptance = accepted / (accepted + rejected).
+        Click a column to sort.</p>
+      <div class="table-wrap"><table class="rank" id="t-contributors"></table></div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="margin-top:0"><h2 class="h-inline">Validators</h2><span class="spacer"></span>
+        <button data-csv="validators">CSV</button></div>
+      <p class="muted">Ranked by votes. Agreement = votes matching the final decision, among decided samples.</p>
+      <div class="table-wrap"><table class="rank" id="t-validators"></table></div>
+    </div>
+  </section>
+</main>
+<footer>Names and e-mail addresses on this page are personal data: do not share or publish them.</footer>
+
+<script src="js/firebase-config.js"></script>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>

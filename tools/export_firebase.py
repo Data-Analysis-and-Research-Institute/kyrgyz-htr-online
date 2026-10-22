@@ -9,7 +9,8 @@ Output:
     collected/images/<doc_id>.png      the rendered word (white background, cropped to the ink)
     collected/strokes/<doc_id>.json    raw strokes: [[x, y, t_ms, pressure, width], ...] per stroke + brush
     collected/labels.csv               id, file, text, prompt_id, ..., review_status, final_text, n_reviews, verdicts
-    collected/writers.csv              anonymous writer id + optional answers from the consent form
+    collected/writers.csv              pseudonymous writer id (Firebase uid) + optional answers from the consent form
+The `profiles` collection (Google name + e-mail) is deliberately NOT exported: it must never be released.
 Split by writer (not by image) when you train: samples of one writer must stay in one split.
 """
 import argparse

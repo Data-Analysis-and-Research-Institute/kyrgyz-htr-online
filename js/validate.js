@@ -1,10 +1,12 @@
 /* Validation page: review collected handwriting samples.
  *  - Firebase mode: anyone signed in with Google can validate (no approval). Each validator casts one vote
  *    per sample, stored as reviews/{submissionId}_{validatorUid}; a label is decided by >= 2 agreeing votes,
- *    so the queue keeps serving a sample until it is decided.
+ *    so the queue keeps serving a sample until it is decided. Nobody votes on their own samples.
  *  - Local mode: open a JSON array of samples (collect.html demo download, or tools/make_validation_set.py)
  *    and download the reviews as JSON. */
-const FB_VERSION = '10.12.2';
+import { signIn as fbSignIn, loadFirebase } from './fb.js';
+import { norm, voteStatus } from './votes.js';
+
 const $ = (id) => document.getElementById(id);
 const VERDICTS = ['correct', 'wrong_label', 'illegible', 'not_kyrgyz', 'personal_info'];
 const APP_VERSION = 'validate-1.0';
@@ -16,43 +18,20 @@ let lastDoc = null;     // Firestore pagination cursor
 const localReviews = [];
 let done = 0;
 
-const norm = (t) => (t || '').toUpperCase().replace(/[^\p{L}\p{N}\- ]/gu, '').trim();
 const disagree = (s) => s.model_reading != null && norm(s.model_reading) !== norm(s.text);
 const votes = new Map();   // submission id -> [review, ...] (all validators)
-
-/* Mirror of tools/export_firebase.py final_label: decision needs >= 2 agreeing votes that are a majority */
-function voteStatus(revs) {
-  const n = revs.length, c = (v) => revs.filter((r) => r.verdict === v).length;
-  if (!n) return 'unreviewed';
-  if (c('personal_info')) return 'excluded_pii';
-  if (n < 2) return 'pending';
-  if (c('correct') >= 2 && c('correct') > n / 2) return 'accepted';
-  const fixes = {};
-  for (const r of revs) if (r.verdict === 'wrong_label') { const k = norm(r.corrected_text); fixes[k] = (fixes[k] || 0) + 1; }
-  if (Object.values(fixes).some((k) => k >= 2 && k > n / 2)) return 'accepted';
-  const bad = c('illegible') + c('not_kyrgyz');
-  if (bad >= 2 && bad > n / 2) return 'rejected';
-  return 'disputed';
-}
 const OPEN = { pending: 0, disputed: 1, unreviewed: 2 };   // still needs votes; queue order
 
 // ---- Firebase --------------------------------------------------------------------------------
 async function signIn() {
   if (!window.FIREBASE_CONFIG) { $('auth-info').textContent = 'No Firebase project configured — use a local file.'; return; }
-  const app = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-app.js`);
-  const auth = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-auth.js`);
-  const fs = await import(`https://www.gstatic.com/firebasejs/${FB_VERSION}/firebase-firestore.js`);
-  const a = app.initializeApp(window.FIREBASE_CONFIG);
-  const cred = await auth.signInWithPopup(auth.getAuth(a), new auth.GoogleAuthProvider());
-  const db = fs.getFirestore(a);
-  const uid = cred.user.uid;
-  fb = { db, uid, fs };
-  $('src').textContent = `Firebase · ${cred.user.email}`;
-  await loadFirebase();
+  fb = await fbSignIn();
+  $('src').textContent = `Firebase · ${fb.user.email}`;
+  await loadQueue();
   begin();
 }
 
-async function loadFirebase() {
+async function loadQueue() {
   const { db, fs, uid } = fb;
   votes.clear();
   for (const d of (await fs.getDocs(fs.collection(db, 'reviews'))).docs) {
@@ -66,7 +45,8 @@ async function loadFirebase() {
   const snap = await fs.getDocs(fs.query(...parts));
   if (snap.docs.length) lastDoc = snap.docs[snap.docs.length - 1];
   // only samples I have not voted on and that are not decided yet
-  const fresh = snap.docs.filter((d) => !mine.has(d.id) && voteStatus(votes.get(d.id) || []) in OPEN)
+  const fresh = snap.docs.filter((d) => !mine.has(d.id) && d.data().writer_id !== uid
+    && voteStatus(votes.get(d.id) || []) in OPEN)
     .map((d) => ({ id: d.id, ...d.data() }));
   queue = queue.slice(pos).concat(sortQueue(fresh));
   pos = 0;
@@ -182,7 +162,8 @@ document.querySelectorAll('[data-v]').forEach((b) => { b.onclick = () => verdict
 $('skip').onclick = () => { pos++; show(); };
 $('replay').onclick = replay;
 $('fix-save').onclick = () => verdict('wrong_label');
-$('more').onclick = async () => { await loadFirebase(); show(); };
+$('more').onclick = async () => { await loadQueue(); show(); };
+loadFirebase().catch(() => {});   // preload the SDK so the sign-in popup opens directly from the click
 $('download').onclick = () => {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([JSON.stringify(localReviews, null, 1)], { type: 'application/json' }));

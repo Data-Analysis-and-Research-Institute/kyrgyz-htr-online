@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body>
+<iframe id="f" src="../admin.html" style="width:1200px;height:1400px"></iframe>
+<pre id="out">START</pre>
+<script>
+// synthetic data only: checks the ranking logic and the rendering, not Firebase
+const log = (s) => { document.getElementById('out').textContent += '\n' + s; };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+document.getElementById('f').onload = async () => {
+  try {
+    const w = document.getElementById('f').contentWindow, d = w.document;
+    for (let i = 0; i < 40 && !w.KHTR_ADMIN; i++) await sleep(250);
+    const now = Date.now(), day = 86400e3;
+    const S = (id, wr, text, ago) => ({ id, writer_id: wr, text, prompt_id: 'p' + text, created_at: now - ago * day });
+    const V = (sub, v, verdict, fix = '', ago = 0) => ({ submission_id: sub, validator_uid: v, verdict, corrected_text: fix, created_at: now - ago * day });
+    const data = {
+      submissions: [S('s1', 'A', 'көз', 1), S('s2', 'A', 'коз', 1), S('s3', 'A', 'жаңы', 40), S('s4', 'B', 'үй', 2), S('s5', 'B', 'ай', 2), S('s6', 'C', 'суу', 3)],
+      reviews: [V('s1', 'X', 'correct'), V('s1', 'Y', 'correct'),            // s1 accepted
+        V('s2', 'X', 'wrong_label', 'кез'), V('s2', 'Y', 'wrong_label', 'кез'), // s2 accepted (fixed)
+        V('s3', 'X', 'illegible', '', 35), V('s3', 'Z', 'not_kyrgyz', '', 35),  // s3 rejected
+        V('s4', 'X', 'correct'), V('s4', 'Y', 'illegible'),                    // s4 disputed
+        V('s5', 'Z', 'correct'),                                                // s5 pending
+        V('s6', 'Y', 'personal_info'), V('s6', 'X', 'correct')],               // s6 excluded
+      profiles: { A: { name: 'Writer A', email: 'a@example.org' }, B: { name: 'Writer B', email: 'b@example.org' },
+        X: { name: 'Val X', email: 'x@example.org' }, Y: { name: 'Val Y', email: 'y@example.org' } },
+    };
+    const R = w.KHTR_ADMIN.rankings(data, 0);
+    log('totals ' + JSON.stringify(R.totals));
+    log('contributors ' + JSON.stringify(R.contributors.map((c) => [c.email, c.samples, c.accepted, c.rejected, c.open, c.excluded_pii, c.acceptance])));
+    log('validators ' + JSON.stringify(R.validators.map((v) => [v.email, v.votes, v.decided, v.agree, v.corrections])));
+    const R30 = w.KHTR_ADMIN.rankings(data, now - 30 * day);
+    log('last 30 days: samples ' + R30.totals.samples + ', votes ' + R30.totals.votes);
+    w.KHTR_ADMIN.show(); w.KHTR_ADMIN.render(data); await sleep(100);
+    const rows = [...d.querySelectorAll('#t-contributors tbody tr')].map((tr) => tr.children[2].textContent);
+    log('contributor table order: ' + rows.join(' > '));
+    d.querySelector('#t-contributors th[data-k="samples"]').click(); await sleep(50);
+    log('sorted by samples: ' + [...d.querySelectorAll('#t-contributors tbody tr')].map((tr) => tr.children[2].textContent).join(' > '));
+    d.getElementById('period').value = '7'; d.getElementById('period').dispatchEvent(new Event('change')); await sleep(50);
+    log('7-day tiles: ' + [...d.querySelectorAll('.tile')].map((t) => t.textContent).join(' | '));
+    log('DONE');
+  } catch (e) { log('ERROR ' + (e.stack || e)); }
+};
+</script></body></html>

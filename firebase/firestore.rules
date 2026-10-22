@@ -1,45 +1,71 @@
 rules_version = '2';
-// Firestore security rules for the handwriting collection and validation (paste into Firebase console ->
-// Firestore Database -> Rules, or deploy with the Firebase CLI).
-//  * contributors sign in anonymously and can only CREATE their own consent record and samples
-//  * anyone signed in with Google is a validator (no approval step). Validators can read samples and all
-//    reviews, and write one review (vote) per sample; a label needs at least 2 agreeing votes.
-//    Anonymous (contributor) accounts cannot read anything.
+// Firestore security rules for the handwriting collection, validation and admin dashboard (paste into Firebase
+// console -> Firestore Database -> Rules, or deploy with the Firebase CLI).
+//  * everyone signs in with Google. Contributors create their own consent record and samples.
+//  * any signed-in user can validate: read samples and votes, and cast one vote per sample (not on their own
+//    samples); a label needs at least 2 agreeing votes.
+//  * profiles/{uid} (name + e-mail) is written by its owner and readable only by admins; it is never exported
+//    with the dataset.
+//  * admins are listed as documents admins/{e-mail} (created by hand in the console; the e-mail addresses are not
+//    in this public file). Admins can read profiles and consents for the ranking dashboard.
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    function isValidator() {
+    function isGoogle() {
       return request.auth != null && request.auth.token.firebase.sign_in_provider == 'google.com';
     }
 
+    function isAdmin() {
+      return isGoogle() && request.auth.token.email_verified == true
+        && exists(/databases/$(database)/documents/admins/$(request.auth.token.email));
+    }
+
     match /consents/{uid} {
-      allow create, update: if request.auth != null && request.auth.uid == uid
+      allow create, update: if isGoogle() && request.auth.uid == uid
         && request.resource.data.consent_version is string
         && request.resource.data.agreed == true
         && request.resource.data.age_16_plus == true;
-      allow read, delete: if false;
+      allow read: if isAdmin();
+      allow delete: if false;
+    }
+
+    match /profiles/{uid} {
+      allow create, update: if isGoogle() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email', 'name', 'last_seen'])
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.name is string && request.resource.data.name.size() <= 200;
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow delete: if false;
+    }
+
+    // admins/{email}: created by hand in the console (any fields). A user may only check their own entry.
+    match /admins/{email} {
+      allow get: if isGoogle() && request.auth.token.email == email;
+      allow list, write: if false;
     }
 
     match /submissions/{id} {
-      allow create: if request.auth != null
+      allow create: if isGoogle()
         && request.resource.data.writer_id == request.auth.uid
         && exists(/databases/$(database)/documents/consents/$(request.auth.uid))
         && request.resource.data.text is string && request.resource.data.text.size() <= 64
         && request.resource.data.prompt_id is string
         && request.resource.data.png is string && request.resource.data.png.size() < 900000
         && request.resource.data.strokes is string && request.resource.data.strokes.size() < 400000;
-      allow read: if isValidator();
+      allow read: if isGoogle();
       allow update, delete: if false;
     }
 
-    // one review per (sample, validator): document id = "<submission id>_<validator uid>"
+    // one vote per (sample, validator): document id = "<submission id>_<validator uid>"; no votes on own samples
     match /reviews/{rid} {
-      allow read: if isValidator();
-      allow create, update: if isValidator()
+      allow read: if isGoogle();
+      allow create, update: if isGoogle()
         && request.resource.data.validator_uid == request.auth.uid
         && rid == request.resource.data.submission_id + '_' + request.auth.uid
         && request.resource.data.verdict in ['correct', 'wrong_label', 'illegible', 'not_kyrgyz', 'personal_info']
-        && request.resource.data.corrected_text is string && request.resource.data.corrected_text.size() <= 64;
+        && request.resource.data.corrected_text is string && request.resource.data.corrected_text.size() <= 64
+        && get(/databases/$(database)/documents/submissions/$(request.resource.data.submission_id)).data.writer_id
+           != request.auth.uid;
       allow delete: if false;
     }
   }

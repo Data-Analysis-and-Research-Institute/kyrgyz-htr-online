@@ -21,7 +21,7 @@ window.FIREBASE_CONFIG = {
 */
 
 window.COLLECTION_SETTINGS = {
-  consentVersion: '2026-10-v1',      // bump when the consent text changes
+  consentVersion: '2026-10-v2',      // bump when the consent text changes (v2: Google sign-in)
   sessionTarget: 40,                 // suggested words per session
   contactEmail: 'ruslan.isaev@alatoo.edu.kg',  // contact for questions / withdrawal requests
   licence: 'MIT',                             // licence the collected data will be released under

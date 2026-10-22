@@ -77,3 +77,15 @@ label.switch { display: flex; gap: 6px; align-items: center; font-weight: 600; }
 .page-text { width: 100%; min-height: 260px; font-size: 17px; line-height: 1.5; padding: 8px; box-sizing: border-box;
   border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: #1b1b22; font-family: inherit; }
 #word-info canvas.preview { height: 56px; margin-top: 8px; }
+
+/* admin dashboard */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-top: 12px; }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.tile-v { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.h-inline { margin: 0; font-size: 18px; }
+.table-wrap { overflow-x: auto; }
+table.rank { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+table.rank th, table.rank td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+table.rank th { cursor: pointer; user-select: none; color: var(--muted); font-weight: 600; }
+table.rank th.desc::after { content: ' ▾'; } table.rank th.asc::after { content: ' ▴'; }
+table.rank tbody tr:nth-child(-n+3) td:first-child { font-weight: 700; color: var(--accent); }
