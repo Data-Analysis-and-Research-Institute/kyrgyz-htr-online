@@ -50,3 +50,12 @@ html[data-ui="en"] [data-lang]:not([data-lang="en"]) { display: none !important;
 .langs button { padding: 4px 10px; font-size: 14px; }
 
 a { color: var(--accent); }
+
+/* example gallery + word-list switch (recognition page) */
+.examples { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; margin-top: 8px; }
+.examples button { padding: 4px; border-radius: 8px; background: #fff; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.examples img { width: 100%; height: 56px; object-fit: contain; display: block; }
+.examples small { color: #555; font-size: 12px; }
+.examples button.selected { outline: 2px solid var(--accent); }
+label.switch { display: flex; gap: 6px; align-items: center; font-weight: 600; }
+.bad { color: #c0392b; }

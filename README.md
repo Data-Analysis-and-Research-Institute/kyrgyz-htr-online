@@ -3,8 +3,10 @@
 A static website with two pages:
 
 * **`index.html` — Recognize.** Write a Kyrgyz word on the canvas (pen / brush / ink) or upload a photo
-  (optional crop); a CTC recogniser runs **in the browser** (onnxruntime-web) and a 100k-word Kyrgyz
-  word list re-scores its candidates. Nothing leaves the device.
+  (optional crop), or click one of 12 **example photos**; a CTC recogniser runs **in the browser**
+  (onnxruntime-web) and a 100k-word Kyrgyz word list re-scores its candidates. The **word-list correction
+  switch** shows the model's own reading instead (no letter substitution, no corpus words). Nothing
+  leaves the device.
 * **`collect.html` — Contribute.** Consent form in **Kyrgyz, Russian and English** (switch at the top,
   or link directly with `collect.html?lang=ky|ru|en`), then one prompt at a time from the "most confused words"
   list (`prompts/collection_prompts.json`). Each sample is stored in **Firebase Firestore**: the rendered
@@ -78,8 +80,9 @@ training (all samples of a writer in the same split).
 
 * The Kyrgyz and Russian consent texts in `collect.html` are translations of the English text: have them
   reviewed by native speakers and by your institution's ethics process.
-* Choose the licence for the collected data and set it in `js/firebase-config.js` (currently a TODO
-  placeholder that is visible on the consent page). Contact: risaev@paragoniu.edu.kh.
+* Licence of the collected data: MIT; contact: ruslan.isaev@alatoo.edu.kg (both in `js/firebase-config.js`).
+* Firebase project `kyrgyz-htr-data-collection` is configured in `js/firebase-config.js`; complete steps 2–5
+  and 8 of the Firebase setup above (Anonymous sign-in, authorized domain, Firestore + rules, App Check).
 * Decide whether contributors' optional answers (age range, writing hand, first language) are needed.
 
 ## Files
@@ -97,7 +100,12 @@ prompts/             collection prompts (from make_collection_list.py)
 firebase/firestore.rules
 tools/               web_pipeline.py (Python mirror), build_web_assets.py (need the full research project to run),
                      export_firebase.py (standalone)
-tests/               headless browser test of the collection flow (demo mode)
+examples/            12 example photos of handwritten words (examples.json: file, expected text, print/cursive)
+tests/               headless browser tests: collection flow (demo mode), examples + word-list switch
 ```
 Rebuild the model assets after retraining: export the ONNX model (see the project notes) and run
 `python webapp/tools/build_web_assets.py --min-count 30` from the project root.
+
+## Licence
+
+MIT — see `LICENSE`. This covers the code, the model files and the data collected with this site.

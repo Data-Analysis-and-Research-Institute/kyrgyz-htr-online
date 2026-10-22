@@ -25,8 +25,10 @@
       return this;
     }
 
-    /* imageData: ImageData (RGBA). Returns {results:[{text, prob, ...}], preview, ms} or null (no ink). */
-    async recognize(imageData) {
+    /* imageData: ImageData (RGBA). useLexicon=false: the model's own reading only (greedy + beam
+       candidates ranked by CTC probability, no corpus words / letter substitution).
+       Returns {results:[{text, prob, ...}], preview, ms, usedLexicon} or null (no ink). */
+    async recognize(imageData, useLexicon = true) {
       const t0 = performance.now();
       const pre = KHTR.preprocess(imageData.data, imageData.width, imageData.height);
       if (!pre) return null;
@@ -34,8 +36,9 @@
       const out = await this.session.run({ image: input });
       const lp = out.logprobs;
       const [, T, C] = lp.dims;
-      const results = KHTR.decode(lp.data, T, C, this.chars, this.lex, this.cfg);
-      return { results, preview: pre, ms: Math.round(performance.now() - t0), usedLexicon: !!this.lex };
+      const lex = useLexicon ? this.lex : null;
+      const results = KHTR.decode(lp.data, T, C, this.chars, lex, this.cfg);
+      return { results, preview: pre, ms: Math.round(performance.now() - t0), usedLexicon: !!lex };
     }
   }
 

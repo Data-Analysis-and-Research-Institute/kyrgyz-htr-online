@@ -1,0 +1,62 @@
+[
+ {
+  "file": "examples/ex01.jpg",
+  "text": "көк",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex02.jpg",
+  "text": "түлкү",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex03.jpg",
+  "text": "көз",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex04.jpg",
+  "text": "терең",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex05.jpg",
+  "text": "күрөш",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex06.jpg",
+  "text": "көбүрөөк",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex07.jpg",
+  "text": "сүйлөм",
+  "style": "print"
+ },
+ {
+  "file": "examples/ex08.jpg",
+  "text": "үрөн",
+  "style": "cursive"
+ },
+ {
+  "file": "examples/ex09.jpg",
+  "text": "ыңгайлуу",
+  "style": "cursive"
+ },
+ {
+  "file": "examples/ex10.jpg",
+  "text": "сүйлөм",
+  "style": "cursive"
+ },
+ {
+  "file": "examples/ex11.jpg",
+  "text": "көлөкө",
+  "style": "cursive"
+ },
+ {
+  "file": "examples/ex12.jpg",
+  "text": "өмүр",
+  "style": "cursive"
+ }
+]

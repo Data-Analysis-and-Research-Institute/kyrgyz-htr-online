@@ -43,8 +43,19 @@
   </div>
 
   <div class="card">
+    <div class="row" style="margin-top:0"><b>Мисалдар / Examples</b><span class="muted">— click a photo to recognise it</span></div>
+    <div class="examples" id="examples"></div>
+  </div>
+
+  <div class="card">
+    <div class="row" style="margin-top:0">
+      <label class="switch"><input type="checkbox" id="use-lexicon" checked>
+        Сөздүк менен оңдоо / Word-list correction</label>
+      <span class="muted" id="mode-note">candidates are re-scored with a 100k-word Kyrgyz corpus</span>
+    </div>
     <div class="muted" id="status">Loading…</div>
     <div class="result" id="result"></div>
+    <div class="muted" id="expected"></div>
     <ul class="alts" id="alts"></ul>
     <div class="row"><span class="muted">Model input:</span><canvas id="preview" class="preview"></canvas><span class="muted" id="timing"></span></div>
   </div>
