@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyrgyz Page Recognition</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Барак / текст таануу · Full-page recognition</h1>
+    <nav><a href="index.html">Таануу / Recognize</a><a href="page.html" class="active">Барак / Page</a><a href="collect.html">Маалымат берүү / Contribute</a><a href="validate.html">Текшерүү / Validate</a></nav>
+  </div>
+</header>
+<main>
+  <div class="card">
+    <div class="tabs">
+      <button id="tab-photo" class="selected">📷 Сүрөт / Photo of a page</button>
+      <button id="tab-draw">✍️ Жазуу / Write a sentence</button>
+    </div>
+    <section id="pane-photo">
+      <input type="file" id="file" accept="image/*">
+      <p class="muted">A photo or scan of a handwritten page or a few lines. Works best with dark ink on plain
+        paper, the page filling most of the photo and lines roughly horizontal (small tilts are corrected).</p>
+    </section>
+    <section id="pane-draw" hidden>
+      <canvas id="draw" class="draw page-draw" aria-label="Writing area"></canvas>
+      <div class="row">
+        <span class="spacer"></span>
+        <button id="undo">↶ Undo</button>
+        <button id="clear">Тазалоо / Clear</button>
+        <button id="recognize-draw" class="primary">Таануу / Recognize</button>
+      </div>
+      <p class="muted">Write one or more lines, leaving a clear space between words.</p>
+    </section>
+    <div class="row" style="margin-top:0.5rem">
+      <label class="switch"><input type="checkbox" id="use-lexicon" checked> Сөздүк менен оңдоо / Word-list correction</label>
+    </div>
+  </div>
+
+  <div class="card" id="out" hidden>
+    <div class="muted" id="status"></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="page-grid">
+      <div class="page-view"><canvas id="overlay"></canvas></div>
+      <div>
+        <div class="row" style="margin-top:0"><b>Текст / Text</b><span class="spacer"></span><button id="copy">Copy</button></div>
+        <textarea id="text" class="page-text" spellcheck="false"></textarea>
+        <p class="muted">Click a box on the image to see the alternatives for that word.</p>
+        <div id="word-info" class="muted"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card muted">
+    <b>How it works.</b> The page is straightened, ruled lines and specks are removed, text lines are traced
+    across the page (they may curve), and each line is split into words at the wide gaps. Every word is then read
+    by the same recogniser as on the word page. On photographed essay pages this gives about 23 % word errors and
+    6 % character errors; words that touch or run into the next line are the main source of mistakes.
+    Everything runs in your browser; the image is not uploaded.
+  </div>
+</main>
+<footer>Kyrgyz HTR · <a href="https://github.com/Data-Analysis-and-Research-Institute/kyrgyz-htr-online">source</a></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js"></script>
+<script src="js/preprocess.js"></script>
+<script src="js/decoder.js"></script>
+<script src="js/brush.js"></script>
+<script src="js/recognizer.js"></script>
+<script src="js/page.js"></script>
+<script src="js/page-app.js"></script>
+</body>
+</html>

@@ -1,10 +1,16 @@
 rules_version = '2';
-// Firestore security rules for the handwriting collection (paste into Firebase console ->
+// Firestore security rules for the handwriting collection and validation (paste into Firebase console ->
 // Firestore Database -> Rules, or deploy with the Firebase CLI).
-// Contributors sign in anonymously; they can only CREATE their own consent record and samples.
-// Nobody can read data from the browser — export it with webapp/tools/export_firebase.py (admin SDK).
+//  * contributors sign in anonymously and can only CREATE their own consent record and samples
+//  * validators sign in with Google; an admin approves them by creating validators/{uid} in the console.
+//    Only validators can read samples, and each validator can write one review per sample.
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    function isValidator() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/validators/$(request.auth.uid));
+    }
 
     match /consents/{uid} {
       allow create, update: if request.auth != null && request.auth.uid == uid
@@ -22,7 +28,25 @@ service cloud.firestore {
         && request.resource.data.prompt_id is string
         && request.resource.data.png is string && request.resource.data.png.size() < 900000
         && request.resource.data.strokes is string && request.resource.data.strokes.size() < 400000;
-      allow read, update, delete: if false;
+      allow read: if isValidator();
+      allow update, delete: if false;
+    }
+
+    // validators/{uid}: created by an admin in the console (any fields, e.g. {name: "..."}).
+    match /validators/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
+    // one review per (sample, validator): document id = "<submission id>_<validator uid>"
+    match /reviews/{rid} {
+      allow read: if isValidator();
+      allow create, update: if isValidator()
+        && request.resource.data.validator_uid == request.auth.uid
+        && rid == request.resource.data.submission_id + '_' + request.auth.uid
+        && request.resource.data.verdict in ['correct', 'wrong_label', 'illegible', 'not_kyrgyz', 'personal_info']
+        && request.resource.data.corrected_text is string && request.resource.data.corrected_text.size() <= 64;
+      allow delete: if false;
     }
   }
 }

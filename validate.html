@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyrgyz Handwriting Validation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Текшерүү · Проверка · Validation</h1>
+    <nav><a href="index.html">Таануу / Recognize</a><a href="page.html">Барак / Page</a><a href="collect.html">Маалымат берүү / Contribute</a><a href="validate.html" class="active">Текшерүү / Validate</a></nav>
+  </div>
+</header>
+<main>
+  <section id="start" class="card">
+    <h2>Validate collected handwriting</h2>
+    <p>Check that each image shows the word in its label. Samples where the recogniser disagrees with the
+      writer's label are shown first. Each sample needs two independent reviews.</p>
+    <div class="row">
+      <button id="signin" class="primary">Sign in with Google (validators)</button>
+      <span class="muted">or</span>
+      <label class="btn">Open a local JSON file… <input type="file" id="file" accept=".json,application/json" hidden></label>
+    </div>
+    <p class="muted" id="auth-info"></p>
+  </section>
+
+  <section id="review" class="card" hidden>
+    <div class="row" style="margin-top:0">
+      <span class="muted" id="src"></span><span class="spacer"></span><span class="muted" id="progress"></span>
+    </div>
+    <div class="val-grid">
+      <div>
+        <div class="muted">Image</div>
+        <img id="img" class="val-img" alt="handwritten sample">
+        <div class="row" id="replay-row"><span class="muted">Stroke replay</span><button id="replay">▶</button></div>
+        <canvas id="strokes" class="val-strokes"></canvas>
+      </div>
+      <div>
+        <table class="val-meta">
+          <tr><td class="muted">Prompt</td><td id="m-prompt"></td></tr>
+          <tr><td class="muted">Label (written)</td><td id="m-text" class="val-label"></td></tr>
+          <tr><td class="muted">Model read</td><td id="m-model"></td></tr>
+          <tr><td class="muted">Brush / input</td><td id="m-brush"></td></tr>
+        </table>
+        <div class="val-actions">
+          <button data-v="correct" class="primary">1 ✓ Correct</button>
+          <button data-v="wrong_label">2 ✎ Wrong label</button>
+          <button data-v="illegible">3 Illegible</button>
+          <button data-v="not_kyrgyz">4 Not Kyrgyz / scribble</button>
+          <button data-v="personal_info">5 Personal information</button>
+          <button id="skip">S Skip</button>
+        </div>
+        <div class="row" id="fix-row" hidden>
+          <label>Correct text <input type="text" id="fix" autocomplete="off" spellcheck="false"></label>
+          <button id="fix-save" class="primary">Save (Enter)</button>
+        </div>
+        <p class="muted" id="status"></p>
+      </div>
+    </div>
+    <div class="row"><button id="download" hidden>Download reviews (JSON)</button><span class="spacer"></span>
+      <button id="more" hidden>Load more</button></div>
+  </section>
+</main>
+<footer>Keys: 1 correct · 2 wrong label · 3 illegible · 4 not Kyrgyz · 5 personal info · S skip · Enter save correction</footer>
+
+<script src="js/firebase-config.js"></script>
+<script type="module" src="js/validate.js"></script>
+</body>
+</html>

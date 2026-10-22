@@ -3,3 +3,7 @@ __pycache__/
 service-account*.json
 collected/
 tests/img/
+tests/private_*
+tests/validate_flow.html
+tests/page_flow.html
+tests/e2e.html

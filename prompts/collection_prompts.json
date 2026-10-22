@@ -1405,114 +1405,6 @@
  },
  {
   "prompt_id": "p0157",
-  "text": "юшенко",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0158",
-  "text": "ющенко",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0159",
-  "text": "швейцария",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0160",
-  "text": "щвейцария",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0161",
-  "text": "батькившина",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0162",
-  "text": "батькивщина",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0163",
-  "text": "шербет",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0164",
-  "text": "щербет",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0165",
-  "text": "швейцариянын",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0166",
-  "text": "щвейцариянын",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0167",
-  "text": "дешица",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0168",
-  "text": "дещица",
-  "category": "A minimal pair",
-  "target": "ш/щ",
-  "priority": 1,
-  "samples_target": 30,
-  "max_per_writer": 2
- },
- {
-  "prompt_id": "p0169",
   "text": "е",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1521,7 +1413,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0170",
+  "prompt_id": "p0158",
   "text": "э",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1530,7 +1422,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0171",
+  "prompt_id": "p0159",
   "text": "бек",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1539,7 +1431,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0172",
+  "prompt_id": "p0160",
   "text": "бэк",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1548,7 +1440,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0173",
+  "prompt_id": "p0161",
   "text": "бектин",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1557,7 +1449,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0174",
+  "prompt_id": "p0162",
   "text": "бэктин",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1566,7 +1458,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0175",
+  "prompt_id": "p0163",
   "text": "кер",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1575,7 +1467,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0176",
+  "prompt_id": "p0164",
   "text": "кэр",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1584,7 +1476,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0177",
+  "prompt_id": "p0165",
   "text": "дер",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1593,7 +1485,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0178",
+  "prompt_id": "p0166",
   "text": "дэр",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1602,7 +1494,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0179",
+  "prompt_id": "p0167",
   "text": "ерлан",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1611,7 +1503,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0180",
+  "prompt_id": "p0168",
   "text": "эрлан",
   "category": "A minimal pair",
   "target": "е/э",
@@ -1620,7 +1512,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0181",
+  "prompt_id": "p0169",
   "text": "тартип",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1629,7 +1521,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0182",
+  "prompt_id": "p0170",
   "text": "тартып",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1638,7 +1530,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0183",
+  "prompt_id": "p0171",
   "text": "саясий",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1647,7 +1539,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0184",
+  "prompt_id": "p0172",
   "text": "саясый",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1656,7 +1548,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0185",
+  "prompt_id": "p0173",
   "text": "си",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1665,7 +1557,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0186",
+  "prompt_id": "p0174",
   "text": "сы",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1674,7 +1566,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0187",
+  "prompt_id": "p0175",
   "text": "тиш",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1683,7 +1575,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0188",
+  "prompt_id": "p0176",
   "text": "тыш",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1692,7 +1584,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0189",
+  "prompt_id": "p0177",
   "text": "тайип",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1701,7 +1593,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0190",
+  "prompt_id": "p0178",
   "text": "тайып",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1710,7 +1602,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0191",
+  "prompt_id": "p0179",
   "text": "ин",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1719,7 +1611,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0192",
+  "prompt_id": "p0180",
   "text": "ын",
   "category": "A minimal pair",
   "target": "и/ы",
@@ -1728,7 +1620,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0193",
+  "prompt_id": "p0181",
   "text": "объективдүү",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1737,7 +1629,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0194",
+  "prompt_id": "p0182",
   "text": "обьективдүү",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1746,7 +1638,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0195",
+  "prompt_id": "p0183",
   "text": "объект",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1755,7 +1647,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0196",
+  "prompt_id": "p0184",
   "text": "обьект",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1764,7 +1656,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0197",
+  "prompt_id": "p0185",
   "text": "объектилерди",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1773,7 +1665,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0198",
+  "prompt_id": "p0186",
   "text": "обьектилерди",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1782,7 +1674,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0199",
+  "prompt_id": "p0187",
   "text": "объектилердин",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1791,7 +1683,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0200",
+  "prompt_id": "p0188",
   "text": "обьектилердин",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1800,7 +1692,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0201",
+  "prompt_id": "p0189",
   "text": "объектилер",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1809,7 +1701,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0202",
+  "prompt_id": "p0190",
   "text": "обьектилер",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1818,7 +1710,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0203",
+  "prompt_id": "p0191",
   "text": "объектиси",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1827,7 +1719,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0204",
+  "prompt_id": "p0192",
   "text": "обьектиси",
   "category": "A minimal pair",
   "target": "ъ/ь",
@@ -1836,7 +1728,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0205",
+  "prompt_id": "p0193",
   "text": "адамсың",
   "category": "B failed word",
   "target": "",
@@ -1845,7 +1737,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0206",
+  "prompt_id": "p0194",
   "text": "аман",
   "category": "B failed word",
   "target": "",
@@ -1854,7 +1746,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0207",
+  "prompt_id": "p0195",
   "text": "андерсон",
   "category": "B failed word",
   "target": "",
@@ -1863,7 +1755,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0208",
+  "prompt_id": "p0196",
   "text": "ар",
   "category": "B failed word",
   "target": "",
@@ -1872,7 +1764,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0209",
+  "prompt_id": "p0197",
   "text": "бизге",
   "category": "B failed word",
   "target": "",
@@ -1881,7 +1773,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0210",
+  "prompt_id": "p0198",
   "text": "биздин",
   "category": "B failed word",
   "target": "",
@@ -1890,7 +1782,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0211",
+  "prompt_id": "p0199",
   "text": "бир",
   "category": "B failed word",
   "target": "",
@@ -1899,7 +1791,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0212",
+  "prompt_id": "p0200",
   "text": "биримдиктүү",
   "category": "B failed word",
   "target": "",
@@ -1908,7 +1800,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0213",
+  "prompt_id": "p0201",
   "text": "болгур",
   "category": "B failed word",
   "target": "",
@@ -1917,7 +1809,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0214",
+  "prompt_id": "p0202",
   "text": "гүл",
   "category": "B failed word",
   "target": "",
@@ -1926,7 +1818,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0215",
+  "prompt_id": "p0203",
   "text": "гүлбарчын",
   "category": "B failed word",
   "target": "",
@@ -1935,7 +1827,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0216",
+  "prompt_id": "p0204",
   "text": "дайым",
   "category": "B failed word",
   "target": "",
@@ -1944,7 +1836,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0217",
+  "prompt_id": "p0205",
   "text": "дешсе",
   "category": "B failed word",
   "target": "",
@@ -1953,7 +1845,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0218",
+  "prompt_id": "p0206",
   "text": "жана",
   "category": "B failed word",
   "target": "",
@@ -1962,7 +1854,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0219",
+  "prompt_id": "p0207",
   "text": "жетекчилигине",
   "category": "B failed word",
   "target": "",
@@ -1971,7 +1863,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0220",
+  "prompt_id": "p0208",
   "text": "жетүүчү",
   "category": "B failed word",
   "target": "",
@@ -1980,7 +1872,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0221",
+  "prompt_id": "p0209",
   "text": "жогорку",
   "category": "B failed word",
   "target": "",
@@ -1989,7 +1881,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0222",
+  "prompt_id": "p0210",
   "text": "жолборс",
   "category": "B failed word",
   "target": "",
@@ -1998,7 +1890,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0223",
+  "prompt_id": "p0211",
   "text": "жылдыруу",
   "category": "B failed word",
   "target": "",
@@ -2007,7 +1899,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0224",
+  "prompt_id": "p0212",
   "text": "заң",
   "category": "B failed word",
   "target": "",
@@ -2016,7 +1908,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0225",
+  "prompt_id": "p0213",
   "text": "иибине",
   "category": "B failed word",
   "target": "",
@@ -2025,7 +1917,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0226",
+  "prompt_id": "p0214",
   "text": "илинип",
   "category": "B failed word",
   "target": "",
@@ -2034,7 +1926,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0227",
+  "prompt_id": "p0215",
   "text": "кари",
   "category": "B failed word",
   "target": "",
@@ -2043,7 +1935,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0228",
+  "prompt_id": "p0216",
   "text": "кафедранын",
   "category": "B failed word",
   "target": "",
@@ -2052,7 +1944,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0229",
+  "prompt_id": "p0217",
   "text": "кетсе",
   "category": "B failed word",
   "target": "",
@@ -2061,7 +1953,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0230",
+  "prompt_id": "p0218",
   "text": "ким",
   "category": "B failed word",
   "target": "",
@@ -2070,7 +1962,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0231",
+  "prompt_id": "p0219",
   "text": "кулк",
   "category": "B failed word",
   "target": "",
@@ -2079,7 +1971,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0232",
+  "prompt_id": "p0220",
   "text": "кылсам",
   "category": "B failed word",
   "target": "",
@@ -2088,7 +1980,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0233",
+  "prompt_id": "p0221",
   "text": "кылышат",
   "category": "B failed word",
   "target": "",
@@ -2097,7 +1989,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0234",
+  "prompt_id": "p0222",
   "text": "күкүк",
   "category": "B failed word",
   "target": "",
@@ -2106,7 +1998,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0235",
+  "prompt_id": "p0223",
   "text": "лар",
   "category": "B failed word",
   "target": "",
@@ -2115,7 +2007,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0236",
+  "prompt_id": "p0224",
   "text": "молдо",
   "category": "B failed word",
   "target": "",
@@ -2124,7 +2016,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0237",
+  "prompt_id": "p0225",
   "text": "неме",
   "category": "B failed word",
   "target": "",
@@ -2133,7 +2025,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0238",
+  "prompt_id": "p0226",
   "text": "озунорду",
   "category": "B failed word",
   "target": "",
@@ -2142,7 +2034,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0239",
+  "prompt_id": "p0227",
   "text": "оокумда",
   "category": "B failed word",
   "target": "",
@@ -2151,7 +2043,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0240",
+  "prompt_id": "p0228",
   "text": "орусия",
   "category": "B failed word",
   "target": "",
@@ -2160,7 +2052,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0241",
+  "prompt_id": "p0229",
   "text": "ошол",
   "category": "B failed word",
   "target": "",
@@ -2169,7 +2061,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0242",
+  "prompt_id": "p0230",
   "text": "партиясынан",
   "category": "B failed word",
   "target": "",
@@ -2178,7 +2070,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0243",
+  "prompt_id": "p0231",
   "text": "педагогикалык",
   "category": "B failed word",
   "target": "",
@@ -2187,7 +2079,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0244",
+  "prompt_id": "p0232",
   "text": "программалоого",
   "category": "B failed word",
   "target": "",
@@ -2196,7 +2088,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0245",
+  "prompt_id": "p0233",
   "text": "самсы",
   "category": "B failed word",
   "target": "",
@@ -2205,7 +2097,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0246",
+  "prompt_id": "p0234",
   "text": "сараң",
   "category": "B failed word",
   "target": "",
@@ -2214,7 +2106,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0247",
+  "prompt_id": "p0235",
   "text": "силерди",
   "category": "B failed word",
   "target": "",
@@ -2223,7 +2115,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0248",
+  "prompt_id": "p0236",
   "text": "сс",
   "category": "B failed word",
   "target": "",
@@ -2232,7 +2124,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0249",
+  "prompt_id": "p0237",
   "text": "сүйүү",
   "category": "B failed word",
   "target": "",
@@ -2241,7 +2133,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0250",
+  "prompt_id": "p0238",
   "text": "тартышат",
   "category": "B failed word",
   "target": "",
@@ -2250,7 +2142,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0251",
+  "prompt_id": "p0239",
   "text": "тинтип",
   "category": "B failed word",
   "target": "",
@@ -2259,7 +2151,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0252",
+  "prompt_id": "p0240",
   "text": "тунук",
   "category": "B failed word",
   "target": "",
@@ -2268,7 +2160,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0253",
+  "prompt_id": "p0241",
   "text": "түтүн",
   "category": "B failed word",
   "target": "",
@@ -2277,7 +2169,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0254",
+  "prompt_id": "p0242",
   "text": "университетин",
   "category": "B failed word",
   "target": "",
@@ -2286,7 +2178,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0255",
+  "prompt_id": "p0243",
   "text": "факультетке",
   "category": "B failed word",
   "target": "",
@@ -2295,7 +2187,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0256",
+  "prompt_id": "p0244",
   "text": "чакыр",
   "category": "B failed word",
   "target": "",
@@ -2304,7 +2196,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0257",
+  "prompt_id": "p0245",
   "text": "чечип",
   "category": "B failed word",
   "target": "",
@@ -2313,7 +2205,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0258",
+  "prompt_id": "p0246",
   "text": "чындыгын",
   "category": "B failed word",
   "target": "",
@@ -2322,7 +2214,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0259",
+  "prompt_id": "p0247",
   "text": "ырахат",
   "category": "B failed word",
   "target": "",
@@ -2331,7 +2223,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0260",
+  "prompt_id": "p0248",
   "text": "экенинизди",
   "category": "B failed word",
   "target": "",
@@ -2340,7 +2232,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0261",
+  "prompt_id": "p0249",
   "text": "эшигинен",
   "category": "B failed word",
   "target": "",
@@ -2349,7 +2241,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0262",
+  "prompt_id": "p0250",
   "text": "өзгөчө",
   "category": "B failed word",
   "target": "",
@@ -2358,7 +2250,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0263",
+  "prompt_id": "p0251",
   "text": "ала",
   "category": "B failed word",
   "target": "",
@@ -2367,7 +2259,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0264",
+  "prompt_id": "p0252",
   "text": "аткаруучу",
   "category": "B failed word",
   "target": "",
@@ -2376,7 +2268,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0265",
+  "prompt_id": "p0253",
   "text": "башкармалыгына",
   "category": "B failed word",
   "target": "",
@@ -2385,7 +2277,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0266",
+  "prompt_id": "p0254",
   "text": "болгонуна",
   "category": "B failed word",
   "target": "",
@@ -2394,7 +2286,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0267",
+  "prompt_id": "p0255",
   "text": "болсо",
   "category": "B failed word",
   "target": "",
@@ -2403,7 +2295,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0268",
+  "prompt_id": "p0256",
   "text": "боорукер",
   "category": "B failed word",
   "target": "",
@@ -2412,7 +2304,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0269",
+  "prompt_id": "p0257",
   "text": "дезертир",
   "category": "B failed word",
   "target": "",
@@ -2421,7 +2313,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0270",
+  "prompt_id": "p0258",
   "text": "доценти",
   "category": "B failed word",
   "target": "",
@@ -2430,7 +2322,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0271",
+  "prompt_id": "p0259",
   "text": "европанын",
   "category": "B failed word",
   "target": "",
@@ -2439,7 +2331,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0272",
+  "prompt_id": "p0260",
   "text": "жазуумдун",
   "category": "B failed word",
   "target": "",
@@ -2448,7 +2340,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0273",
+  "prompt_id": "p0261",
   "text": "жакасындагы",
   "category": "B failed word",
   "target": "",
@@ -2457,7 +2349,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0274",
+  "prompt_id": "p0262",
   "text": "жакшы",
   "category": "B failed word",
   "target": "",
@@ -2466,7 +2358,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0275",
+  "prompt_id": "p0263",
   "text": "жалбырагынын",
   "category": "B failed word",
   "target": "",
@@ -2475,7 +2367,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0276",
+  "prompt_id": "p0264",
   "text": "жалпы",
   "category": "B failed word",
   "target": "",
@@ -2484,7 +2376,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0277",
+  "prompt_id": "p0265",
   "text": "жашаган",
   "category": "B failed word",
   "target": "",
@@ -2493,7 +2385,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0278",
+  "prompt_id": "p0266",
   "text": "жашоо",
   "category": "B failed word",
   "target": "",
@@ -2502,7 +2394,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0279",
+  "prompt_id": "p0267",
   "text": "жашы",
   "category": "B failed word",
   "target": "",
@@ -2511,7 +2403,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0280",
+  "prompt_id": "p0268",
   "text": "жен",
   "category": "B failed word",
   "target": "",
@@ -2520,7 +2412,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0281",
+  "prompt_id": "p0269",
   "text": "жетем",
   "category": "B failed word",
   "target": "",
@@ -2529,7 +2421,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0282",
+  "prompt_id": "p0270",
   "text": "жилик",
   "category": "B failed word",
   "target": "",
@@ -2538,7 +2430,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0283",
+  "prompt_id": "p0271",
   "text": "жоготуусу",
   "category": "B failed word",
   "target": "",
@@ -2547,7 +2439,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0284",
+  "prompt_id": "p0272",
   "text": "жолугат",
   "category": "B failed word",
   "target": "",
@@ -2556,7 +2448,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0285",
+  "prompt_id": "p0273",
   "text": "жолуң",
   "category": "B failed word",
   "target": "",
@@ -2565,7 +2457,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0286",
+  "prompt_id": "p0274",
   "text": "жылынын",
   "category": "B failed word",
   "target": "",
@@ -2574,7 +2466,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0287",
+  "prompt_id": "p0275",
   "text": "зым",
   "category": "B failed word",
   "target": "",
@@ -2583,7 +2475,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0288",
+  "prompt_id": "p0276",
   "text": "ийгилик",
   "category": "B failed word",
   "target": "",
@@ -2592,7 +2484,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0289",
+  "prompt_id": "p0277",
   "text": "исмаил",
   "category": "B failed word",
   "target": "",
@@ -2601,7 +2493,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0290",
+  "prompt_id": "p0278",
   "text": "ички",
   "category": "B failed word",
   "target": "",
@@ -2610,7 +2502,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0291",
+  "prompt_id": "p0279",
   "text": "келет",
   "category": "B failed word",
   "target": "",
@@ -2619,7 +2511,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0292",
+  "prompt_id": "p0280",
   "text": "кошуналарымдын",
   "category": "B failed word",
   "target": "",
@@ -2628,7 +2520,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0293",
+  "prompt_id": "p0281",
   "text": "кыз",
   "category": "B failed word",
   "target": "",
@@ -2637,7 +2529,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0294",
+  "prompt_id": "p0282",
   "text": "кыргызстанды",
   "category": "B failed word",
   "target": "",
@@ -2646,7 +2538,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0295",
+  "prompt_id": "p0283",
   "text": "кээде",
   "category": "B failed word",
   "target": "",
@@ -2655,7 +2547,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0296",
+  "prompt_id": "p0284",
   "text": "көп",
   "category": "B failed word",
   "target": "",
@@ -2664,7 +2556,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0297",
+  "prompt_id": "p0285",
   "text": "көрүнүшү",
   "category": "B failed word",
   "target": "",
@@ -2673,7 +2565,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0298",
+  "prompt_id": "p0286",
   "text": "лагман",
   "category": "B failed word",
   "target": "",
@@ -2682,7 +2574,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0299",
+  "prompt_id": "p0287",
   "text": "максаттарга",
   "category": "B failed word",
   "target": "",
@@ -2691,7 +2583,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0300",
+  "prompt_id": "p0288",
   "text": "манты",
   "category": "B failed word",
   "target": "",
@@ -2700,7 +2592,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0301",
+  "prompt_id": "p0289",
   "text": "медициналык",
   "category": "B failed word",
   "target": "",
@@ -2709,7 +2601,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0302",
+  "prompt_id": "p0290",
   "text": "мүчөлүгүнөн",
   "category": "B failed word",
   "target": "",
@@ -2718,7 +2610,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0303",
+  "prompt_id": "p0291",
   "text": "нерсе",
   "category": "B failed word",
   "target": "",
@@ -2727,7 +2619,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0304",
+  "prompt_id": "p0292",
   "text": "ниети",
   "category": "B failed word",
   "target": "",
@@ -2736,7 +2628,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0305",
+  "prompt_id": "p0293",
   "text": "омур",
   "category": "B failed word",
   "target": "",
@@ -2745,7 +2637,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0306",
+  "prompt_id": "p0294",
   "text": "реалдуулук",
   "category": "B failed word",
   "target": "",
@@ -2754,7 +2646,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0307",
+  "prompt_id": "p0295",
   "text": "талапкер",
   "category": "B failed word",
   "target": "",
@@ -2763,7 +2655,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0308",
+  "prompt_id": "p0296",
   "text": "тескерисинче",
   "category": "B failed word",
   "target": "",
@@ -2772,7 +2664,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0309",
+  "prompt_id": "p0297",
   "text": "турган",
   "category": "B failed word",
   "target": "",
@@ -2781,7 +2673,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0310",
+  "prompt_id": "p0298",
   "text": "туруктуулуктун",
   "category": "B failed word",
   "target": "",
@@ -2790,7 +2682,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0311",
+  "prompt_id": "p0299",
   "text": "тушап",
   "category": "B failed word",
   "target": "",
@@ -2799,7 +2691,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0312",
+  "prompt_id": "p0300",
   "text": "факультетинен",
   "category": "B failed word",
   "target": "",
@@ -2808,7 +2700,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0313",
+  "prompt_id": "p0301",
   "text": "франческо",
   "category": "B failed word",
   "target": "",
@@ -2817,7 +2709,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0314",
+  "prompt_id": "p0302",
   "text": "чымыр",
   "category": "B failed word",
   "target": "",
@@ -2826,7 +2718,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0315",
+  "prompt_id": "p0303",
   "text": "шаарында",
   "category": "B failed word",
   "target": "",
@@ -2835,7 +2727,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0316",
+  "prompt_id": "p0304",
   "text": "шартыма",
   "category": "B failed word",
   "target": "",
@@ -2844,7 +2736,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0317",
+  "prompt_id": "p0305",
   "text": "ысык-көл",
   "category": "B failed word",
   "target": "",
@@ -2853,7 +2745,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0318",
+  "prompt_id": "p0306",
   "text": "эмес",
   "category": "B failed word",
   "target": "",
@@ -2862,7 +2754,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0319",
+  "prompt_id": "p0307",
   "text": "эсептөөнү",
   "category": "B failed word",
   "target": "",
@@ -2871,7 +2763,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0320",
+  "prompt_id": "p0308",
   "text": "ээрчитип",
   "category": "B failed word",
   "target": "",
@@ -2880,7 +2772,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0321",
+  "prompt_id": "p0309",
   "text": "үй-бүлөсүн",
   "category": "B failed word",
   "target": "",
@@ -2889,7 +2781,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0322",
+  "prompt_id": "p0310",
   "text": "үйрөтүү",
   "category": "B failed word",
   "target": "",
@@ -2898,7 +2790,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0323",
+  "prompt_id": "p0311",
   "text": "адамдын",
   "category": "B failed word",
   "target": "",
@@ -2907,7 +2799,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0324",
+  "prompt_id": "p0312",
   "text": "айрыкча",
   "category": "B failed word",
   "target": "",
@@ -2916,7 +2808,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0325",
+  "prompt_id": "p0313",
   "text": "албасаңар",
   "category": "B failed word",
   "target": "",
@@ -2925,7 +2817,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0326",
+  "prompt_id": "p0314",
   "text": "алтын",
   "category": "B failed word",
   "target": "",
@@ -2934,7 +2826,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0327",
+  "prompt_id": "p0315",
   "text": "аныктоо",
   "category": "B failed word",
   "target": "",
@@ -2943,7 +2835,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0328",
+  "prompt_id": "p0316",
   "text": "ата-энеси",
   "category": "B failed word",
   "target": "",
@@ -2952,7 +2844,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0329",
+  "prompt_id": "p0317",
   "text": "аяш",
   "category": "B failed word",
   "target": "",
@@ -2961,7 +2853,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0330",
+  "prompt_id": "p0318",
   "text": "аңкилдек",
   "category": "B failed word",
   "target": "",
@@ -2970,7 +2862,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0331",
+  "prompt_id": "p0319",
   "text": "багындырууга",
   "category": "B failed word",
   "target": "",
@@ -2979,7 +2871,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0332",
+  "prompt_id": "p0320",
   "text": "бакыт",
   "category": "B failed word",
   "target": "",
@@ -2988,7 +2880,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0333",
+  "prompt_id": "p0321",
   "text": "баласагын",
   "category": "B failed word",
   "target": "",
@@ -2997,7 +2889,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0334",
+  "prompt_id": "p0322",
   "text": "балким",
   "category": "B failed word",
   "target": "",
@@ -3006,7 +2898,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0335",
+  "prompt_id": "p0323",
   "text": "башкалар",
   "category": "B failed word",
   "target": "",
@@ -3015,7 +2907,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0336",
+  "prompt_id": "p0324",
   "text": "башкаруу",
   "category": "B failed word",
   "target": "",
@@ -3024,7 +2916,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0337",
+  "prompt_id": "p0325",
   "text": "бетер",
   "category": "B failed word",
   "target": "",
@@ -3033,7 +2925,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0338",
+  "prompt_id": "p0326",
   "text": "билбейм",
   "category": "B failed word",
   "target": "",
@@ -3042,7 +2934,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0339",
+  "prompt_id": "p0327",
   "text": "билдирбестен",
   "category": "B failed word",
   "target": "",
@@ -3051,7 +2943,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0340",
+  "prompt_id": "p0328",
   "text": "бирок",
   "category": "B failed word",
   "target": "",
@@ -3060,7 +2952,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0341",
+  "prompt_id": "p0329",
   "text": "болгонго",
   "category": "B failed word",
   "target": "",
@@ -3069,7 +2961,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0342",
+  "prompt_id": "p0330",
   "text": "бөлүм",
   "category": "B failed word",
   "target": "",
@@ -3078,7 +2970,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0343",
+  "prompt_id": "p0331",
   "text": "грек",
   "category": "B failed word",
   "target": "",
@@ -3087,7 +2979,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0344",
+  "prompt_id": "p0332",
   "text": "достук",
   "category": "B failed word",
   "target": "",
@@ -3096,7 +2988,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0345",
+  "prompt_id": "p0333",
   "text": "жакшыра",
   "category": "B failed word",
   "target": "",
@@ -3105,7 +2997,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0346",
+  "prompt_id": "p0334",
   "text": "жалатылган",
   "category": "B failed word",
   "target": "",
@@ -3114,7 +3006,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0347",
+  "prompt_id": "p0335",
   "text": "жалаң",
   "category": "B failed word",
   "target": "",
@@ -3123,7 +3015,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0348",
+  "prompt_id": "p0336",
   "text": "жамбаштап",
   "category": "B failed word",
   "target": "",
@@ -3132,7 +3024,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0349",
+  "prompt_id": "p0337",
   "text": "жанына",
   "category": "B failed word",
   "target": "",
@@ -3141,7 +3033,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0350",
+  "prompt_id": "p0338",
   "text": "жарык",
   "category": "B failed word",
   "target": "",
@@ -3150,7 +3042,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0351",
+  "prompt_id": "p0339",
   "text": "жасаган",
   "category": "B failed word",
   "target": "",
@@ -3159,7 +3051,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0352",
+  "prompt_id": "p0340",
   "text": "жат",
   "category": "B failed word",
   "target": "",
@@ -3168,7 +3060,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0353",
+  "prompt_id": "p0341",
   "text": "жатканда",
   "category": "B failed word",
   "target": "",
@@ -3177,7 +3069,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0354",
+  "prompt_id": "p0342",
   "text": "жашайбыз",
   "category": "B failed word",
   "target": "",
@@ -3186,7 +3078,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0355",
+  "prompt_id": "p0343",
   "text": "жашоого",
   "category": "B failed word",
   "target": "",
@@ -3195,7 +3087,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0356",
+  "prompt_id": "p0344",
   "text": "жеди",
   "category": "B failed word",
   "target": "",
@@ -3204,7 +3096,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0357",
+  "prompt_id": "p0345",
   "text": "желе",
   "category": "B failed word",
   "target": "",
@@ -3213,7 +3105,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0358",
+  "prompt_id": "p0346",
   "text": "жоготот",
   "category": "B failed word",
   "target": "",
@@ -3222,7 +3114,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0359",
+  "prompt_id": "p0347",
   "text": "жолдошбек",
   "category": "B failed word",
   "target": "",
@@ -3231,7 +3123,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0360",
+  "prompt_id": "p0348",
   "text": "жоопкерчиликтен",
   "category": "B failed word",
   "target": "",
@@ -3240,7 +3132,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0361",
+  "prompt_id": "p0349",
   "text": "жылытат",
   "category": "B failed word",
   "target": "",
@@ -3249,7 +3141,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0362",
+  "prompt_id": "p0350",
   "text": "жөжө",
   "category": "B failed word",
   "target": "",
@@ -3258,7 +3150,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0363",
+  "prompt_id": "p0351",
   "text": "кайрадан",
   "category": "B failed word",
   "target": "",
@@ -3267,7 +3159,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0364",
+  "prompt_id": "p0352",
   "text": "калбашы",
   "category": "B failed word",
   "target": "",
@@ -3276,7 +3168,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0365",
+  "prompt_id": "p0353",
   "text": "капшытында",
   "category": "B failed word",
   "target": "",
@@ -3285,7 +3177,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0366",
+  "prompt_id": "p0354",
   "text": "келгенмин",
   "category": "B failed word",
   "target": "",
@@ -3294,7 +3186,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0367",
+  "prompt_id": "p0355",
   "text": "келечек",
   "category": "B failed word",
   "target": "",
@@ -3303,7 +3195,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0368",
+  "prompt_id": "p0356",
   "text": "керемети",
   "category": "B failed word",
   "target": "",
@@ -3312,7 +3204,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0369",
+  "prompt_id": "p0357",
   "text": "кесибим",
   "category": "B failed word",
   "target": "",
@@ -3321,7 +3213,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0370",
+  "prompt_id": "p0358",
   "text": "кинолордон",
   "category": "B failed word",
   "target": "",
@@ -3330,7 +3222,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0371",
+  "prompt_id": "p0359",
   "text": "кичүү",
   "category": "B failed word",
   "target": "",
@@ -3339,7 +3231,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0372",
+  "prompt_id": "p0360",
   "text": "классында",
   "category": "B failed word",
   "target": "",
@@ -3348,7 +3240,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0373",
+  "prompt_id": "p0361",
   "text": "клер",
   "category": "B failed word",
   "target": "",
@@ -3357,7 +3249,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0374",
+  "prompt_id": "p0362",
   "text": "койбодумбу",
   "category": "B failed word",
   "target": "",
@@ -3366,7 +3258,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0375",
+  "prompt_id": "p0363",
   "text": "которууга",
   "category": "B failed word",
   "target": "",
@@ -3375,7 +3267,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0376",
+  "prompt_id": "p0364",
   "text": "кулжа",
   "category": "B failed word",
   "target": "",
@@ -3384,7 +3276,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0377",
+  "prompt_id": "p0365",
   "text": "курабыз",
   "category": "B failed word",
   "target": "",
@@ -3393,7 +3285,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0378",
+  "prompt_id": "p0366",
   "text": "куржун",
   "category": "B failed word",
   "target": "",
@@ -3402,7 +3294,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0379",
+  "prompt_id": "p0367",
   "text": "кыдырып",
   "category": "B failed word",
   "target": "",
@@ -3411,7 +3303,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0380",
+  "prompt_id": "p0368",
   "text": "күбөлүк",
   "category": "B failed word",
   "target": "",
@@ -3420,7 +3312,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0381",
+  "prompt_id": "p0369",
   "text": "күч",
   "category": "B failed word",
   "target": "",
@@ -3429,7 +3321,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0382",
+  "prompt_id": "p0370",
   "text": "мекен",
   "category": "B failed word",
   "target": "",
@@ -3438,7 +3330,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0383",
+  "prompt_id": "p0371",
   "text": "мингин",
   "category": "B failed word",
   "target": "",
@@ -3447,7 +3339,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0384",
+  "prompt_id": "p0372",
   "text": "мээрим",
   "category": "B failed word",
   "target": "",
@@ -3456,7 +3348,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0385",
+  "prompt_id": "p0373",
   "text": "онлайн",
   "category": "B failed word",
   "target": "",
@@ -3465,7 +3357,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0386",
+  "prompt_id": "p0374",
   "text": "ортосунда",
   "category": "B failed word",
   "target": "",
@@ -3474,7 +3366,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0387",
+  "prompt_id": "p0375",
   "text": "орус",
   "category": "B failed word",
   "target": "",
@@ -3483,7 +3375,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0388",
+  "prompt_id": "p0376",
   "text": "ошончо",
   "category": "B failed word",
   "target": "",
@@ -3492,7 +3384,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0389",
+  "prompt_id": "p0377",
   "text": "падыша",
   "category": "B failed word",
   "target": "",
@@ -3501,7 +3393,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0390",
+  "prompt_id": "p0378",
   "text": "партиянын",
   "category": "B failed word",
   "target": "",
@@ -3510,7 +3402,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0391",
+  "prompt_id": "p0379",
   "text": "партиясы",
   "category": "B failed word",
   "target": "",
@@ -3519,7 +3411,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0392",
+  "prompt_id": "p0380",
   "text": "программалоо",
   "category": "B failed word",
   "target": "",
@@ -3528,7 +3420,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0393",
+  "prompt_id": "p0381",
   "text": "роль",
   "category": "B failed word",
   "target": "",
@@ -3537,7 +3429,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0394",
+  "prompt_id": "p0382",
   "text": "сентябрь",
   "category": "B failed word",
   "target": "",
@@ -3546,7 +3438,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0395",
+  "prompt_id": "p0383",
   "text": "созула",
   "category": "B failed word",
   "target": "",
@@ -3555,7 +3447,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0396",
+  "prompt_id": "p0384",
   "text": "сокур",
   "category": "B failed word",
   "target": "",
@@ -3564,7 +3456,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0397",
+  "prompt_id": "p0385",
   "text": "суранам",
   "category": "B failed word",
   "target": "",
@@ -3573,7 +3465,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0398",
+  "prompt_id": "p0386",
   "text": "сынагына",
   "category": "B failed word",
   "target": "",
@@ -3582,7 +3474,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0399",
+  "prompt_id": "p0387",
   "text": "сөздөр",
   "category": "B failed word",
   "target": "",
@@ -3591,7 +3483,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0400",
+  "prompt_id": "p0388",
   "text": "тааныштык",
   "category": "B failed word",
   "target": "",
@@ -3600,7 +3492,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0401",
+  "prompt_id": "p0389",
   "text": "тарабынын",
   "category": "B failed word",
   "target": "",
@@ -3609,7 +3501,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0402",
+  "prompt_id": "p0390",
   "text": "ташмат",
   "category": "B failed word",
   "target": "",
@@ -3618,7 +3510,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0403",
+  "prompt_id": "p0391",
   "text": "теңдешкен",
   "category": "B failed word",
   "target": "",
@@ -3627,7 +3519,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0404",
+  "prompt_id": "p0392",
   "text": "тоголок",
   "category": "B failed word",
   "target": "",
@@ -3636,7 +3528,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0405",
+  "prompt_id": "p0393",
   "text": "тоо",
   "category": "B failed word",
   "target": "",
@@ -3645,7 +3537,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0406",
+  "prompt_id": "p0394",
   "text": "турат",
   "category": "B failed word",
   "target": "",
@@ -3654,7 +3546,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0407",
+  "prompt_id": "p0395",
   "text": "убактысынан",
   "category": "B failed word",
   "target": "",
@@ -3663,7 +3555,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0408",
+  "prompt_id": "p0396",
   "text": "укук",
   "category": "B failed word",
   "target": "",
@@ -3672,7 +3564,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0409",
+  "prompt_id": "p0397",
   "text": "физика",
   "category": "B failed word",
   "target": "",
@@ -3681,7 +3573,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0410",
+  "prompt_id": "p0398",
   "text": "чыгармалары",
   "category": "B failed word",
   "target": "",
@@ -3690,7 +3582,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0411",
+  "prompt_id": "p0399",
   "text": "чындыктын",
   "category": "B failed word",
   "target": "",
@@ -3699,7 +3591,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0412",
+  "prompt_id": "p0400",
   "text": "шыпырып",
   "category": "B failed word",
   "target": "",
@@ -3708,7 +3600,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0413",
+  "prompt_id": "p0401",
   "text": "эгерде",
   "category": "B failed word",
   "target": "",
@@ -3717,7 +3609,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0414",
+  "prompt_id": "p0402",
   "text": "экөөбүздү",
   "category": "B failed word",
   "target": "",
@@ -3726,7 +3618,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0415",
+  "prompt_id": "p0403",
   "text": "экөөнүн",
   "category": "B failed word",
   "target": "",
@@ -3735,7 +3627,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0416",
+  "prompt_id": "p0404",
   "text": "элек",
   "category": "B failed word",
   "target": "",
@@ -3744,7 +3636,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0417",
+  "prompt_id": "p0405",
   "text": "эмесе",
   "category": "B failed word",
   "target": "",
@@ -3753,7 +3645,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0418",
+  "prompt_id": "p0406",
   "text": "үч",
   "category": "B failed word",
   "target": "",
@@ -3762,7 +3654,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0419",
+  "prompt_id": "p0407",
   "text": "үчүн",
   "category": "B failed word",
   "target": "",
@@ -3771,7 +3663,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0420",
+  "prompt_id": "p0408",
   "text": "өздөрү",
   "category": "B failed word",
   "target": "",
@@ -3780,7 +3672,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0421",
+  "prompt_id": "p0409",
   "text": "өнүктүрүү",
   "category": "B failed word",
   "target": "",
@@ -3789,7 +3681,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0422",
+  "prompt_id": "p0410",
   "text": "өрнөк",
   "category": "B failed word",
   "target": "",
@@ -3798,7 +3690,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0423",
+  "prompt_id": "p0411",
   "text": "өткөрүлө",
   "category": "B failed word",
   "target": "",
@@ -3807,7 +3699,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0424",
+  "prompt_id": "p0412",
   "text": "өтүп",
   "category": "B failed word",
   "target": "",
@@ -3816,7 +3708,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0425",
+  "prompt_id": "p0413",
   "text": "объектинин",
   "category": "C rare letter",
   "target": "ъ",
@@ -3825,7 +3717,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0426",
+  "prompt_id": "p0414",
   "text": "объекттер",
   "category": "C rare letter",
   "target": "ъ",
@@ -3834,7 +3726,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0427",
+  "prompt_id": "p0415",
   "text": "объектини",
   "category": "C rare letter",
   "target": "ъ",
@@ -3843,7 +3735,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0428",
+  "prompt_id": "p0416",
   "text": "субъект",
   "category": "C rare letter",
   "target": "ъ",
@@ -3852,7 +3744,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0429",
+  "prompt_id": "p0417",
   "text": "объекттин",
   "category": "C rare letter",
   "target": "ъ",
@@ -3861,7 +3753,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0430",
+  "prompt_id": "p0418",
   "text": "социалдык",
   "category": "C rare letter",
   "target": "ц",
@@ -3870,7 +3762,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0431",
+  "prompt_id": "p0419",
   "text": "милиция",
   "category": "C rare letter",
   "target": "ц",
@@ -3879,7 +3771,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0432",
+  "prompt_id": "p0420",
   "text": "полиция",
   "category": "C rare letter",
   "target": "ц",
@@ -3888,7 +3780,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0433",
+  "prompt_id": "p0421",
   "text": "операция",
   "category": "C rare letter",
   "target": "ц",
@@ -3897,7 +3789,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0434",
+  "prompt_id": "p0422",
   "text": "милициянын",
   "category": "C rare letter",
   "target": "ц",
@@ -3906,7 +3798,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0435",
+  "prompt_id": "p0423",
   "text": "коррупция",
   "category": "C rare letter",
   "target": "ц",
@@ -3915,7 +3807,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0436",
+  "prompt_id": "p0424",
   "text": "оппозиция",
   "category": "C rare letter",
   "target": "ц",
@@ -3924,7 +3816,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0437",
+  "prompt_id": "p0425",
   "text": "медицина",
   "category": "C rare letter",
   "target": "ц",
@@ -3933,7 +3825,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0438",
+  "prompt_id": "p0426",
   "text": "боюнча",
   "category": "C rare letter",
   "target": "ю",
@@ -3942,7 +3834,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0439",
+  "prompt_id": "p0427",
   "text": "тыюу",
   "category": "C rare letter",
   "target": "ю",
@@ -3951,7 +3843,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0440",
+  "prompt_id": "p0428",
   "text": "коюлган",
   "category": "C rare letter",
   "target": "ю",
@@ -3960,7 +3852,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0441",
+  "prompt_id": "p0429",
   "text": "уюмунун",
   "category": "C rare letter",
   "target": "ю",
@@ -3969,7 +3861,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0442",
+  "prompt_id": "p0430",
   "text": "коюп",
   "category": "C rare letter",
   "target": "ю",
@@ -3978,7 +3870,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0443",
+  "prompt_id": "p0431",
   "text": "бою",
   "category": "C rare letter",
   "target": "ю",
@@ -3987,7 +3879,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0444",
+  "prompt_id": "p0432",
   "text": "февралда",
   "category": "C rare letter",
   "target": "в",
@@ -3996,7 +3888,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0445",
+  "prompt_id": "p0433",
   "text": "августта",
   "category": "C rare letter",
   "target": "в",
@@ -4005,7 +3897,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0446",
+  "prompt_id": "p0434",
   "text": "москва",
   "category": "C rare letter",
   "target": "в",
@@ -4014,7 +3906,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0447",
+  "prompt_id": "p0435",
   "text": "европа",
   "category": "C rare letter",
   "target": "в",
@@ -4023,7 +3915,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0448",
+  "prompt_id": "p0436",
   "text": "январда",
   "category": "C rare letter",
   "target": "в",
@@ -4032,7 +3924,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0449",
+  "prompt_id": "p0437",
   "text": "владимир",
   "category": "C rare letter",
   "target": "в",
@@ -4041,7 +3933,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0450",
+  "prompt_id": "p0438",
   "text": "видео",
   "category": "C rare letter",
   "target": "в",
@@ -4050,7 +3942,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0451",
+  "prompt_id": "p0439",
   "text": "январь",
   "category": "C rare letter",
   "target": "в",
@@ -4059,7 +3951,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0452",
+  "prompt_id": "p0440",
   "text": "орусиянын",
   "category": "C rare letter",
   "target": "я",
@@ -4068,7 +3960,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0453",
+  "prompt_id": "p0441",
   "text": "окуя",
   "category": "C rare letter",
   "target": "я",
@@ -4077,7 +3969,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0454",
+  "prompt_id": "p0442",
   "text": "сыяктуу",
   "category": "C rare letter",
   "target": "я",
@@ -4086,7 +3978,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0455",
+  "prompt_id": "p0443",
   "text": "россия",
   "category": "C rare letter",
   "target": "я",
@@ -4095,7 +3987,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0456",
+  "prompt_id": "p0444",
   "text": "азия",
   "category": "C rare letter",
   "target": "я",
@@ -4104,7 +3996,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0457",
+  "prompt_id": "p0445",
   "text": "телефон",
   "category": "C rare letter",
   "target": "ф",
@@ -4113,7 +4005,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0458",
+  "prompt_id": "p0446",
   "text": "футбол",
   "category": "C rare letter",
   "target": "ф",
@@ -4122,7 +4014,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0459",
+  "prompt_id": "p0447",
   "text": "февраль",
   "category": "C rare letter",
   "target": "ф",
@@ -4131,7 +4023,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0460",
+  "prompt_id": "p0448",
   "text": "финансы",
   "category": "C rare letter",
   "target": "ф",
@@ -4140,7 +4032,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0461",
+  "prompt_id": "p0449",
   "text": "факты",
   "category": "C rare letter",
   "target": "ф",
@@ -4149,7 +4041,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0462",
+  "prompt_id": "p0450",
   "text": "фонду",
   "category": "C rare letter",
   "target": "ф",
@@ -4158,7 +4050,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0463",
+  "prompt_id": "p0451",
   "text": "финансылык",
   "category": "C rare letter",
   "target": "ф",
@@ -4167,7 +4059,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0464",
+  "prompt_id": "p0452",
   "text": "техникалык",
   "category": "C rare letter",
   "target": "х",
@@ -4176,7 +4068,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0465",
+  "prompt_id": "p0453",
   "text": "тарыхый",
   "category": "C rare letter",
   "target": "х",
@@ -4185,7 +4077,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0466",
+  "prompt_id": "p0454",
   "text": "тарых",
   "category": "C rare letter",
   "target": "х",
@@ -4194,7 +4086,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0467",
+  "prompt_id": "p0455",
   "text": "хан",
   "category": "C rare letter",
   "target": "х",
@@ -4203,7 +4095,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0468",
+  "prompt_id": "p0456",
   "text": "химиялык",
   "category": "C rare letter",
   "target": "х",
@@ -4212,7 +4104,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0469",
+  "prompt_id": "p0457",
   "text": "техника",
   "category": "C rare letter",
   "target": "х",
@@ -4221,7 +4113,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0470",
+  "prompt_id": "p0458",
   "text": "тарыхы",
   "category": "C rare letter",
   "target": "х",
@@ -4230,7 +4122,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0471",
+  "prompt_id": "p0459",
   "text": "михаил",
   "category": "C rare letter",
   "target": "х",
@@ -4239,7 +4131,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0472",
+  "prompt_id": "p0460",
   "text": "чейин",
   "category": "C rare letter",
   "target": "и",
@@ -4248,7 +4140,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0473",
+  "prompt_id": "p0461",
   "text": "билдирди",
   "category": "C rare letter",
   "target": "и",
@@ -4257,7 +4149,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0474",
+  "prompt_id": "p0462",
   "text": "эки",
   "category": "C rare letter",
   "target": "и",
@@ -4266,7 +4158,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0475",
+  "prompt_id": "p0463",
   "text": "эми",
   "category": "C rare letter",
   "target": "и",
@@ -4275,7 +4167,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0476",
+  "prompt_id": "p0464",
   "text": "бишкек",
   "category": "C rare letter",
   "target": "и",
@@ -4284,7 +4176,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0477",
+  "prompt_id": "p0465",
   "text": "декабрь",
   "category": "C rare letter",
   "target": "ь",
@@ -4293,7 +4185,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0478",
+  "prompt_id": "p0466",
   "text": "октябрь",
   "category": "C rare letter",
   "target": "ь",
@@ -4302,7 +4194,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0479",
+  "prompt_id": "p0467",
   "text": "апрель",
   "category": "C rare letter",
   "target": "ь",
@@ -4311,7 +4203,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0480",
+  "prompt_id": "p0468",
   "text": "ноябрь",
   "category": "C rare letter",
   "target": "ь",
@@ -4320,7 +4212,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0481",
+  "prompt_id": "p0469",
   "text": "маалымат",
   "category": "C rare letter",
   "target": "м",
@@ -4329,7 +4221,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0482",
+  "prompt_id": "p0470",
   "text": "адам",
   "category": "C rare letter",
   "target": "м",
@@ -4338,7 +4230,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0483",
+  "prompt_id": "p0471",
   "text": "миң",
   "category": "C rare letter",
   "target": "м",
@@ -4347,7 +4239,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0484",
+  "prompt_id": "p0472",
   "text": "айтымында",
   "category": "C rare letter",
   "target": "м",
@@ -4356,7 +4248,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0485",
+  "prompt_id": "p0473",
   "text": "мындай",
   "category": "C rare letter",
   "target": "м",
@@ -4365,7 +4257,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0486",
+  "prompt_id": "p0474",
   "text": "болгон",
   "category": "C rare letter",
   "target": "н",
@@ -4374,7 +4266,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0487",
+  "prompt_id": "p0475",
   "text": "деген",
   "category": "C rare letter",
   "target": "н",
@@ -4383,7 +4275,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0488",
+  "prompt_id": "p0476",
   "text": "бул",
   "category": "C rare letter",
   "target": "л",
@@ -4392,7 +4284,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0489",
+  "prompt_id": "p0477",
   "text": "тууралуу",
   "category": "C rare letter",
   "target": "л",
@@ -4401,7 +4293,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0490",
+  "prompt_id": "p0478",
   "text": "болуп",
   "category": "C rare letter",
   "target": "л",
@@ -4410,7 +4302,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0491",
+  "prompt_id": "p0479",
   "text": "учурда",
   "category": "C rare letter",
   "target": "ч",
@@ -4419,7 +4311,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0492",
+  "prompt_id": "p0480",
   "text": "чек",
   "category": "C rare letter",
   "target": "ч",
@@ -4428,7 +4320,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0493",
+  "prompt_id": "p0481",
   "text": "биринчи",
   "category": "C rare letter",
   "target": "ч",
@@ -4437,7 +4329,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0494",
+  "prompt_id": "p0482",
   "text": "ичинде",
   "category": "C rare letter",
   "target": "ч",
@@ -4446,7 +4338,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0495",
+  "prompt_id": "p0483",
   "text": "башчысы",
   "category": "C rare letter",
   "target": "ч",
@@ -4455,7 +4347,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0496",
+  "prompt_id": "p0484",
   "text": "кыргыз",
   "category": "C rare letter",
   "target": "г",
@@ -4464,7 +4356,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0497",
+  "prompt_id": "p0485",
   "text": "дагы",
   "category": "C rare letter",
   "target": "г",
@@ -4473,7 +4365,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0498",
+  "prompt_id": "p0486",
   "text": "гана",
   "category": "C rare letter",
   "target": "г",
@@ -4482,7 +4374,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0499",
+  "prompt_id": "p0487",
   "text": "кыргызстан",
   "category": "C rare letter",
   "target": "г",
@@ -4491,7 +4383,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0500",
+  "prompt_id": "p0488",
   "text": "миллион",
   "category": "D letter pair",
   "target": "лл",
@@ -4500,7 +4392,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0501",
+  "prompt_id": "p0489",
   "text": "доллар",
   "category": "D letter pair",
   "target": "лл",
@@ -4509,7 +4401,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0502",
+  "prompt_id": "p0490",
   "text": "миллиард",
   "category": "D letter pair",
   "target": "лл",
@@ -4518,7 +4410,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0503",
+  "prompt_id": "p0491",
   "text": "долларга",
   "category": "D letter pair",
   "target": "лл",
@@ -4527,7 +4419,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0504",
+  "prompt_id": "p0492",
   "text": "ысык-көлдө",
   "category": "D letter pair",
   "target": "к-",
@@ -4536,7 +4428,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0505",
+  "prompt_id": "p0493",
   "text": "азык-түлүк",
   "category": "D letter pair",
   "target": "к-",
@@ -4545,7 +4437,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0506",
+  "prompt_id": "p0494",
   "text": "тамак-аш",
   "category": "D letter pair",
   "target": "к-",
@@ -4554,7 +4446,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0507",
+  "prompt_id": "p0495",
   "text": "тоо-кен",
   "category": "D letter pair",
   "target": "-к",
@@ -4563,7 +4455,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0508",
+  "prompt_id": "p0496",
   "text": "кызыл-кыя",
   "category": "D letter pair",
   "target": "-к",
@@ -4572,7 +4464,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0509",
+  "prompt_id": "p0497",
   "text": "жалал-абад",
   "category": "D letter pair",
   "target": "-а",
@@ -4581,7 +4473,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0510",
+  "prompt_id": "p0498",
   "text": "чолпон-ата",
   "category": "D letter pair",
   "target": "-а",
@@ -4590,7 +4482,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0511",
+  "prompt_id": "p0499",
   "text": "ала-арча",
   "category": "D letter pair",
   "target": "-а",
@@ -4599,7 +4491,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0512",
+  "prompt_id": "p0500",
   "text": "кара-суу",
   "category": "D letter pair",
   "target": "а-",
@@ -4608,7 +4500,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0513",
+  "prompt_id": "p0501",
   "text": "ала-тоо",
   "category": "D letter pair",
   "target": "а-",
@@ -4617,7 +4509,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0514",
+  "prompt_id": "p0502",
   "text": "ата-журт",
   "category": "D letter pair",
   "target": "а-",
@@ -4626,7 +4518,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0515",
+  "prompt_id": "p0503",
   "text": "үй-бүлө",
   "category": "D letter pair",
   "target": "-б",
@@ -4635,7 +4527,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0516",
+  "prompt_id": "p0504",
   "text": "үй-бүлөлүк",
   "category": "D letter pair",
   "target": "-б",
@@ -4644,7 +4536,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0517",
+  "prompt_id": "p0505",
   "text": "үй-бүлөсү",
   "category": "D letter pair",
   "target": "-б",
@@ -4653,7 +4545,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0518",
+  "prompt_id": "p0506",
   "text": "ат-башы",
   "category": "D letter pair",
   "target": "-б",
@@ -4662,7 +4554,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0519",
+  "prompt_id": "p0507",
   "text": "евразия",
   "category": "D letter pair",
   "target": "вр",
@@ -4671,7 +4563,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0520",
+  "prompt_id": "p0508",
   "text": "түздөн-түз",
   "category": "D letter pair",
   "target": "-т",
@@ -4680,7 +4572,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0521",
+  "prompt_id": "p0509",
   "text": "күнү-түнү",
   "category": "D letter pair",
   "target": "-т",
@@ -4689,7 +4581,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0522",
+  "prompt_id": "p0510",
   "text": "коюлду",
   "category": "D letter pair",
   "target": "юл",
@@ -4698,7 +4590,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0523",
+  "prompt_id": "p0511",
   "text": "сөзсүз",
   "category": "D letter pair",
   "target": "зс",
@@ -4707,7 +4599,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0524",
+  "prompt_id": "p0512",
   "text": "негизсиз",
   "category": "D letter pair",
   "target": "зс",
@@ -4716,7 +4608,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0525",
+  "prompt_id": "p0513",
   "text": "түзсө",
   "category": "D letter pair",
   "target": "зс",
@@ -4725,7 +4617,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0526",
+  "prompt_id": "p0514",
   "text": "ар-намыс",
   "category": "D letter pair",
   "target": "р-",
@@ -4734,7 +4626,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0527",
+  "prompt_id": "p0515",
   "text": "камбар-ата",
   "category": "D letter pair",
   "target": "р-",
@@ -4743,7 +4635,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0528",
+  "prompt_id": "p0516",
   "text": "бир-эки",
   "category": "D letter pair",
   "target": "р-",
@@ -4752,7 +4644,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0529",
+  "prompt_id": "p0517",
   "text": "нур-султан",
   "category": "D letter pair",
   "target": "р-",
@@ -4761,7 +4653,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0530",
+  "prompt_id": "p0518",
   "text": "новости",
   "category": "D letter pair",
   "target": "во",
@@ -4770,7 +4662,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0531",
+  "prompt_id": "p0519",
   "text": "адвокат",
   "category": "D letter pair",
   "target": "во",
@@ -4779,7 +4671,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0532",
+  "prompt_id": "p0520",
   "text": "адвокаты",
   "category": "D letter pair",
   "target": "во",
@@ -4788,7 +4680,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0533",
+  "prompt_id": "p0521",
   "text": "искусство",
   "category": "D letter pair",
   "target": "во",
@@ -4797,7 +4689,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0534",
+  "prompt_id": "p0522",
   "text": "маал-маалы",
   "category": "D letter pair",
   "target": "л-",
@@ -4806,7 +4698,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0535",
+  "prompt_id": "p0523",
   "text": "айыл-чарба",
   "category": "D letter pair",
   "target": "л-",
@@ -4815,7 +4707,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0536",
+  "prompt_id": "p0524",
   "text": "э-мейл",
   "category": "D letter pair",
   "target": "-м",
@@ -4824,7 +4716,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0537",
+  "prompt_id": "p0525",
   "text": "вице-мэри",
   "category": "D letter pair",
   "target": "-м",
@@ -4833,7 +4725,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0538",
+  "prompt_id": "p0526",
   "text": "вице-мэр",
   "category": "D letter pair",
   "target": "-м",
@@ -4842,7 +4734,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0539",
+  "prompt_id": "p0527",
   "text": "министри",
   "category": "D letter pair",
   "target": "тр",
@@ -4851,7 +4743,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0540",
+  "prompt_id": "p0528",
   "text": "электр",
   "category": "D letter pair",
   "target": "тр",
@@ -4860,7 +4752,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0541",
+  "prompt_id": "p0529",
   "text": "министрлер",
   "category": "D letter pair",
   "target": "тр",
@@ -4869,7 +4761,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0542",
+  "prompt_id": "p0530",
   "text": "метрге",
   "category": "D letter pair",
   "target": "тр",
@@ -4878,7 +4770,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0543",
+  "prompt_id": "p0531",
   "text": "украинанын",
   "category": "D letter pair",
   "target": "кр",
@@ -4887,7 +4779,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0544",
+  "prompt_id": "p0532",
   "text": "украина",
   "category": "D letter pair",
   "target": "кр",
@@ -4896,7 +4788,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0545",
+  "prompt_id": "p0533",
   "text": "украин",
   "category": "D letter pair",
   "target": "кр",
@@ -4905,7 +4797,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0546",
+  "prompt_id": "p0534",
   "text": "крнын",
   "category": "D letter pair",
   "target": "кр",
@@ -4914,7 +4806,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0547",
+  "prompt_id": "p0535",
   "text": "радиосунун",
   "category": "D letter pair",
   "target": "ио",
@@ -4923,7 +4815,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0548",
+  "prompt_id": "p0536",
   "text": "чемпиону",
   "category": "D letter pair",
   "target": "ио",
@@ -4932,7 +4824,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0549",
+  "prompt_id": "p0537",
   "text": "радиосуна",
   "category": "D letter pair",
   "target": "ио",
@@ -4941,7 +4833,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0550",
+  "prompt_id": "p0538",
   "text": "катчысы",
   "category": "D letter pair",
   "target": "тч",
@@ -4950,7 +4842,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0551",
+  "prompt_id": "p0539",
   "text": "саясатчы",
   "category": "D letter pair",
   "target": "тч",
@@ -4959,7 +4851,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0552",
+  "prompt_id": "p0540",
   "text": "спортчу",
   "category": "D letter pair",
   "target": "тч",
@@ -4968,7 +4860,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0553",
+  "prompt_id": "p0541",
   "text": "акыйкатчы",
   "category": "D letter pair",
   "target": "тч",
@@ -4977,7 +4869,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0554",
+  "prompt_id": "p0542",
   "text": "саясат",
   "category": "D letter pair",
   "target": "яс",
@@ -4986,7 +4878,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0555",
+  "prompt_id": "p0543",
   "text": "компаниясы",
   "category": "D letter pair",
   "target": "яс",
@@ -4995,7 +4887,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0556",
+  "prompt_id": "p0544",
   "text": "август",
   "category": "D letter pair",
   "target": "ав",
@@ -5004,7 +4896,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0557",
+  "prompt_id": "p0545",
   "text": "автоунаа",
   "category": "D letter pair",
   "target": "ав",
@@ -5013,7 +4905,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0558",
+  "prompt_id": "p0546",
   "text": "автору",
   "category": "D letter pair",
   "target": "ав",
@@ -5022,7 +4914,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0559",
+  "prompt_id": "p0547",
   "text": "алмазбек",
   "category": "D letter pair",
   "target": "зб",
@@ -5031,7 +4923,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0560",
+  "prompt_id": "p0548",
   "text": "өзбекстан",
   "category": "D letter pair",
   "target": "зб",
@@ -5040,7 +4932,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0561",
+  "prompt_id": "p0549",
   "text": "өзбек",
   "category": "D letter pair",
   "target": "зб",
@@ -5049,7 +4941,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0562",
+  "prompt_id": "p0550",
   "text": "киргизбей",
   "category": "D letter pair",
   "target": "зб",
@@ -5058,7 +4950,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0563",
+  "prompt_id": "p0551",
   "text": "кызматы",
   "category": "D letter pair",
   "target": "зм",
@@ -5067,7 +4959,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0564",
+  "prompt_id": "p0552",
   "text": "кызмат",
   "category": "D letter pair",
   "target": "зм",
@@ -5076,7 +4968,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0565",
+  "prompt_id": "p0553",
   "text": "мыйзамсыз",
   "category": "D letter pair",
   "target": "мс",
@@ -5085,7 +4977,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0566",
+  "prompt_id": "p0554",
   "text": "камсыз",
   "category": "D letter pair",
   "target": "мс",
@@ -5094,7 +4986,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0567",
+  "prompt_id": "p0555",
   "text": "камсыздоо",
   "category": "D letter pair",
   "target": "мс",
@@ -5103,7 +4995,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0568",
+  "prompt_id": "p0556",
   "text": "тынымсыз",
   "category": "D letter pair",
   "target": "мс",
@@ -5112,7 +5004,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0569",
+  "prompt_id": "p0557",
   "text": "мыйзам",
   "category": "D letter pair",
   "target": "йз",
@@ -5121,7 +5013,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0570",
+  "prompt_id": "p0558",
   "text": "мыйзамга",
   "category": "D letter pair",
   "target": "йз",
@@ -5130,7 +5022,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0571",
+  "prompt_id": "p0559",
   "text": "мыйзамдын",
   "category": "D letter pair",
   "target": "йз",
@@ -5139,7 +5031,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0572",
+  "prompt_id": "p0560",
   "text": "аскер",
   "category": "D letter pair",
   "target": "ск",
@@ -5148,7 +5040,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0573",
+  "prompt_id": "p0561",
   "text": "аскердик",
   "category": "D letter pair",
   "target": "ск",
@@ -5157,7 +5049,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0574",
+  "prompt_id": "p0562",
   "text": "уюму",
   "category": "D letter pair",
   "target": "юм",
@@ -5166,7 +5058,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0575",
+  "prompt_id": "p0563",
   "text": "уюмдун",
   "category": "D letter pair",
   "target": "юм",
@@ -5175,7 +5067,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0576",
+  "prompt_id": "p0564",
   "text": "уюмдар",
   "category": "D letter pair",
   "target": "юм",
@@ -5184,7 +5076,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0577",
+  "prompt_id": "p0565",
   "text": "каражат",
   "category": "D letter pair",
   "target": "аж",
@@ -5193,7 +5085,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0578",
+  "prompt_id": "p0566",
   "text": "бажы",
   "category": "D letter pair",
   "target": "аж",
@@ -5202,7 +5094,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0579",
+  "prompt_id": "p0567",
   "text": "тажик",
   "category": "D letter pair",
   "target": "аж",
@@ -5211,7 +5103,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0580",
+  "prompt_id": "p0568",
   "text": "тажикстан",
   "category": "D letter pair",
   "target": "аж",
@@ -5220,7 +5112,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0581",
+  "prompt_id": "p0569",
   "text": "кабарлады",
   "category": "D letter pair",
   "target": "рл",
@@ -5229,7 +5121,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0582",
+  "prompt_id": "p0570",
   "text": "парламент",
   "category": "D letter pair",
   "target": "рл",
@@ -5238,7 +5130,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0583",
+  "prompt_id": "p0571",
   "text": "дээрлик",
   "category": "D letter pair",
   "target": "рл",
@@ -5247,7 +5139,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0584",
+  "prompt_id": "p0572",
   "text": "өкмөт",
   "category": "D letter pair",
   "target": "км",
@@ -5256,7 +5148,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0585",
+  "prompt_id": "p0573",
   "text": "өкмөттүн",
   "category": "D letter pair",
   "target": "км",
@@ -5265,7 +5157,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0586",
+  "prompt_id": "p0574",
   "text": "укмкнын",
   "category": "D letter pair",
   "target": "км",
@@ -5274,7 +5166,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0587",
+  "prompt_id": "p0575",
   "text": "өкмөтү",
   "category": "D letter pair",
   "target": "км",
@@ -5283,7 +5175,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0588",
+  "prompt_id": "p0576",
   "text": "байланыштуу",
   "category": "E long word",
   "target": "11 letters",
@@ -5292,7 +5184,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0589",
+  "prompt_id": "p0577",
   "text": "кыргызстанда",
   "category": "E long word",
   "target": "12 letters",
@@ -5301,7 +5193,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0590",
+  "prompt_id": "p0578",
   "text": "республикасынын",
   "category": "E long word",
   "target": "15 letters",
@@ -5310,7 +5202,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0591",
+  "prompt_id": "p0579",
   "text": "жергиликтүү",
   "category": "E long word",
   "target": "11 letters",
@@ -5319,7 +5211,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0592",
+  "prompt_id": "p0580",
   "text": "президенти",
   "category": "E long word",
   "target": "10 letters",
@@ -5328,7 +5220,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0593",
+  "prompt_id": "p0581",
   "text": "коопсуздук",
   "category": "E long word",
   "target": "10 letters",
@@ -5337,7 +5229,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0594",
+  "prompt_id": "p0582",
   "text": "маалыматка",
   "category": "E long word",
   "target": "10 letters",
@@ -5346,7 +5238,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0595",
+  "prompt_id": "p0583",
   "text": "министрлиги",
   "category": "E long word",
   "target": "11 letters",
@@ -5355,7 +5247,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0596",
+  "prompt_id": "p0584",
   "text": "кызматкерлери",
   "category": "E long word",
   "target": "13 letters",
@@ -5364,7 +5256,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0597",
+  "prompt_id": "p0585",
   "text": "экономикалык",
   "category": "E long word",
   "target": "12 letters",
@@ -5373,7 +5265,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0598",
+  "prompt_id": "p0586",
   "text": "министрлигинин",
   "category": "E long word",
   "target": "14 letters",
@@ -5382,7 +5274,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0599",
+  "prompt_id": "p0587",
   "text": "билдиришти",
   "category": "E long word",
   "target": "10 letters",
@@ -5391,7 +5283,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0600",
+  "prompt_id": "p0588",
   "text": "кыргызстанга",
   "category": "E long word",
   "target": "12 letters",
@@ -5400,7 +5292,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0601",
+  "prompt_id": "p0589",
   "text": "ошондуктан",
   "category": "E long word",
   "target": "10 letters",
@@ -5409,7 +5301,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0602",
+  "prompt_id": "p0590",
   "text": "кошумчалады",
   "category": "E long word",
   "target": "11 letters",
@@ -5418,7 +5310,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0603",
+  "prompt_id": "p0591",
   "text": "максатында",
   "category": "E long word",
   "target": "10 letters",
@@ -5427,7 +5319,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0604",
+  "prompt_id": "p0592",
   "text": "кыргызстандагы",
   "category": "E long word",
   "target": "14 letters",
@@ -5436,7 +5328,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0605",
+  "prompt_id": "p0593",
   "text": "туурасында",
   "category": "E long word",
   "target": "10 letters",
@@ -5445,7 +5337,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0606",
+  "prompt_id": "p0594",
   "text": "шаарындагы",
   "category": "E long word",
   "target": "10 letters",
@@ -5454,7 +5346,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0607",
+  "prompt_id": "p0595",
   "text": "райондордо",
   "category": "E long word",
   "target": "10 letters",
@@ -5463,7 +5355,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0608",
+  "prompt_id": "p0596",
   "text": "ортосундагы",
   "category": "E long word",
   "target": "11 letters",
@@ -5472,7 +5364,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0609",
+  "prompt_id": "p0597",
   "text": "премьер-министр",
   "category": "E long word",
   "target": "15 letters",
@@ -5481,7 +5373,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0610",
+  "prompt_id": "p0598",
   "text": "башкармалыгынын",
   "category": "E long word",
   "target": "15 letters",
@@ -5490,7 +5382,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0611",
+  "prompt_id": "p0599",
   "text": "маалыматты",
   "category": "E long word",
   "target": "10 letters",
@@ -5499,7 +5391,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0612",
+  "prompt_id": "p0600",
   "text": "бишкектеги",
   "category": "E long word",
   "target": "10 letters",
@@ -5508,7 +5400,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0613",
+  "prompt_id": "p0601",
   "text": "маалыматына",
   "category": "E long word",
   "target": "11 letters",
@@ -5517,7 +5409,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0614",
+  "prompt_id": "p0602",
   "text": "казакстандын",
   "category": "E long word",
   "target": "12 letters",
@@ -5526,7 +5418,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0615",
+  "prompt_id": "p0603",
   "text": "маалыматта",
   "category": "E long word",
   "target": "10 letters",
@@ -5535,7 +5427,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0616",
+  "prompt_id": "p0604",
   "text": "белгиленген",
   "category": "E long word",
   "target": "11 letters",
@@ -5544,7 +5436,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0617",
+  "prompt_id": "p0605",
   "text": "адамдардын",
   "category": "E long word",
   "target": "10 letters",
@@ -5553,7 +5445,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0618",
+  "prompt_id": "p0606",
   "text": "партиясынын",
   "category": "E long word",
   "target": "11 letters",
@@ -5562,7 +5454,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0619",
+  "prompt_id": "p0607",
   "text": "республикалык",
   "category": "E long word",
   "target": "13 letters",
@@ -5571,7 +5463,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0620",
+  "prompt_id": "p0608",
   "text": "жаан-чачын",
   "category": "E long word",
   "target": "10 letters",
@@ -5580,7 +5472,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0621",
+  "prompt_id": "p0609",
   "text": "саламаттык",
   "category": "E long word",
   "target": "10 letters",
@@ -5589,7 +5481,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0622",
+  "prompt_id": "p0610",
   "text": "агенттигине",
   "category": "E long word",
   "target": "11 letters",
@@ -5598,7 +5490,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0623",
+  "prompt_id": "p0611",
   "text": "температурасы",
   "category": "E long word",
   "target": "13 letters",
@@ -5607,7 +5499,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0624",
+  "prompt_id": "p0612",
   "text": "маалыматтар",
   "category": "E long word",
   "target": "11 letters",
@@ -5616,7 +5508,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0625",
+  "prompt_id": "p0613",
   "text": "коронавирус",
   "category": "E long word",
   "target": "11 letters",
@@ -5625,7 +5517,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0626",
+  "prompt_id": "p0614",
   "text": "кызматкери",
   "category": "E long word",
   "target": "10 letters",
@@ -5634,7 +5526,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0627",
+  "prompt_id": "p0615",
   "text": "тажикстандын",
   "category": "E long word",
   "target": "12 letters",
@@ -5643,7 +5535,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0628",
+  "prompt_id": "p0616",
   "text": "районундагы",
   "category": "E long word",
   "target": "11 letters",
@@ -5652,7 +5544,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0629",
+  "prompt_id": "p0617",
   "text": "керектигин",
   "category": "E long word",
   "target": "10 letters",
@@ -5661,7 +5553,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0630",
+  "prompt_id": "p0618",
   "text": "ооруканага",
   "category": "E long word",
   "target": "10 letters",
@@ -5670,7 +5562,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0631",
+  "prompt_id": "p0619",
   "text": "америкалык",
   "category": "E long word",
   "target": "10 letters",
@@ -5679,7 +5571,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0632",
+  "prompt_id": "p0620",
   "text": "комитетинин",
   "category": "E long word",
   "target": "11 letters",
@@ -5688,7 +5580,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0633",
+  "prompt_id": "p0621",
   "text": "жалпысынан",
   "category": "E long word",
   "target": "10 letters",
@@ -5697,7 +5589,7 @@
   "max_per_writer": 2
  },
  {
-  "prompt_id": "p0634",
+  "prompt_id": "p0622",
   "text": "депутаттар",
   "category": "E long word",
   "target": "10 letters",
