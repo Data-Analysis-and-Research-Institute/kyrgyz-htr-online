@@ -26,28 +26,35 @@ def norm(t):
 
 
 def final_label(row, revs):
-    """Status from validator reviews:
-    excluded_pii  any reviewer flagged personal information
-    accepted      >= 2 'correct' reviews (or 1 'correct' and the model read the same text), or
-                  >= 2 'wrong_label' reviews that agree on the corrected text
-    rejected      majority 'illegible' / 'not_kyrgyz'
-    needs_review  reviewers disagree;  unreviewed  no review yet"""
+    """Status from validator votes (one vote per validator; a decision needs >= 2 agreeing votes that are
+    also a majority). Mirrored in js/validate.js (voteStatus).
+    unreviewed    no vote yet
+    excluded_pii  any vote flagged personal information (privacy first: one flag is enough)
+    pending       one vote so far
+    accepted      >= 2 'correct' votes, or >= 2 'wrong_label' votes agreeing on the corrected text
+    rejected      >= 2 'illegible' / 'not_kyrgyz' votes
+    disputed      >= 2 votes but no agreement yet (stays in the validation queue for more votes)"""
     v = Counter(r.get('verdict') for r in revs)
     fixes = Counter(norm(r.get('corrected_text')) for r in revs if r.get('verdict') == 'wrong_label')
-    base = dict(n_reviews=len(revs), verdicts=';'.join(f'{k}:{n}' for k, n in sorted(v.items())))
+    n = len(revs)
+    base = dict(n_reviews=n, verdicts=';'.join(f'{k}:{c}' for k, c in sorted(v.items())))
     if not revs:
         return dict(base, review_status='unreviewed', final_text='')
     if v['personal_info']:
         return dict(base, review_status='excluded_pii', final_text='')
-    model_agrees = norm(row.get('model_reading')) == norm(row.get('text'))
-    if v['correct'] >= 2 or (v['correct'] == 1 and len(revs) == 1 and model_agrees):
+    if n < 2:
+        return dict(base, review_status='pending', final_text='')
+    if v['correct'] >= 2 and v['correct'] > n / 2:
         return dict(base, review_status='accepted', final_text=row.get('text', ''))
-    if fixes and fixes.most_common(1)[0][1] >= 2:
-        fixed = next(r['corrected_text'] for r in revs if norm(r.get('corrected_text')) == fixes.most_common(1)[0][0])
-        return dict(base, review_status='accepted', final_text=fixed)
-    if v['illegible'] + v['not_kyrgyz'] > len(revs) / 2:
+    if fixes:
+        key, k = fixes.most_common(1)[0]
+        if k >= 2 and k > n / 2:
+            fixed = next(r['corrected_text'] for r in revs if norm(r.get('corrected_text')) == key)
+            return dict(base, review_status='accepted', final_text=fixed)
+    bad = v['illegible'] + v['not_kyrgyz']
+    if bad >= 2 and bad > n / 2:
         return dict(base, review_status='rejected', final_text='')
-    return dict(base, review_status='needs_review', final_text='')
+    return dict(base, review_status='disputed', final_text='')
 
 
 def main():

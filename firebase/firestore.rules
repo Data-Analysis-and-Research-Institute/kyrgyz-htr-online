@@ -2,14 +2,14 @@ rules_version = '2';
 // Firestore security rules for the handwriting collection and validation (paste into Firebase console ->
 // Firestore Database -> Rules, or deploy with the Firebase CLI).
 //  * contributors sign in anonymously and can only CREATE their own consent record and samples
-//  * validators sign in with Google; an admin approves them by creating validators/{uid} in the console.
-//    Only validators can read samples, and each validator can write one review per sample.
+//  * anyone signed in with Google is a validator (no approval step). Validators can read samples and all
+//    reviews, and write one review (vote) per sample; a label needs at least 2 agreeing votes.
+//    Anonymous (contributor) accounts cannot read anything.
 service cloud.firestore {
   match /databases/{database}/documents {
 
     function isValidator() {
-      return request.auth != null
-        && exists(/databases/$(database)/documents/validators/$(request.auth.uid));
+      return request.auth != null && request.auth.token.firebase.sign_in_provider == 'google.com';
     }
 
     match /consents/{uid} {
@@ -30,12 +30,6 @@ service cloud.firestore {
         && request.resource.data.strokes is string && request.resource.data.strokes.size() < 400000;
       allow read: if isValidator();
       allow update, delete: if false;
-    }
-
-    // validators/{uid}: created by an admin in the console (any fields, e.g. {name: "..."}).
-    match /validators/{uid} {
-      allow get: if request.auth != null && request.auth.uid == uid;
-      allow list, write: if false;
     }
 
     // one review per (sample, validator): document id = "<submission id>_<validator uid>"

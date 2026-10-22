@@ -16,10 +16,11 @@
 <main>
   <section id="start" class="card">
     <h2>Validate collected handwriting</h2>
-    <p>Check that each image shows the word in its label. Samples where the recogniser disagrees with the
-      writer's label are shown first. Each sample needs two independent reviews.</p>
+    <p>Check that each image shows the word in its label. Anyone with a Google account can help. Each sample
+      needs at least two independent votes that agree; samples waiting for a second vote come first, then
+      those where the recogniser disagrees with the writer's label.</p>
     <div class="row">
-      <button id="signin" class="primary">Sign in with Google (validators)</button>
+      <button id="signin" class="primary">Sign in with Google</button>
       <span class="muted">or</span>
       <label class="btn">Open a local JSON file… <input type="file" id="file" accept=".json,application/json" hidden></label>
     </div>
@@ -43,6 +44,7 @@
           <tr><td class="muted">Label (written)</td><td id="m-text" class="val-label"></td></tr>
           <tr><td class="muted">Model read</td><td id="m-model"></td></tr>
           <tr><td class="muted">Brush / input</td><td id="m-brush"></td></tr>
+          <tr><td class="muted">Votes</td><td id="m-votes" class="muted"></td></tr>
         </table>
         <div class="val-actions">
           <button data-v="correct" class="primary">1 ✓ Correct</button>

@@ -1,6 +1,7 @@
 /* Validation page: review collected handwriting samples.
- *  - Firebase mode: validators sign in with Google; an admin approves them (validators/{uid} document).
- *    Reviews are stored as reviews/{submissionId}_{validatorUid}.
+ *  - Firebase mode: anyone signed in with Google can validate (no approval). Each validator casts one vote
+ *    per sample, stored as reviews/{submissionId}_{validatorUid}; a label is decided by >= 2 agreeing votes,
+ *    so the queue keeps serving a sample until it is decided.
  *  - Local mode: open a JSON array of samples (collect.html demo download, or tools/make_validation_set.py)
  *    and download the reviews as JSON. */
 const FB_VERSION = '10.12.2';
@@ -17,6 +18,23 @@ let done = 0;
 
 const norm = (t) => (t || '').toUpperCase().replace(/[^\p{L}\p{N}\- ]/gu, '').trim();
 const disagree = (s) => s.model_reading != null && norm(s.model_reading) !== norm(s.text);
+const votes = new Map();   // submission id -> [review, ...] (all validators)
+
+/* Mirror of tools/export_firebase.py final_label: decision needs >= 2 agreeing votes that are a majority */
+function voteStatus(revs) {
+  const n = revs.length, c = (v) => revs.filter((r) => r.verdict === v).length;
+  if (!n) return 'unreviewed';
+  if (c('personal_info')) return 'excluded_pii';
+  if (n < 2) return 'pending';
+  if (c('correct') >= 2 && c('correct') > n / 2) return 'accepted';
+  const fixes = {};
+  for (const r of revs) if (r.verdict === 'wrong_label') { const k = norm(r.corrected_text); fixes[k] = (fixes[k] || 0) + 1; }
+  if (Object.values(fixes).some((k) => k >= 2 && k > n / 2)) return 'accepted';
+  const bad = c('illegible') + c('not_kyrgyz');
+  if (bad >= 2 && bad > n / 2) return 'rejected';
+  return 'disputed';
+}
+const OPEN = { pending: 0, disputed: 1, unreviewed: 2 };   // still needs votes; queue order
 
 // ---- Firebase --------------------------------------------------------------------------------
 async function signIn() {
@@ -28,13 +46,6 @@ async function signIn() {
   const cred = await auth.signInWithPopup(auth.getAuth(a), new auth.GoogleAuthProvider());
   const db = fs.getFirestore(a);
   const uid = cred.user.uid;
-  let approved = false;
-  try { approved = (await fs.getDoc(fs.doc(db, 'validators', uid))).exists(); } catch (e) { approved = false; }
-  if (!approved) {
-    $('auth-info').innerHTML = `Signed in as ${cred.user.email}. You are not an approved validator yet: send this ID to `
-      + `the project admin, who adds a document <code>validators/${uid}</code> in the Firebase console.`;
-    return;
-  }
   fb = { db, uid, fs };
   $('src').textContent = `Firebase · ${cred.user.email}`;
   await loadFirebase();
@@ -43,13 +54,20 @@ async function signIn() {
 
 async function loadFirebase() {
   const { db, fs, uid } = fb;
-  const mine = new Set((await fs.getDocs(fs.query(fs.collection(db, 'reviews'), fs.where('validator_uid', '==', uid))))
-    .docs.map((d) => d.data().submission_id));
+  votes.clear();
+  for (const d of (await fs.getDocs(fs.collection(db, 'reviews'))).docs) {
+    const r = d.data();
+    if (!votes.has(r.submission_id)) votes.set(r.submission_id, []);
+    votes.get(r.submission_id).push(r);
+  }
+  const mine = new Set([...votes].filter(([, rs]) => rs.some((r) => r.validator_uid === uid)).map(([id]) => id));
   const parts = [fs.collection(db, 'submissions'), fs.orderBy('created_at', 'desc'), fs.limit(100)];
   if (lastDoc) parts.push(fs.startAfter(lastDoc));
   const snap = await fs.getDocs(fs.query(...parts));
   if (snap.docs.length) lastDoc = snap.docs[snap.docs.length - 1];
-  const fresh = snap.docs.filter((d) => !mine.has(d.id)).map((d) => ({ id: d.id, ...d.data() }));
+  // only samples I have not voted on and that are not decided yet
+  const fresh = snap.docs.filter((d) => !mine.has(d.id) && voteStatus(votes.get(d.id) || []) in OPEN)
+    .map((d) => ({ id: d.id, ...d.data() }));
   queue = queue.slice(pos).concat(sortQueue(fresh));
   pos = 0;
   $('more').hidden = snap.docs.length < 100;
@@ -77,9 +95,11 @@ async function openFile(f) {
   begin();
 }
 
-// model/label disagreements first, otherwise keep the original order
+// samples one vote short of a decision first, then disputed, then new ones; model/label disagreements first
 function sortQueue(items) {
-  return items.map((s, i) => [disagree(s) ? 0 : 1, i, s]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map((x) => x[2]);
+  const st = (s) => OPEN[voteStatus(votes.get(s.id) || [])] ?? 2;
+  return items.map((s, i) => [st(s), disagree(s) ? 0 : 1, i, s])
+    .sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]).map((x) => x[3]);
 }
 
 // ---- review UI --------------------------------------------------------------------------------
@@ -102,6 +122,9 @@ function show() {
     : `${m.toLowerCase()} <span class="${disagree(s) ? 'bad' : 'ok'}">${disagree(s) ? '≠ label' : '= label'}</span>`;
   const b = s.brush || {};
   $('m-brush').textContent = [b.preset, s.pointer_type].filter(Boolean).join(' / ');
+  const n = (votes.get(s.id) || []).length;   // others' verdicts are not shown, so votes stay independent
+  $('m-votes').textContent = n ? `${n} other vote${n > 1 ? 's' : ''} so far (at least 2 agreeing needed)`
+    : 'first vote (at least 2 agreeing needed)';
   $('fix').value = s.text || '';
   $('status').textContent = '';
   replay();

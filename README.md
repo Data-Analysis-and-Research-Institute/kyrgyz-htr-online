@@ -16,8 +16,10 @@ A static website with four pages:
   list (`prompts/collection_prompts.json`). Each sample is stored in **Firebase Firestore**: the rendered
   PNG, raw strokes (x, y, t, pressure, width), brush style, prompt, what was written and the model's
   reading. Without a Firebase config it runs in **demo mode** (local JSON download, nothing uploaded).
-* **`validate.html` — Validate.** Approved validators sign in with Google and review collected samples one by
-  one (samples where the model disagrees with the writer's label come first): **1** correct, **2** wrong label
+* **`validate.html` — Validate.** Anyone signed in with Google can review collected samples (no approval step).
+  Every sample needs **at least 2 agreeing votes**; the queue serves samples waiting for a second vote first,
+  then disputed ones, then new ones (model/label disagreements first). Validators see how many votes a sample
+  has, not what they were. Keys: **1** correct, **2** wrong label
   (type the correct text), **3** illegible, **4** not Kyrgyz / scribble, **5** personal information, **S** skip;
   stroke replay with **R**. Reviews are stored as `reviews/{submission}_{validator}`. It also works on a
   **local JSON file** (a demo-mode download from `collect.html` or a file from `tools/make_validation_set.py`)
@@ -87,14 +89,13 @@ python -m http.server 8000      # then open http://localhost:8000
 ### Validators (`validate.html`)
 
 1. **Authentication → Sign-in method → Google → Enable** (anonymous sign-in stays on for contributors).
-2. Publish the current `firebase/firestore.rules` (it adds the `validators` and `reviews` rules; submissions
-   are readable only by validators).
-3. A validator opens `validate.html` and clicks *Sign in with Google*; the page shows their user ID.
-4. Admin: **Firestore → Start collection** `validators` → document ID = that user ID, any field
-   (e.g. `name: "..."`, `added: <date>`). Validators cannot add themselves; delete the document to revoke.
-5. `tools/export_firebase.py` merges the reviews into `labels.csv`: `review_status` (`accepted` after two
-   agreeing reviews, or one *correct* review when the model read the same text; `rejected`, `needs_review`,
-   `excluded_pii` if anyone flags personal information, `unreviewed`), `final_text`, `n_reviews`, `verdicts`.
+2. Publish the current `firebase/firestore.rules`: any Google-signed-in user may read samples and votes and
+   cast one vote per sample (`reviews/{submission}_{uid}`); anonymous contributor accounts cannot read anything.
+3. `tools/export_firebase.py` turns the votes into `review_status` / `final_text` in `labels.csv`:
+   `accepted` (≥ 2 agreeing *correct* votes, or ≥ 2 *wrong label* votes with the same corrected text, and a
+   majority), `rejected` (≥ 2 *illegible / not Kyrgyz*), `disputed` (≥ 2 votes, no agreement — stays in the
+   queue), `pending` (1 vote), `unreviewed`, and `excluded_pii` (a single *personal information* flag is enough,
+   and the sample leaves the queue). Train only on `accepted`.
 
 To review samples offline: `python webapp/tools/make_validation_set.py --help` builds a local JSON queue
 (open it in `validate.html` → *Open a local JSON file*). Such files may contain dataset images: keep them private.
@@ -114,7 +115,7 @@ training (all samples of a writer in the same split).
 * Licence of the collected data: MIT; contact: ruslan.isaev@alatoo.edu.kg (both in `js/firebase-config.js`).
 * Firebase project `kyrgyz-htr-data-collection` is configured in `js/firebase-config.js`; complete steps 2–5
   and 8 of the Firebase setup above (Anonymous sign-in, authorized domain, Firestore + rules, App Check).
-* Validators: enable the Google provider, publish the updated rules, add `validators/{uid}` documents.
+* Validation: enable the Google sign-in provider and publish the updated rules.
 * Decide whether contributors' optional answers (age range, writing hand, first language) are needed.
 
 ## Files
