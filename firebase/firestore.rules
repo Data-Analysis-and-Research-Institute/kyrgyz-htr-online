@@ -25,7 +25,7 @@ service cloud.firestore {
         && request.resource.data.consent_version is string
         && request.resource.data.agreed == true
         && request.resource.data.age_16_plus == true;
-      allow read: if isAdmin();
+      allow read: if isAdmin() || (isGoogle() && request.auth.uid == uid);   // own record: consent asked only once
       allow delete: if false;
     }
 

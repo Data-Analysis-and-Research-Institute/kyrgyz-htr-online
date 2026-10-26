@@ -1,7 +1,7 @@
 /* Collection page: consent -> random weighted prompts -> canvas -> Firestore (or local demo mode).
  * Each submission stores the rendered PNG (cropped to the ink), the raw strokes (JSON), the brush style,
  * the prompt and what was actually written, and the in-browser model's reading of it. */
-import { signIn, loadFirebase } from './fb.js';
+import { signIn, signOut, currentUser, loadFirebase } from './fb.js';
 
 const S = window.COLLECTION_SETTINGS;
 const $ = (id) => document.getElementById(id);
@@ -126,6 +126,8 @@ async function submit() {
 }
 
 // ---- consent ----------------------------------------------------------------------------------
+// Consent and sign-in are asked once: a returning user (still signed in, consent of the current version on
+// record in Firestore or this browser) goes straight to the writing session.
 async function start() {
   $('start').disabled = true;
   $('start').textContent = T('starting');
@@ -146,12 +148,38 @@ async function start() {
   };
   if (fb) await fb.fs.setDoc(fb.fs.doc(fb.db, 'consents', writerId), { ...consent, agreed_at: fb.fs.serverTimestamp() });
   store.set('khtr_consent', { ...consent, writer_id: writerId });
+  openSession();
+}
+
+function openSession() {
   $('writer').textContent = fb ? fb.user.email : writerId.slice(0, 16);
+  $('signout').hidden = !fb;
   $('consent').hidden = true;
   $('session').hidden = false;
   ink.resize();
   nextPrompt();
   rec.load(() => {}).then(() => { recReady = true; }).catch(() => {});   // model feedback is optional
+}
+
+async function resume() {
+  const saved = store.get('khtr_consent', null);
+  const current = (c, id) => c && c.agreed && c.consent_version === S.consentVersion && (!id || c.writer_id === id);
+  if (!window.FIREBASE_CONFIG) {                       // demo mode: consent remembered in this browser
+    if (current(saved)) { writerId = saved.writer_id; openSession(); }
+    return;
+  }
+  const user = await currentUser();
+  if (!user || user.isAnonymous) return;
+  let ok = current(saved, user.uid);
+  fb = await signIn();                                 // already signed in: no popup
+  if (!ok) {
+    try {
+      const d = await fb.fs.getDoc(fb.fs.doc(fb.db, 'consents', user.uid));
+      ok = d.exists() && current({ ...d.data(), writer_id: user.uid }, user.uid);
+      if (ok) store.set('khtr_consent', { ...d.data(), writer_id: user.uid });
+    } catch (e) { console.warn(e); }
+  }
+  if (ok) { writerId = user.uid; openSession(); }
 }
 
 function updateStart() { $('start').disabled = !($('c-age').checked && $('c-agree').checked); }
@@ -177,6 +205,7 @@ loadFirebase().catch(() => {});   // preload the SDK so the sign-in popup opens 
 $('c-age').onchange = updateStart;
 $('c-agree').onchange = updateStart;
 $('start').onclick = start;
+$('signout').onclick = async () => { await signOut(); store.set('khtr_consent', null); location.reload(); };
 $('submit').onclick = submit;
 $('skip').onclick = nextPrompt;
 $('clear').onclick = () => ink.clear();
@@ -190,3 +219,4 @@ $('download').onclick = () => {
 };
 
 prompts = await fetch('prompts/collection_prompts.json').then((r) => r.json());
+resume().catch((e) => console.warn('resume', e));

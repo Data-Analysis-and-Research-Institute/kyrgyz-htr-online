@@ -1,7 +1,8 @@
 # Kyrgyz handwriting recognition — web app (GitHub Pages)
 
 A static website with five pages. **Everyone signs in with Google** to contribute or validate (recognition
-needs no sign-in):
+needs no sign-in). Sign-in and consent are asked **once**: returning users go straight to writing / validating
+(the consent record is checked in Firestore, so this also works on a new device; a new consent version asks again):
 
 * **`index.html` — Recognize.** Write a Kyrgyz word on the canvas (pen / brush / ink) or upload a photo
   (optional crop), or click one of 12 **example photos**; a CTC recogniser runs **in the browser**
@@ -30,9 +31,8 @@ needs no sign-in):
   then disputed ones, then new ones (model/label disagreements first). Validators see how many votes a sample
   has, not what they were. Keys: **1** correct, **2** wrong label
   (type the correct text), **3** illegible, **4** not Kyrgyz / scribble, **5** personal information, **S** skip;
-  stroke replay with **R**. Reviews are stored as `reviews/{submission}_{validator}`. It also works on a
-  **local JSON file** (a demo-mode download from `collect.html` or a file from `tools/make_validation_set.py`)
-  and then downloads the reviews as JSON.
+  stroke replay with **R**. Reviews are stored as `reviews/{submission}_{validator}`. Google sign-in only.
+  When the queue is empty the page says why (own samples, already voted, already decided).
 
 ## Accuracy
 
@@ -113,8 +113,6 @@ Delete the document to remove an admin. The addresses live only in your Firestor
    queue), `pending` (1 vote), `unreviewed`, and `excluded_pii` (a single *personal information* flag is enough,
    and the sample leaves the queue). Train only on `accepted`.
 
-To review samples offline: `python webapp/tools/make_validation_set.py --help` builds a local JSON queue
-(open it in `validate.html` → *Open a local JSON file*). Such files may contain dataset images: keep them private.
 
 Export the collected data (admin side, needs a service-account key — never commit it):
 ```
@@ -145,14 +143,14 @@ js/recognizer.js     onnxruntime-web session, ties preprocessing + model + decod
 js/brush.js          canvas brush engine: pen, calligraphic brush (bold, sharp edges), ink with diffusion
 js/app.js            recognition page;  js/collect.js  collection page (Firebase or demo mode)
 js/page.js           page segmentation (deskew, line paths, words);  js/page-app.js  page UI
-js/validate.js       validation page (Firebase or local file);  js/admin.js  ranking dashboard
+js/validate.js       validation page (Google sign-in);  js/admin.js  ranking dashboard
 js/fb.js             Google sign-in + private profile;  js/votes.js  votes -> decision (mirrors export_firebase.py)
 js/firebase-config.js  your Firebase config + collection settings
 model/               ONNX model, charset, decoder settings, lexicon
 prompts/             collection prompts (from make_collection_list.py)
 firebase/firestore.rules
 tools/               web_pipeline.py (Python mirror), build_web_assets.py (need the full research project to run),
-                     export_firebase.py (standalone; merges validator reviews), make_validation_set.py
+                     export_firebase.py (standalone; merges validator reviews)
 examples/            12 example photos of handwritten words (examples.json: file, expected text, print/cursive)
 tests/               headless browser tests: collection flow (demo mode), examples + word-list switch,
                      admin rankings (synthetic data)

@@ -19,19 +19,22 @@
     <p>Check that each image shows the word in its label. Anyone with a Google account can help. Each sample
       needs at least two independent votes that agree; samples waiting for a second vote come first, then
       those where the recogniser disagrees with the writer's label.</p>
-    <div class="row">
-      <button id="signin" class="primary">Sign in with Google</button>
-      <span class="muted">or</span>
-      <label class="btn">Open a local JSON file… <input type="file" id="file" accept=".json,application/json" hidden></label>
-    </div>
+    <div class="row"><button id="signin" class="primary">Sign in with Google</button></div>
+    <p class="muted">You sign in once; the next visits continue directly. You will not be shown your own writing.</p>
     <p class="muted" id="auth-info"></p>
   </section>
 
   <section id="review" class="card" hidden>
     <div class="row" style="margin-top:0">
-      <span class="muted" id="src"></span><span class="spacer"></span><span class="muted" id="progress"></span>
+      <span class="muted" id="src"></span><button id="signout" class="link">Sign out</button>
+      <span class="spacer"></span><span class="muted" id="progress"></span>
     </div>
-    <div class="val-grid">
+    <div id="empty" hidden>
+      <p><b>Thank you — your queue is empty.</b></p>
+      <p class="muted" id="empty-info"></p>
+      <div class="row"><button id="recheck">↻ Check for new samples</button></div>
+    </div>
+    <div class="val-grid" id="sample">
       <div>
         <div class="muted">Image</div>
         <img id="img" class="val-img" alt="handwritten sample">
@@ -61,8 +64,6 @@
         <p class="muted" id="status"></p>
       </div>
     </div>
-    <div class="row"><button id="download" hidden>Download reviews (JSON)</button><span class="spacer"></span>
-      <button id="more" hidden>Load more</button></div>
   </section>
 </main>
 <footer><a href="admin.html">Admin</a> · Keys: 1 correct · 2 wrong label · 3 illegible · 4 not Kyrgyz · 5 personal info · S skip · Enter save correction</footer>

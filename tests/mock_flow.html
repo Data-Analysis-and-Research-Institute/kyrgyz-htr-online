@@ -1,0 +1,79 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body>
+<iframe id="f" style="width:1000px;height:1200px"></iframe>
+<pre id="out">START</pre>
+<script>
+// Sign-in / consent / validation flows against an in-memory Firebase stand-in (tests/mock/*), mapped in with an
+// import map. Synthetic data only.
+const log = (s) => { document.getElementById('out').textContent += '\n' + s; };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const V = 'https://www.gstatic.com/firebasejs/10.12.2/';
+const MAP = { imports: { [V + 'firebase-app.js']: '/tests/mock/firebase-app.js',
+  [V + 'firebase-auth.js']: '/tests/mock/firebase-auth.js', [V + 'firebase-firestore.js']: '/tests/mock/firebase-firestore.js' } };
+const U = { uid: 'U', email: 'u@example.org', displayName: 'User U', isAnonymous: false };
+
+async function open(page, mock) {
+  localStorage.clear();
+  window.MOCK = mock;
+  const html = await (await fetch('/' + page)).text();
+  const inject = `<base href="${location.origin}/"><script>window.__MOCK = parent.MOCK;<\/script>`
+    + `<script type="importmap">${JSON.stringify(MAP)}<\/script>`;
+  const f = document.getElementById('f');
+  await new Promise((r) => { f.onload = r; f.srcdoc = html.replace('<head>', '<head>' + inject); });
+  await sleep(1500);
+  return f.contentWindow;
+}
+const vis = (w, id) => !w.document.getElementById(id).hidden;
+
+(async () => {
+  try {
+    const ver = (await (await fetch('/js/firebase-config.js')).text()).match(/consentVersion:\s*'([^']+)'/)[1];
+    const consent = { consent_version: ver, agreed: true, age_16_plus: true };
+
+    let w = await open('collect.html', { user: U, popupUser: U, db: { consents: { U: consent } } });
+    log(`collect, returning user with consent: session=${vis(w, 'session')} consent=${vis(w, 'consent')} popups=${MOCK.popups || 0} writer=${w.document.getElementById('writer').textContent}`);
+
+    w = await open('collect.html', { user: U, popupUser: U, db: { consents: { U: { ...consent, consent_version: 'old' } } } });
+    log(`collect, signed in but old consent: session=${vis(w, 'session')} consent=${vis(w, 'consent')}`);
+    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.getElementById('start').click();
+    await sleep(800);
+    log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups || 0} stored consent=${MOCK.db.consents.U.consent_version} profile=${MOCK.db.profiles.U.email}`);
+
+    w = await open('collect.html', { user: null, popupUser: U, db: {} });
+    log(`collect, new visitor: consent=${vis(w, 'consent')} session=${vis(w, 'session')}`);
+    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.getElementById('start').click();
+    await sleep(800);
+    log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups}`);
+    w = await open('collect.html', Object.assign(MOCK, { popups: 0 }));   // reload: same signed-in user, consent stored
+    log(`  reload: session=${vis(w, 'session')} consent=${vis(w, 'consent')} popups=${MOCK.popups}`);
+
+    // validation: 230 newest samples are U's own, then 10 already voted by U, 5 decided, 15 open (5 with one vote)
+    const subs = {}, reviews = {};
+    let t = 1e12;
+    for (let i = 0; i < 230; i++) subs['own' + i] = { writer_id: 'U', text: 'көз', created_at: t--, png: 'data:,' };
+    for (let i = 0; i < 30; i++) {
+      const id = 'o' + i;
+      subs[id] = { writer_id: 'W', text: 'үй', model_reading: i % 3 ? 'үй' : 'уй', created_at: t--, png: 'data:,' };
+      if (i < 10) reviews[id + '_U'] = { submission_id: id, validator_uid: 'U', verdict: 'correct' };
+      else if (i < 15) { reviews[id + '_A'] = { submission_id: id, validator_uid: 'A', verdict: 'correct' };
+        reviews[id + '_B'] = { submission_id: id, validator_uid: 'B', verdict: 'correct' }; }
+      else if (i < 20) reviews[id + '_A'] = { submission_id: id, validator_uid: 'A', verdict: 'correct' };
+    }
+    w = await open('validate.html', { user: U, popupUser: U, db: { submissions: subs, reviews } });
+    const d = w.document;
+    log(`validate, returning user: review=${vis(w, 'review')} start=${vis(w, 'start')} popups=${MOCK.popups || 0} | ${d.getElementById('progress').textContent}`);
+    log(`  first sample votes: ${d.getElementById('m-votes').textContent}`);
+    for (let i = 0; i < 20 && vis(w, 'sample'); i++) {
+      d.dispatchEvent(new w.KeyboardEvent('keydown', { key: '1' })); await sleep(150);
+    }
+    const mine = Object.keys(MOCK.db.reviews).filter((k) => k.endsWith('_U')).length - 10;
+    log(`  voted ${mine} | empty=${vis(w, 'empty')} | ${d.getElementById('empty-info').textContent}`);
+    log(`  no vote on own samples: ${!Object.keys(MOCK.db.reviews).some((k) => k.startsWith('own'))}`);
+
+    w = await open('validate.html', { user: null, popupUser: U, db: { submissions: subs, reviews: {} } });
+    log(`validate, new visitor: start=${vis(w, 'start')} review=${vis(w, 'review')} | no file input: ${!w.document.getElementById('file')}`);
+    w.document.getElementById('signin').click(); await sleep(800);
+    log(`  after sign-in: review=${vis(w, 'review')} popups=${MOCK.popups} | ${w.document.getElementById('progress').textContent}`);
+    log('DONE');
+  } catch (e) { log('ERROR ' + (e.stack || e)); }
+})();
+</script></body></html>

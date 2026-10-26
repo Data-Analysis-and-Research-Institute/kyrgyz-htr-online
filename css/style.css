@@ -89,3 +89,4 @@ table.rank th, table.rank td { padding: 6px 8px; border-bottom: 1px solid var(--
 table.rank th { cursor: pointer; user-select: none; color: var(--muted); font-weight: 600; }
 table.rank th.desc::after { content: ' ▾'; } table.rank th.asc::after { content: ' ▴'; }
 table.rank tbody tr:nth-child(-n+3) td:first-child { font-weight: 700; color: var(--accent); }
+button.link { background: none; border: none; color: var(--accent); padding: 2px 4px; text-decoration: underline; }
