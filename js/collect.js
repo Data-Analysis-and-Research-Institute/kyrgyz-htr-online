@@ -97,7 +97,7 @@ async function submit() {
   const docData = {
     writer_id: writerId, session_id: sessionId, prompt_id: current.prompt_id, prompt_text: current.text,
     text, text_changed: text !== current.text, category: current.category, priority: current.priority,
-    brush: style, pointer_type: pointer, short_only: SHORT_ONLY, png, strokes, model_reading: reading, model_prob: prob,
+    brush: style, pointer_type: pointer, input_device: $('s-device').value, short_only: SHORT_ONLY, png, strokes, model_reading: reading, model_prob: prob,
     image_w: crop.width, image_h: crop.height, consent_version: S.consentVersion, app_version: APP_VERSION,
   };
   if (png.length > 900000 || strokes.length > 400000) {
@@ -148,14 +148,28 @@ async function start() {
   if (!fb) store.set('khtr_local_id', writerId);
   const consent = {
     consent_version: S.consentVersion, age_16_plus: true, agreed: true,
-    age_range: $('q-age').value, hand: $('q-hand').value, first_language: $('q-lang').value,
+    age_range: $('q-age').value, hand: $('q-hand').value, first_language: $('q-lang').value, input_device: chosenDevice(),
   };
   if (fb) await fb.fs.setDoc(fb.fs.doc(fb.db, 'consents', writerId), { ...consent, agreed_at: fb.fs.serverTimestamp() });
   store.set('khtr_consent', { ...consent, writer_id: writerId });
   openSession();
 }
 
+// writing device: asked on the consent form (required), changeable during the session, stored with every sample
+const DEVICES = ['finger', 'mouse', 'touchpad', 'stylus'];
+const chosenDevice = () => (document.querySelector('input[name="device"]:checked') || {}).value || '';
+function initDevice(saved) {
+  // returning users: their last choice; otherwise a guess from the pointer (touch screen -> finger)
+  const guess = matchMedia('(pointer: coarse)').matches ? 'finger' : 'mouse';
+  $('s-device').value = DEVICES.includes(saved) ? saved : (chosenDevice() || guess);
+}
+$('s-device').onchange = () => {
+  const c = store.get('khtr_consent', null);
+  if (c) store.set('khtr_consent', { ...c, input_device: $('s-device').value });
+};
+
 function openSession() {
+  initDevice((store.get('khtr_consent', null) || {}).input_device);
   $('writer').textContent = fb ? fb.user.email : writerId.slice(0, 16);
   $('signout').hidden = !fb;
   $('short-note').hidden = !SHORT_ONLY;
@@ -187,7 +201,7 @@ async function resume() {
   if (ok) { writerId = user.uid; openSession(); }
 }
 
-function updateStart() { $('start').disabled = !($('c-age').checked && $('c-agree').checked); }
+function updateStart() { $('start').disabled = !($('c-age').checked && $('c-agree').checked && chosenDevice()); }
 
 // ---- wire up ----------------------------------------------------------------------------------
 document.querySelectorAll('.js-licence').forEach((e) => { e.textContent = S.licence; });
@@ -200,6 +214,7 @@ $('demo-banner').hidden = !!window.FIREBASE_CONFIG;
 loadFirebase().catch(() => {});   // preload the SDK so the sign-in popup opens directly from the click
 $('c-age').onchange = updateStart;
 $('c-agree').onchange = updateStart;
+document.querySelectorAll('input[name="device"]').forEach((r) => { r.onchange = updateStart; });
 $('start').onclick = start;
 $('signout').onclick = async () => { await signOut(); store.set('khtr_consent', null); location.reload(); };
 $('submit').onclick = submit;

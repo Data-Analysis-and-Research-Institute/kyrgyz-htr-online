@@ -93,3 +93,8 @@ button.link { background: none; border: none; color: var(--accent); padding: 2px
 /* interface-language dropdown (js/i18n.js) */
 .lang-pick { font-size: 14px; color: var(--muted); white-space: nowrap; }
 .lang-pick select { font: inherit; padding: 3px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text); }
+/* writing-device choice on the consent form */
+fieldset.device { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px 12px; margin: 12px 0 0; }
+fieldset.device legend { padding: 0 4px; font-weight: 600; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; margin: 6px 6px 0 0; cursor: pointer; }
+.chip:has(input:checked) { border-color: var(--accent); color: var(--accent); font-weight: 600; }

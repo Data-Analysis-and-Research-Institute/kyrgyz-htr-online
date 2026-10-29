@@ -34,13 +34,13 @@ const vis = (w, id) => !w.document.getElementById(id).hidden;
 
     w = await open('collect.html', { user: U, popupUser: U, db: { consents: { U: { ...consent, consent_version: 'old' } } } });
     log(`collect, signed in but old consent: session=${vis(w, 'session')} consent=${vis(w, 'consent')}`);
-    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.getElementById('start').click();
+    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.querySelector('input[name="device"][value="touchpad"]').click(); w.document.getElementById('start').click();
     await sleep(800);
-    log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups || 0} stored consent=${MOCK.db.consents.U.consent_version} profile=${MOCK.db.profiles.U.email}`);
+    log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups || 0} stored consent=${MOCK.db.consents.U.consent_version} device=${MOCK.db.consents.U.input_device} session device=${w.document.getElementById('s-device').value} profile=${MOCK.db.profiles.U.email}`);
 
     w = await open('collect.html', { user: null, popupUser: U, db: {} });
     log(`collect, new visitor: consent=${vis(w, 'consent')} session=${vis(w, 'session')}`);
-    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.getElementById('start').click();
+    w.document.getElementById('c-age').click(); w.document.getElementById('c-agree').click(); w.document.querySelector('input[name="device"][value="touchpad"]').click(); w.document.getElementById('start').click();
     await sleep(800);
     log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups}`);
     w = await open('collect.html', Object.assign(MOCK, { popups: 0 }));   // reload: same signed-in user, consent stored

@@ -113,6 +113,13 @@
 
     // ---- collect.html ------------------------------------------------------------------------
     'title.collect': { ky: 'Кол жазма чогултуу', ru: 'Сбор почерка', en: 'Handwriting collection' },
+    'dev.question': { ky: 'Эмне менен жазасыз?', ru: 'Чем вы будете писать?', en: 'What will you write with?' },
+    'dev.required': { ky: '(милдеттүү; кийин өзгөртсө болот)', ru: '(обязательно; можно изменить позже)', en: '(required; can be changed later)' },
+    'dev.short': { ky: 'Жазуу куралы:', ru: 'Пишу:', en: 'Writing with:' },
+    'dev.finger': { ky: 'Манжа', ru: 'Палец', en: 'Finger' },
+    'dev.mouse': { ky: 'Чычкан', ru: 'Мышь', en: 'Mouse' },
+    'dev.touchpad': { ky: 'Тачпад (сенсордук панель)', ru: 'Тачпад', en: 'Touchpad' },
+    'dev.stylus': { ky: 'Стилус', ru: 'Стилус', en: 'Stylus' },
     'col.right': { ky: 'оң', ru: 'правая', en: 'right' },
     'col.left': { ky: 'сол', ru: 'левая', en: 'left' },
     'col.kyrgyz': { ky: 'кыргыз тили', ru: 'кыргызский', en: 'Kyrgyz' },

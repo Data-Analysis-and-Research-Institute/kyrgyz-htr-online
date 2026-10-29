@@ -27,6 +27,9 @@ needs no sign-in). Sign-in and consent are asked **once**: returning users go st
   Without a Firebase config it runs in **demo mode** (local JSON download, nothing uploaded).
   On **phones** (touch screen, short side < 600 px) only words of up to 6 letters are suggested (327 of the 622
   prompts); such samples carry `short_only: true`.
+  The consent form asks (required) **what the contributor writes with: finger, mouse, touchpad or stylus**. It can be
+  changed during the session; every sample stores `input_device` (next to the browser-detected `pointer_type`, which
+  cannot tell a touchpad from a mouse) and `export_firebase.py` writes it to `labels.csv`.
 * **`admin.html` — Ranking (admin only).** Contributors ranked by accepted samples (also samples, rejected,
   awaiting votes, acceptance rate, distinct words, last active) and validators ranked by votes (also agreement
   with the final decisions, corrections); summary tiles, period filter (all / 30 / 7 days / 24 h), sortable

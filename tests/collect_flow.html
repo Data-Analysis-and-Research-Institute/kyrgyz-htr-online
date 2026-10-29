@@ -9,7 +9,9 @@ document.getElementById('f').onload = async () => {
     const w = document.getElementById('f').contentWindow, d = w.document, $ = (id) => d.getElementById(id);
     await sleep(500);
     $('c-age').click(); $('c-agree').click();
-    log('start enabled after consent: ' + !$('start').disabled);
+    log('start enabled before choosing a device: ' + !$('start').disabled);
+    d.querySelector('input[name="device"][value="stylus"]').click();
+    log('start enabled after consent + device: ' + !$('start').disabled);
     $('start').click();
     await sleep(1500);
     log('session visible: ' + !$('session').hidden + ' | prompt: ' + $('prompt').textContent + ' | ' + $('brush-info').textContent + ' | writer: ' + $('writer').textContent);
@@ -28,6 +30,7 @@ document.getElementById('f').onload = async () => {
       await sleep(4000);
       log(`submit ${k + 1}: feedback="${$('feedback').textContent}" | count="${$('count').textContent}" | next prompt: ${$('prompt').textContent} (was ${prompt1}) | download visible: ${!$('download').hidden}`);
     }
+    log('session device: ' + $('s-device').value + ' | consent device: ' + JSON.parse(w.localStorage.getItem('khtr_consent')).input_device);
     log('localStorage done-count entries: ' + Object.keys(JSON.parse(w.localStorage.getItem('khtr_done') || '{}')).length);
     log('DONE');
   } catch (e) { log('ERROR ' + (e.stack || e)); }

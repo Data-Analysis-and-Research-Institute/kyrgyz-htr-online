@@ -88,6 +88,10 @@
       <span data-lang="ky">Кол жазмамдын жогоруда жазылгандай чогултулушуна жана жарыяланышына макулмун.</span>
       <span data-lang="ru">Я согласен(на) на сбор и публикацию моего почерка, как описано выше.</span>
       <span data-lang="en">I agree that my handwriting is collected and released as described above.</span></label>
+    <fieldset class="device" id="q-device">
+      <legend><span data-i18n="dev.question"></span> <span class="muted" data-i18n="dev.required"></span></legend>
+      <label class="chip"><input type="radio" name="device" value="finger"> <span data-i18n="dev.finger"></span></label><label class="chip"><input type="radio" name="device" value="mouse"> <span data-i18n="dev.mouse"></span></label><label class="chip"><input type="radio" name="device" value="touchpad"> <span data-i18n="dev.touchpad"></span></label><label class="chip"><input type="radio" name="device" value="stylus"> <span data-i18n="dev.stylus"></span></label>
+    </fieldset>
     <div class="row">
       <label><span data-lang="ky">Жаш курагы</span><span data-lang="ru">Возраст</span><span data-lang="en">Age range</span>
         <select id="q-age"><option value="">—</option><option>16-17</option><option>18-24</option><option>25-34</option><option>35-49</option><option>50+</option></select></label>
@@ -111,6 +115,8 @@
     <canvas id="draw" class="draw" aria-label="Writing area"></canvas>
     <div class="row">
       <span class="muted" id="brush-info"></span>
+      <label class="muted"><span data-i18n="dev.short"></span>
+        <select id="s-device"><option value="finger" data-i18n="dev.finger"></option><option value="mouse" data-i18n="dev.mouse"></option><option value="touchpad" data-i18n="dev.touchpad"></option><option value="stylus" data-i18n="dev.stylus"></option></select></label>
       <span class="spacer"></span>
       <button id="undo">↶</button>
       <button id="clear"><span data-lang="ky">Тазалоо</span><span data-lang="ru">Очистить</span><span data-lang="en">Clear</span></button>

@@ -87,7 +87,8 @@ def main():
                          text_changed=s.get('text_changed', False), writer_id=s.get('writer_id', ''),
                          session_id=s.get('session_id', ''), category=s.get('category', ''),
                          brush=brush.get('preset', ''), brush_color=brush.get('color', ''),
-                         pointer=s.get('pointer_type', ''), model_reading=s.get('model_reading') or '',
+                         pointer=s.get('pointer_type', ''), input_device=s.get('input_device', ''),
+                         model_reading=s.get('model_reading') or '',
                          model_prob=s.get('model_prob') or '', width=s.get('image_w', ''), height=s.get('image_h', ''),
                          created_at=created.isoformat() if hasattr(created, 'isoformat') else str(created or '')))
     # merge validator reviews (reviews/{submission}_{validator}) into a final status and label
