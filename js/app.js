@@ -6,13 +6,17 @@
   let ready = false, busy = false, pending = null;
   let last = null;            // {imageData, expected} of the last recognition (re-run when the switch changes)
 
-  const status = (t) => { $('status').textContent = t; };
+  const t = KHTR.t;
+  let statusMsg = ['st.loading'];   // [key, ...args]: redrawn when the language changes
+  const status = (key, ...a) => { statusMsg = [key, ...a]; $('status').textContent = t(key, ...a); };
+  let shown = null;                 // last result shown, redrawn when the language changes
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } },
   };
 
   function show(r, expected) {
+    shown = [r, expected];
     $('expected').textContent = '';
     if (!r || !r.results.length) { $('result').textContent = '—'; $('alts').innerHTML = ''; return; }
     const [best, ...rest] = r.results;
@@ -20,29 +24,29 @@
     $('result').textContent = text;
     if (expected) {
       const ok = text === expected.toLowerCase();
-      $('expected').innerHTML = `Expected: <b>${expected}</b> <span class="${ok ? 'ok' : 'bad'}">${ok ? '✓' : '✗'}</span>`;
+      $('expected').innerHTML = `${t('idx.expected')} <b>${expected}</b> <span class="${ok ? 'ok' : 'bad'}">${ok ? '✓' : '✗'}</span>`;
     }
     $('alts').innerHTML = '';
     for (const a of rest.slice(0, 5)) {
       const li = document.createElement('li');
-      li.textContent = `${a.text.toLowerCase()} · ${(a.prob * 100).toFixed(0)}%`;
+      li.textContent = t('alts', a.text.toLowerCase(), (a.prob * 100).toFixed(0));
       $('alts').appendChild(li);
     }
-    status(`Best guess ${(best.prob * 100).toFixed(0)}% · ` + (r.usedLexicon ? 'with word-list correction'
-      : $('use-lexicon').checked ? 'model only (word list still loading)' : 'model only, no word list'));
+    status('idx.best', (best.prob * 100).toFixed(0));
+    $('status').textContent += ' · ' + t(r.usedLexicon ? 'idx.withLex' : $('use-lexicon').checked ? 'idx.lexLoading' : 'idx.noLex');
     KHTR.drawPreview($('preview'), r.preview);
     $('timing').textContent = `${r.ms} ms`;
   }
 
   async function run(imageData, expected = null) {
     last = { imageData, expected };
-    if (!ready) { pending = last; status('Loading model…'); return; }
+    if (!ready) { pending = last; status('st.loadingModel'); return; }
     if (busy) { pending = last; return; }
     busy = true;
     try {
       const r = await rec.recognize(imageData, $('use-lexicon').checked);
-      if (!r) { status('No ink found — write or crop a word.'); show(null); } else show(r, expected);
-    } catch (e) { status('Error: ' + e.message); console.error(e); }
+      if (!r) { status('idx.noInk'); show(null); } else show(r, expected);
+    } catch (e) { status('st.error', e.message); console.error(e); }
     busy = false;
     if (pending) { const p = pending; pending = null; run(p.imageData, p.expected); }
   }
@@ -50,9 +54,7 @@
   // ---- word-list switch -----------------------------------------------------------------------
   function updateMode() {
     const on = $('use-lexicon').checked;
-    $('mode-note').textContent = on
-      ? 'candidates are re-scored with a 100k-word Kyrgyz corpus'
-      : "the model's own reading: no letter substitution, no corpus words";
+    $('mode-note').textContent = t(on ? 'idx.modeOn' : 'idx.modeOff');
     store.set('khtr_use_lexicon', on);
   }
   $('use-lexicon').checked = store.get('khtr_use_lexicon', true);
@@ -146,14 +148,23 @@
       };
       $('examples').appendChild(b);
     }
-  }).catch(() => { $('examples').textContent = 'Examples could not be loaded.'; });
+  }).catch(() => { $('examples').textContent = t('idx.examplesFail'); });
 
   // ---- load model -----------------------------------------------------------------------------
-  rec.load(status).then(() => {
+  let acc = [88, '4.3'];
+  const showAcc = () => { $('acc').textContent = t('idx.acc', ...acc); };
+  showAcc();
+  rec.load((key) => { if (!shown) status(key); }).then(() => {
     ready = true;
     if (pending) { const p = pending; pending = null; run(p.imageData, p.expected); }
     fetch('model/decoder_config.json').then((r) => r.json()).then((c) => {
-      if (c.test) $('acc').textContent = `≈ ${c.test.word_acc.toFixed(0)} % of words, ${c.test.cer.toFixed(1)} % character error`;
+      if (c.test) { acc = [c.test.word_acc.toFixed(0), c.test.cer.toFixed(1)]; showAcc(); }
     });
-  }).catch((e) => status('Could not load the model: ' + e.message));
+  }).catch((e) => status('st.modelFail', e.message));
+
+  // ---- interface language ---------------------------------------------------------------------
+  window.addEventListener('khtr:lang', () => {
+    updateMode(); showAcc();
+    if (shown && shown[0]) show(...shown); else status(...statusMsg);
+  });
 })();

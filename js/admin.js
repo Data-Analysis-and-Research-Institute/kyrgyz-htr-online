@@ -7,6 +7,7 @@ import { decide, agreed } from './votes.js';
 
 const $ = (id) => document.getElementById(id);
 const DAY = 86400e3;
+const t = (...a) => window.KHTR.t(...a);
 const FIELDS = ['writer_id', 'created_at', 'text', 'prompt_id'];
 let data = null;               // {submissions, reviews, profiles}
 let tables = {};               // name -> {cols, rows, sort, desc}
@@ -30,7 +31,7 @@ async function fetchSubmissions(user) {
       out.push({ id: d.name.split('/').pop(), writer_id: v('writer_id'), text: v('text') || '',
         prompt_id: v('prompt_id'), created_at: Date.parse(v('created_at')) || 0 });
     }
-    $('loaded').textContent = `Loading samples… ${out.length}`;
+    $('loaded').textContent = t('adm.loadingN', out.length);
     if (docs.length < 5000) break;
     last = docs[docs.length - 1].name;
   }
@@ -39,18 +40,17 @@ async function fetchSubmissions(user) {
 
 async function load() {
   const f = await signIn();
-  if (!f) { $('auth-info').textContent = 'No Firebase project configured.'; return; }
+  if (!f) { $('auth-info').textContent = t('val.noConfig'); return; }
   const email = f.user.email;
   let admin = false;
   try { admin = (await f.fs.getDoc(f.fs.doc(f.db, 'admins', email))).exists(); } catch { admin = false; }
   if (!admin) {
-    $('auth-info').innerHTML = `Signed in as <b>${esc(email)}</b>, which is not an admin. An existing admin adds `
-      + `a document with this e-mail as its ID to the Firestore collection <code>admins</code>.`;
+    $('auth-info').innerHTML = t('adm.notAdmin', esc(email));
     return;
   }
   $('start').hidden = true;
   $('dash').hidden = false;
-  $('who').textContent = `Signed in as ${email}`;
+  $('who').textContent = t('adm.who', email);
   const ms = (t) => (t && t.toMillis ? t.toMillis() : 0);
   const [submissions, revSnap, profSnap] = await Promise.all([fetchSubmissions(f.user),
     f.fs.getDocs(f.fs.collection(f.db, 'reviews')), f.fs.getDocs(f.fs.collection(f.db, 'profiles'))]);
@@ -107,14 +107,14 @@ export function rankings(d, since = 0) {
 // ---- rendering --------------------------------------------------------------------------------
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const pct = (x) => (x == null ? '—' : `${Math.round(x * 100)} %`);
-const date = (t) => (t ? new Date(t).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' }) : '—');
+const date = (t) => (t ? new Date(t).toLocaleString(window.KHTR.lang(), { dateStyle: 'short', timeStyle: 'short' }) : '—');
 
 const COLS = {
-  contributors: [['name', 'Name'], ['email', 'E-mail'], ['accepted', 'Accepted'], ['samples', 'Samples'],
-    ['rejected', 'Rejected'], ['open', 'Awaiting votes'], ['excluded_pii', 'PII'], ['acceptance', 'Acceptance', pct],
-    ['words', 'Distinct words'], ['last', 'Last active', date]],
-  validators: [['name', 'Name'], ['email', 'E-mail'], ['votes', 'Votes'], ['decided', 'On decided samples'],
-    ['agreement', 'Agreement', pct], ['corrections', 'Corrections'], ['last', 'Last vote', date]],
+  contributors: [['name', 'c.name'], ['email', 'c.email'], ['accepted', 'c.accepted'], ['samples', 'c.samples'],
+    ['rejected', 'c.rejected'], ['open', 'c.open'], ['excluded_pii', 'c.pii'], ['acceptance', 'c.acceptance', pct],
+    ['words', 'c.words'], ['last', 'c.last', date]],
+  validators: [['name', 'c.name'], ['email', 'c.email'], ['votes', 'c.votes'], ['decided', 'c.decided'],
+    ['agreement', 'c.agreement', pct], ['corrections', 'c.corrections'], ['last', 'c.lastVote', date]],
 };
 const DEFAULT_SORT = { contributors: ['accepted', 'samples'], validators: ['votes', 'agreement'] };
 
@@ -122,13 +122,13 @@ export function render(d) {
   data = d;
   const days = +$('period').value;
   const R = rankings(d, days ? Date.now() - days * DAY : 0);
-  const t = R.totals;
-  $('tiles').innerHTML = [['Samples', t.samples], ['Contributors', t.contributors], ['Votes', t.votes],
-    ['Validators', t.validators], ['Accepted', t.accepted], ['Rejected', t.rejected], ['Awaiting votes', t.open],
-    ['Excluded (PII)', t.excluded_pii]]
-    .map(([k, v]) => `<div class="tile"><div class="tile-v">${v.toLocaleString()}</div><div class="muted">${k}</div></div>`).join('');
-  $('loaded').textContent = `${d.submissions.length} samples, ${d.reviews.length} votes, `
-    + `${Object.keys(d.profiles).length} profiles loaded · ${new Date().toLocaleString()}`;
+  const n = R.totals;
+  $('tiles').innerHTML = [['c.samples', n.samples], ['c.contributors', n.contributors], ['c.votes', n.votes],
+    ['c.validators', n.validators], ['c.accepted', n.accepted], ['c.rejected', n.rejected], ['c.open', n.open],
+    ['c.excluded', n.excluded_pii]]
+    .map(([k, v]) => `<div class="tile"><div class="tile-v">${v.toLocaleString()}</div><div class="muted">${t(k)}</div></div>`).join('');
+  $('loaded').textContent = t('adm.loaded', d.submissions.length, d.reviews.length, Object.keys(d.profiles).length,
+    new Date().toLocaleString());
   for (const name of ['contributors', 'validators']) {
     const prev = tables[name];
     tables[name] = { cols: COLS[name], rows: R[name], sort: prev ? prev.sort : DEFAULT_SORT[name][0], desc: prev ? prev.desc : true };
@@ -149,11 +149,11 @@ function sorted(name) {
 function drawTable(name) {
   const T = tables[name], rows = sorted(name);
   const head = '<tr><th>#</th>' + T.cols.map(([k, label]) =>
-    `<th data-k="${k}" class="${k === T.sort ? (T.desc ? 'desc' : 'asc') : ''}">${label}</th>`).join('') + '</tr>';
+    `<th data-k="${k}" class="${k === T.sort ? (T.desc ? 'desc' : 'asc') : ''}">${t(label)}</th>`).join('') + '</tr>';
   const body = rows.map((r, i) => `<tr><td>${i + 1}</td>` + T.cols.map(([k, , fmt]) =>
     `<td>${esc(fmt ? fmt(r[k]) : r[k])}</td>`).join('') + '</tr>').join('');
   const el = $('t-' + name);
-  el.innerHTML = `<thead>${head}</thead><tbody>${body || `<tr><td colspan="${T.cols.length + 1}" class="muted">No data for this period.</td></tr>`}</tbody>`;
+  el.innerHTML = `<thead>${head}</thead><tbody>${body || `<tr><td colspan="${T.cols.length + 1}" class="muted">${t('adm.noData')}</td></tr>`}</tbody>`;
   el.querySelectorAll('th[data-k]').forEach((th) => {
     th.onclick = () => { const k = th.dataset.k; T.desc = T.sort === k ? !T.desc : true; T.sort = k; drawTable(name); };
   });
@@ -173,6 +173,7 @@ function csv(name) {
 $('signin').onclick = () => load().catch((e) => { $('auth-info').textContent = 'Error: ' + e.message; console.error(e); });
 $('reload').onclick = () => load().catch((e) => { $('loaded').textContent = 'Error: ' + e.message; });
 $('period').onchange = () => data && render(data);
+window.addEventListener('khtr:lang', () => { if (data) render(data); });
 document.querySelectorAll('[data-csv]').forEach((b) => { b.onclick = () => csv(b.dataset.csv); });
 loadFirebase().catch(() => {});
 window.KHTR_ADMIN = { render, rankings, show: () => { $('start').hidden = true; $('dash').hidden = false; } };   // test hook

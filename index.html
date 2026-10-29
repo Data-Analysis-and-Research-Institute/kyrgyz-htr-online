@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ky">
+<html lang="ky" data-title="title.index">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,69 +9,64 @@
 <body>
 <header>
   <div class="wrap">
-    <h1>Кыргызча кол жазма таануу · Kyrgyz handwriting recognition</h1>
-    <nav><a href="index.html" class="active">Таануу / Recognize</a><a href="page.html">Барак / Page</a><a href="collect.html">Маалымат берүү / Contribute</a><a href="validate.html">Текшерүү / Validate</a></nav>
+    <h1 data-i18n="title.index">Кыргызча кол жазма таануу</h1>
+    <nav><a href="index.html" class="active" data-i18n="nav.recognize">Таануу</a><a href="page.html" data-i18n="nav.page">Барак</a><a href="collect.html" data-i18n="nav.contribute">Маалымат берүү</a><a href="validate.html" data-i18n="nav.validate">Текшерүү</a></nav>
   </div>
 </header>
 <main>
   <div class="card">
     <div class="tabs">
-      <button id="tab-draw" class="selected">✍️ Жазуу / Draw</button>
-      <button id="tab-photo">📷 Сүрөт / Photo</button>
+      <button id="tab-draw" class="selected" data-i18n="tab.draw">✍️ Жазуу</button>
+      <button id="tab-photo" data-i18n="tab.photo">📷 Сүрөт</button>
     </div>
 
     <section id="pane-draw">
       <canvas id="draw" class="draw" aria-label="Writing area"></canvas>
       <div class="row">
-        <span class="muted">Brush:</span>
-        <button data-preset="pen" class="selected">Pen</button>
-        <button data-preset="brush">Brush</button>
-        <button data-preset="ink">Ink</button>
+        <span class="muted" data-i18n="brush">Калем:</span>
+        <button data-preset="pen" class="selected" data-i18n="brush.pen">Калем</button>
+        <button data-preset="brush" data-i18n="brush.brush">Кисть</button>
+        <button data-preset="ink" data-i18n="brush.ink">Сыя</button>
         <span class="spacer"></span>
-        <button id="undo">↶ Undo</button>
-        <button id="clear">Тазалоо / Clear</button>
+        <button id="undo" data-i18n="undo">↶ Артка</button>
+        <button id="clear" data-i18n="clear">Тазалоо</button>
       </div>
-      <p class="muted">Write one Kyrgyz word. Recognition runs automatically after you lift the pen.</p>
+      <p class="muted" data-i18n="idx.drawHint"></p>
     </section>
 
     <section id="pane-photo" hidden>
       <input type="file" id="file" accept="image/*" capture="environment">
-      <p class="muted">Photograph one handwritten word. Drag on the image to crop to the word (optional).</p>
+      <p class="muted" data-i18n="idx.photoHint"></p>
       <canvas id="photo" class="photo" hidden></canvas>
-      <div class="row"><button id="recognize-photo" class="primary" disabled>Таануу / Recognize</button></div>
+      <div class="row"><button id="recognize-photo" class="primary" disabled data-i18n="recognize">Таануу</button></div>
     </section>
   </div>
 
   <div class="card">
-    <div class="row" style="margin-top:0"><b>Мисалдар / Examples</b><span class="muted">— click a photo to recognise it</span></div>
+    <div class="row" style="margin-top:0"><b data-i18n="idx.examples">Мисалдар</b><span class="muted" data-i18n="idx.examplesHint"></span></div>
     <div class="examples" id="examples"></div>
   </div>
 
   <div class="card">
     <div class="row" style="margin-top:0">
-      <label class="switch"><input type="checkbox" id="use-lexicon" checked>
-        Сөздүк менен оңдоо / Word-list correction</label>
-      <span class="muted" id="mode-note">candidates are re-scored with a 100k-word Kyrgyz corpus</span>
+      <label class="switch"><input type="checkbox" id="use-lexicon" checked> <span data-i18n="lexicon">Сөздүк менен оңдоо</span></label>
+      <span class="muted" id="mode-note"></span>
     </div>
-    <div class="muted" id="status">Loading…</div>
+    <div class="muted" id="status"></div>
     <div class="result" id="result"></div>
     <div class="muted" id="expected"></div>
     <ul class="alts" id="alts"></ul>
-    <div class="row"><span class="muted">Model input:</span><canvas id="preview" class="preview"></canvas><span class="muted" id="timing"></span></div>
+    <div class="row"><span class="muted" data-i18n="idx.modelInput">Моделдин кириши:</span><canvas id="preview" class="preview"></canvas><span class="muted" id="timing"></span></div>
   </div>
 
   <div class="card muted">
-    <b>About.</b> A CNN-BiLSTM CTC recogniser trained on the Kyrgyz Handwritten Words dataset (v1.1) runs
-    entirely in your browser (onnxruntime-web); a 100k-word Kyrgyz word list re-scores its candidates.
-    Expected accuracy on the dataset's test split: <span id="acc">≈ 88 % of words, 4.3 % character error</span>.
-    Nothing you write or upload here leaves your device.
+    <span data-i18n-html="idx.about"></span>
+    <span data-i18n="idx.accLabel"></span> <span id="acc"></span>.
   </div>
 </main>
-<footer>
-  Dataset: Burul Shambetova (ORCID 0009-0001-5149-3744) and students. Corpus: Leipzig Corpora Collection,
-  Manas-UdS Kyrgyz Corpus, Kyrgyz News Corpus.
-</footer>
+<footer data-i18n="idx.footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js"></script>
 <script src="js/preprocess.js"></script>
 <script src="js/decoder.js"></script>

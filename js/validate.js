@@ -9,6 +9,7 @@ const $ = (id) => document.getElementById(id);
 const VERDICTS = ['correct', 'wrong_label', 'illegible', 'not_kyrgyz', 'personal_info'];
 const APP_VERSION = 'validate-1.1';
 const PAGE = 200, MIN_QUEUE = 30;
+const t = (...a) => window.KHTR.t(...a);
 
 let fb = null;          // {db, uid, fs, user}
 let queue = [];         // samples to review
@@ -24,12 +25,12 @@ const OPEN = { pending: 0, disputed: 1, unreviewed: 2 };   // still needs votes;
 
 // ---- Firebase --------------------------------------------------------------------------------
 async function signIn() {
-  if (!window.FIREBASE_CONFIG) { $('auth-info').textContent = 'No Firebase project configured.'; return; }
+  if (!window.FIREBASE_CONFIG) { $('auth-info').textContent = t('val.noConfig'); return; }
   fb = await fbSignIn();
   $('src').textContent = fb.user.email;
   $('start').hidden = true;
   $('review').hidden = false;
-  $('status').textContent = 'Loading samples…';
+  $('status').textContent = t('val.loading');
   await loadVotes();
   await fillQueue();
   show();
@@ -85,14 +86,12 @@ function sortQueue(items) {
 function show() {
   $('fix-row').hidden = true;
   const s = queue[pos];
-  $('progress').textContent = `${done} reviewed · ${Math.max(0, queue.length - pos)}${exhausted ? '' : '+'} in queue`;
+  $('progress').textContent = t('val.progress', done, `${Math.max(0, queue.length - pos)}${exhausted ? '' : '+'}`);
   $('empty').hidden = !!s;
   $('sample').hidden = !s;
   if (!s) {
     $('status').textContent = '';
-    $('empty-info').textContent = `Nothing left for you to validate. Of ${skipped.scanned} samples, ${skipped.own} are your `
-      + `own (nobody validates their own writing), ${skipped.voted} already have your vote and ${skipped.decided} are `
-      + 'already decided by two agreeing votes. Samples written by other people will appear here.';
+    $('empty-info').textContent = t('val.emptyInfo', skipped.scanned, skipped.own, skipped.voted, skipped.decided);
     return;
   }
   $('img').src = s.png;
@@ -100,12 +99,11 @@ function show() {
   $('m-text').textContent = s.text || '';
   const m = s.model_reading;
   $('m-model').innerHTML = m == null ? '<span class="muted">—</span>'
-    : `${m.toLowerCase()} <span class="${disagree(s) ? 'bad' : 'ok'}">${disagree(s) ? '≠ label' : '= label'}</span>`;
+    : `${m.toLowerCase()} <span class="${disagree(s) ? 'bad' : 'ok'}">${t(disagree(s) ? 'val.neq' : 'val.eq')}</span>`;
   const b = s.brush || {};
   $('m-brush').textContent = [b.preset, s.pointer_type].filter(Boolean).join(' / ');
   const n = (votes.get(s.id) || []).length;   // others' verdicts are not shown, so votes stay independent
-  $('m-votes').textContent = n ? `${n} other vote${n > 1 ? 's' : ''} so far (at least 2 agreeing needed)`
-    : 'first vote (at least 2 agreeing needed)';
+  $('m-votes').textContent = n ? t('val.votesN', n) : t('val.votes0');
   $('fix').value = s.text || '';
   $('status').textContent = '';
   replay();
@@ -147,18 +145,19 @@ async function verdict(v) {
   if (!s) return;
   if (v === 'wrong_label' && $('fix-row').hidden) { $('fix-row').hidden = false; $('fix').focus(); $('fix').select(); return; }
   const corrected = v === 'wrong_label' ? $('fix').value.trim() : '';
-  if (v === 'wrong_label' && !corrected) { $('status').textContent = 'Enter the correct text.'; return; }
+  if (v === 'wrong_label' && !corrected) { $('status').textContent = t('val.enterText'); return; }
   try {
     await saveReview(s, v, corrected);
     done++;
     pos++;
     if (!exhausted && queue.length - pos < 5) await fillQueue();
     show();
-  } catch (e) { $('status').textContent = 'Could not save: ' + e.message; }
+  } catch (e) { $('status').textContent = t('val.saveFail', e.message); }
 }
 
 // ---- wire up ----------------------------------------------------------------------------------
-const fail = (e) => { console.error(e); $('start').hidden = false; $('review').hidden = true; $('auth-info').textContent = 'Sign-in failed: ' + e.message; };
+const fail = (e) => { console.error(e); $('start').hidden = false; $('review').hidden = true; $('auth-info').textContent = t('val.signinFail', e.message); };
+window.addEventListener('khtr:lang', () => { if (!$('review').hidden) { const keep = $('fix').value; show(); $('fix').value = keep; } });
 $('signin').onclick = () => signIn().catch(fail);
 $('signout').onclick = async () => { await signOut(); location.reload(); };
 document.querySelectorAll('[data-v]').forEach((b) => { b.onclick = () => verdict(b.dataset.v); });

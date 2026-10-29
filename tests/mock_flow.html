@@ -11,12 +11,12 @@ const MAP = { imports: { [V + 'firebase-app.js']: '/tests/mock/firebase-app.js',
   [V + 'firebase-auth.js']: '/tests/mock/firebase-auth.js', [V + 'firebase-firestore.js']: '/tests/mock/firebase-firestore.js' } };
 const U = { uid: 'U', email: 'u@example.org', displayName: 'User U', isAnonymous: false };
 
-async function open(page, mock) {
+async function open(page, mock, extra = '') {
   localStorage.clear();
   window.MOCK = mock;
   const html = await (await fetch('/' + page)).text();
   const inject = `<base href="${location.origin}/"><script>window.__MOCK = parent.MOCK;<\/script>`
-    + `<script type="importmap">${JSON.stringify(MAP)}<\/script>`;
+    + `<script type="importmap">${JSON.stringify(MAP)}<\/script>` + extra;
   const f = document.getElementById('f');
   await new Promise((r) => { f.onload = r; f.srcdoc = html.replace('<head>', '<head>' + inject); });
   await sleep(1500);
@@ -45,6 +45,18 @@ const vis = (w, id) => !w.document.getElementById(id).hidden;
     log(`  after agreeing: session=${vis(w, 'session')} popups=${MOCK.popups}`);
     w = await open('collect.html', Object.assign(MOCK, { popups: 0 }));   // reload: same signed-in user, consent stored
     log(`  reload: session=${vis(w, 'session')} consent=${vis(w, 'consent')} popups=${MOCK.popups}`);
+
+    // phone: touch screen 390 x 844 -> only words of <= 6 letters
+    const PHONE = `<script>window.matchMedia = (q) => ({ matches: q.includes('coarse'), addEventListener() {}, removeEventListener() {} });`
+      + `Object.defineProperty(screen, 'width', { value: 390 }); Object.defineProperty(screen, 'height', { value: 844 });<\/script>`;
+    w = await open('collect.html', { user: U, popupUser: U, db: { consents: { U: consent } } }, PHONE);
+    const seenTexts = [];
+    for (let i = 0; i < 40; i++) { seenTexts.push(w.document.getElementById('prompt').textContent); w.document.getElementById('skip').click(); }
+    log(`collect on a phone: note shown=${vis(w, 'short-note')} | 40 prompts, longest ${Math.max(...seenTexts.map((x) => [...x].length))} letters: ${seenTexts.slice(0, 8).join(', ')}…`);
+    w = await open('collect.html', { user: U, popupUser: U, db: { consents: { U: consent } } });
+    const desk = [];
+    for (let i = 0; i < 40; i++) { desk.push(w.document.getElementById('prompt').textContent); w.document.getElementById('skip').click(); }
+    log(`collect on a desktop: note shown=${vis(w, 'short-note')} | longest of 40 prompts: ${Math.max(...desk.map((x) => [...x].length))} letters`);
 
     // validation: 230 newest samples are U's own, then 10 already voted by U, 5 decided, 15 open (5 with one vote)
     const subs = {}, reviews = {};

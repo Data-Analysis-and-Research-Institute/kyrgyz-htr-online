@@ -6,6 +6,9 @@ import { signIn, signOut, currentUser, loadFirebase } from './fb.js';
 const S = window.COLLECTION_SETTINGS;
 const $ = (id) => document.getElementById(id);
 const PRIORITY_WEIGHT = { 1: 3, 2: 2, 3: 1 };
+// phones (touch screen, short side < 600 px): only short words fit the writing area comfortably
+const SHORT_ONLY = matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) < 600;
+const SHORT_MAX = 6;   // letters
 const APP_VERSION = 'collect-1.1';
 
 let fb = null;            // {db, uid, fs, user} when Firebase is configured (Google sign-in)
@@ -44,7 +47,8 @@ const store = {
 
 function pickPrompt() {
   const done = store.get('khtr_done', {});
-  const pool = prompts.filter((p) => (done[p.prompt_id] || 0) < p.max_per_writer && !seen.has(p.prompt_id));
+  const pool = prompts.filter((p) => (done[p.prompt_id] || 0) < p.max_per_writer && !seen.has(p.prompt_id)
+    && (!SHORT_ONLY || [...p.text].length <= SHORT_MAX));
   if (!pool.length) return null;
   let tot = 0;
   for (const p of pool) tot += PRIORITY_WEIGHT[p.priority] || 1;
@@ -62,7 +66,7 @@ function nextPrompt() {
   current = pickPrompt();
   ink.clear();
   if (!current) {
-    $('prompt').textContent = 'Бүттү! · Готово! · All done — thank you.';
+    $('prompt').textContent = window.KHTR.t('col.allDone');
     $('submit').disabled = $('skip').disabled = true;
     return;
   }
@@ -93,7 +97,7 @@ async function submit() {
   const docData = {
     writer_id: writerId, session_id: sessionId, prompt_id: current.prompt_id, prompt_text: current.text,
     text, text_changed: text !== current.text, category: current.category, priority: current.priority,
-    brush: style, pointer_type: pointer, png, strokes, model_reading: reading, model_prob: prob,
+    brush: style, pointer_type: pointer, short_only: SHORT_ONLY, png, strokes, model_reading: reading, model_prob: prob,
     image_w: crop.width, image_h: crop.height, consent_version: S.consentVersion, app_version: APP_VERSION,
   };
   if (png.length > 900000 || strokes.length > 400000) {
@@ -154,6 +158,7 @@ async function start() {
 function openSession() {
   $('writer').textContent = fb ? fb.user.email : writerId.slice(0, 16);
   $('signout').hidden = !fb;
+  $('short-note').hidden = !SHORT_ONLY;
   $('consent').hidden = true;
   $('session').hidden = false;
   ink.resize();
@@ -189,17 +194,8 @@ document.querySelectorAll('.js-licence').forEach((e) => { e.textContent = S.lice
 document.querySelectorAll('.js-contact').forEach((e) => {
   const a = document.createElement('a'); a.href = 'mailto:' + S.contactEmail; a.textContent = S.contactEmail; e.replaceChildren(a);
 });
-// language switch: Kyrgyz (default), Russian, English; remembered per browser
-function setLang(l) {
-  document.documentElement.dataset.ui = l;
-  document.documentElement.lang = l;
-  document.querySelectorAll('[data-set-lang]').forEach((b) => b.classList.toggle('selected', b.dataset.setLang === l));
-  store.set('khtr_lang', l);
-}
-document.querySelectorAll('[data-set-lang]').forEach((b) => { b.onclick = () => setLang(b.dataset.setLang); });
-const urlLang = new URLSearchParams(location.search).get('lang');   // e.g. collect.html?lang=ru
-setLang(['ky', 'ru', 'en'].includes(urlLang) ? urlLang
-  : store.get('khtr_lang', (navigator.language || '').toLowerCase().startsWith('ru') ? 'ru' : 'ky'));
+// interface language: js/i18n.js (operating-system language by default, dropdown in the header)
+window.addEventListener('khtr:lang', () => { if (submitted) $('count').textContent = T('count', submitted); });
 $('demo-banner').hidden = !!window.FIREBASE_CONFIG;
 loadFirebase().catch(() => {});   // preload the SDK so the sign-in popup opens directly from the click
 $('c-age').onchange = updateStart;

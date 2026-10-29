@@ -9,7 +9,7 @@
 
     async load(onStatus = () => {}) {
       ort.env.wasm.wasmPaths = `https://cdn.jsdelivr.net/npm/onnxruntime-web@${ORT_VERSION}/dist/`;
-      onStatus('Loading model…');
+      onStatus('st.loadingModel');      // status keys, translated by the page (js/i18n.js)
       const [charset, cfg] = await Promise.all([
         fetch(this.base + 'charset.json').then((r) => r.json()),
         fetch(this.base + 'decoder_config.json').then((r) => r.json()),
@@ -17,11 +17,11 @@
       this.chars = charset.chars;
       this.cfg = cfg;
       this.session = await ort.InferenceSession.create(this.base + 'kyrgyz_ctc_lstm.onnx', { executionProviders: ['wasm'] });
-      onStatus('Loading word list…');
+      onStatus('st.loadingLex');
       // the lexicon is optional: recognition works without it (greedy CTC), just less accurately
       this.lexPromise = fetch(this.base + 'lexicon.tsv').then((r) => r.text())
-        .then((t) => { this.lex = KHTR.parseLexicon(t); onStatus('Ready'); })
-        .catch(() => onStatus('Ready (no word list)'));
+        .then((t) => { this.lex = KHTR.parseLexicon(t); onStatus('st.ready'); })
+        .catch(() => onStatus('st.readyNoLex'));
       return this;
     }
 

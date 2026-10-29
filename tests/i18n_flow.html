@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body>
+<iframe id="f" style="width:1000px;height:900px"></iframe>
+<pre id="out">START</pre>
+<script>
+// Interface language: ?lang=, dropdown (remembered), OS default (run the browser with --lang=ru to check that).
+const log = (s) => { document.getElementById('out').textContent += '\n' + s; };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const f = document.getElementById('f');
+const load = (url) => new Promise((r) => { f.onload = async () => { await sleep(700); r(f.contentWindow); }; f.src = url; });
+const LATIN = /[A-Za-z]{4,}/;   // English words left in a ky/ru interface
+(async () => {
+  try {
+    localStorage.removeItem('khtr_ui_lang');
+    let w = await load('/index.html');
+    log(`OS default: navigator.languages=${JSON.stringify(navigator.languages)} -> ${w.document.documentElement.lang} | h1: ${w.document.querySelector('h1').textContent}`);
+    for (const page of ['index.html', 'page.html', 'collect.html', 'validate.html', 'admin.html']) {
+      for (const l of ['ky', 'ru', 'en']) {
+        w = await load(`/${page}?lang=${l}`);
+        const d = w.document;
+        const visible = [...d.querySelectorAll('h1, h2, nav a, button, label, p, td, th, footer, span, b, option')]
+          .filter((e) => e.offsetParent !== null || e.tagName === 'OPTION').map((e) => e.childElementCount ? '' : e.textContent.trim()).filter(Boolean);
+        const latin = l === 'en' ? [] : visible.filter((s) => LATIN.test(s.replace(/Google|Firebase|Firestore|Enter|ORCID|CNN-BiLSTM|CTC|onnxruntime-web|Leipzig Corpora Collection|Manas-UdS Kyrgyz Corpus|Kyrgyz News Corpus|admins|Kyrgyz HTR|source|English|CSV|PII/g, '')));
+        log(`${page} [${l}] title="${d.title}" h1="${d.querySelector('h1').textContent}" select=${d.getElementById('lang-select').value}`
+          + (latin.length ? ` | untranslated: ${JSON.stringify(latin.slice(0, 6))}` : ''));
+      }
+    }
+    w = await load('/validate.html?lang=en');
+    const sel = w.document.getElementById('lang-select');
+    sel.value = 'ru'; sel.dispatchEvent(new Event('change')); await sleep(100);
+    log(`dropdown -> ru: h1="${w.document.querySelector('h1').textContent}" button="${w.document.getElementById('signin').textContent}" stored=${localStorage.getItem('khtr_ui_lang')}`);
+    w = await load('/index.html');
+    log(`next page without ?lang: ${w.document.documentElement.lang} h1="${w.document.querySelector('h1').textContent}"`);
+    localStorage.removeItem('khtr_ui_lang');
+    log('DONE');
+  } catch (e) { log('ERROR ' + (e.stack || e)); }
+})();
+</script></body></html>

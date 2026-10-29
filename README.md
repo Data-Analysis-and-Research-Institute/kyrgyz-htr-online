@@ -1,5 +1,10 @@
 # Kyrgyz handwriting recognition — web app (GitHub Pages)
 
+**Interface language:** Kyrgyz, Russian or English, chosen automatically from the operating-system / browser
+language (Kyrgyz → Kyrgyz, Russian → Russian, anything else → English); a 🌐 dropdown in the header of every page
+switches it and is remembered; `?lang=ky|ru|en` in a link forces one. All texts are in `js/i18n.js` (Kyrgyz and
+Russian should be checked by native speakers; the consent text stays in `collect.html`, one block per language).
+
 A static website with five pages. **Everyone signs in with Google** to contribute or validate (recognition
 needs no sign-in). Sign-in and consent are asked **once**: returning users go straight to writing / validating
 (the consent record is checked in Firestore, so this also works on a new device; a new consent version asks again):
@@ -20,6 +25,8 @@ needs no sign-in). Sign-in and consent are asked **once**: returning users go st
   reading. Contributors sign in with Google when they accept the consent form; their name and e-mail are kept in
   a separate admin-only `profiles` collection and are never exported with the data.
   Without a Firebase config it runs in **demo mode** (local JSON download, nothing uploaded).
+  On **phones** (touch screen, short side < 600 px) only words of up to 6 letters are suggested (327 of the 622
+  prompts); such samples carry `short_only: true`.
 * **`admin.html` — Ranking (admin only).** Contributors ranked by accepted samples (also samples, rejected,
   awaiting votes, acceptance rate, distinct words, last active) and validators ranked by votes (also agreement
   with the final decisions, corrections); summary tiles, period filter (all / 30 / 7 days / 24 h), sortable
@@ -144,6 +151,7 @@ js/brush.js          canvas brush engine: pen, calligraphic brush (bold, sharp e
 js/app.js            recognition page;  js/collect.js  collection page (Firebase or demo mode)
 js/page.js           page segmentation (deskew, line paths, words);  js/page-app.js  page UI
 js/validate.js       validation page (Google sign-in);  js/admin.js  ranking dashboard
+js/i18n.js           interface language (texts in ky/ru/en, OS default, dropdown)
 js/fb.js             Google sign-in + private profile;  js/votes.js  votes -> decision (mirrors export_firebase.py)
 js/firebase-config.js  your Firebase config + collection settings
 model/               ONNX model, charset, decoder settings, lexicon

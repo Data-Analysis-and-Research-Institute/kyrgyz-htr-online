@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ky">
+<html lang="ky" data-title="title.validate">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,65 +9,64 @@
 <body>
 <header>
   <div class="wrap">
-    <h1>Текшерүү · Проверка · Validation</h1>
-    <nav><a href="index.html">Таануу / Recognize</a><a href="page.html">Барак / Page</a><a href="collect.html">Маалымат берүү / Contribute</a><a href="validate.html" class="active">Текшерүү / Validate</a></nav>
+    <h1 data-i18n="title.validate">Текшерүү</h1>
+    <nav><a href="index.html" data-i18n="nav.recognize">Таануу</a><a href="page.html" data-i18n="nav.page">Барак</a><a href="collect.html" data-i18n="nav.contribute">Маалымат берүү</a><a href="validate.html" class="active" data-i18n="nav.validate">Текшерүү</a></nav>
   </div>
 </header>
 <main>
   <section id="start" class="card">
-    <h2>Validate collected handwriting</h2>
-    <p>Check that each image shows the word in its label. Anyone with a Google account can help. Each sample
-      needs at least two independent votes that agree; samples waiting for a second vote come first, then
-      those where the recogniser disagrees with the writer's label.</p>
-    <div class="row"><button id="signin" class="primary">Sign in with Google</button></div>
-    <p class="muted">You sign in once; the next visits continue directly. You will not be shown your own writing.</p>
+    <h2 data-i18n="val.h2"></h2>
+    <p data-i18n="val.intro"></p>
+    <div class="row"><button id="signin" class="primary" data-i18n="signin">Google менен кирүү</button></div>
+    <p class="muted" data-i18n="val.once"></p>
     <p class="muted" id="auth-info"></p>
   </section>
 
   <section id="review" class="card" hidden>
     <div class="row" style="margin-top:0">
-      <span class="muted" id="src"></span><button id="signout" class="link">Sign out</button>
+      <span class="muted" id="src"></span><button id="signout" class="link" data-i18n="signout">Чыгуу</button>
       <span class="spacer"></span><span class="muted" id="progress"></span>
     </div>
     <div id="empty" hidden>
-      <p><b>Thank you — your queue is empty.</b></p>
+      <p><b data-i18n="val.thanks"></b></p>
       <p class="muted" id="empty-info"></p>
-      <div class="row"><button id="recheck">↻ Check for new samples</button></div>
+      <div class="row"><button id="recheck" data-i18n="val.recheck"></button></div>
     </div>
     <div class="val-grid" id="sample">
       <div>
-        <div class="muted">Image</div>
+        <div class="muted" data-i18n="val.image"></div>
         <img id="img" class="val-img" alt="handwritten sample">
-        <div class="row" id="replay-row"><span class="muted">Stroke replay</span><button id="replay">▶</button></div>
+        <div class="row" id="replay-row"><span class="muted" data-i18n="val.replay"></span><button id="replay">▶</button></div>
         <canvas id="strokes" class="val-strokes"></canvas>
       </div>
       <div>
         <table class="val-meta">
-          <tr><td class="muted">Prompt</td><td id="m-prompt"></td></tr>
-          <tr><td class="muted">Label (written)</td><td id="m-text" class="val-label"></td></tr>
-          <tr><td class="muted">Model read</td><td id="m-model"></td></tr>
-          <tr><td class="muted">Brush / input</td><td id="m-brush"></td></tr>
-          <tr><td class="muted">Votes</td><td id="m-votes" class="muted"></td></tr>
+          <tr><td class="muted" data-i18n="val.prompt"></td><td id="m-prompt"></td></tr>
+          <tr><td class="muted" data-i18n="val.label"></td><td id="m-text" class="val-label"></td></tr>
+          <tr><td class="muted" data-i18n="val.model"></td><td id="m-model"></td></tr>
+          <tr><td class="muted" data-i18n="val.brush"></td><td id="m-brush"></td></tr>
+          <tr><td class="muted" data-i18n="val.votes"></td><td id="m-votes" class="muted"></td></tr>
         </table>
         <div class="val-actions">
-          <button data-v="correct" class="primary">1 ✓ Correct</button>
-          <button data-v="wrong_label">2 ✎ Wrong label</button>
-          <button data-v="illegible">3 Illegible</button>
-          <button data-v="not_kyrgyz">4 Not Kyrgyz / scribble</button>
-          <button data-v="personal_info">5 Personal information</button>
-          <button id="skip">S Skip</button>
+          <button data-v="correct" class="primary" data-i18n="v.correct"></button>
+          <button data-v="wrong_label" data-i18n="v.wrong"></button>
+          <button data-v="illegible" data-i18n="v.illegible"></button>
+          <button data-v="not_kyrgyz" data-i18n="v.notky"></button>
+          <button data-v="personal_info" data-i18n="v.pii"></button>
+          <button id="skip" data-i18n="v.skip"></button>
         </div>
         <div class="row" id="fix-row" hidden>
-          <label>Correct text <input type="text" id="fix" autocomplete="off" spellcheck="false"></label>
-          <button id="fix-save" class="primary">Save (Enter)</button>
+          <label><span data-i18n="val.fixLabel"></span> <input type="text" id="fix" autocomplete="off" spellcheck="false"></label>
+          <button id="fix-save" class="primary" data-i18n="val.fixSave"></button>
         </div>
         <p class="muted" id="status"></p>
       </div>
     </div>
   </section>
 </main>
-<footer><a href="admin.html">Admin</a> · Keys: 1 correct · 2 wrong label · 3 illegible · 4 not Kyrgyz · 5 personal info · S skip · Enter save correction</footer>
+<footer><a href="admin.html" data-i18n="nav.admin">Админ</a> · <span data-i18n="val.keys"></span></footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/firebase-config.js"></script>
 <script type="module" src="js/validate.js"></script>
 </body>

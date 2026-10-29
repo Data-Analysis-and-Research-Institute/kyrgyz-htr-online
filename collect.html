@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ky" data-ui="ky">
+<html lang="ky" data-ui="ky" data-title="title.collect">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,8 @@
 <body>
 <header>
   <div class="wrap">
-    <h1>Кол жазма чогултуу · Сбор почерка · Handwriting collection</h1>
-    <nav><a href="index.html">Таануу / Recognize</a><a href="page.html">Барак / Page</a><a href="collect.html" class="active">Маалымат берүү / Contribute</a><a href="validate.html">Текшерүү / Validate</a></nav>
-    <div class="langs" role="group" aria-label="Language">
-      <button data-set-lang="ky">Кыргызча</button><button data-set-lang="ru">Русский</button><button data-set-lang="en">English</button>
-    </div>
+    <h1 data-i18n="title.collect">Кол жазма чогултуу</h1>
+    <nav><a href="index.html" data-i18n="nav.recognize">Таануу</a><a href="page.html" data-i18n="nav.page">Барак</a><a href="collect.html" class="active" data-i18n="nav.contribute">Маалымат берүү</a><a href="validate.html" data-i18n="nav.validate">Текшерүү</a></nav>
   </div>
 </header>
 <main>
@@ -95,9 +92,9 @@
       <label><span data-lang="ky">Жаш курагы</span><span data-lang="ru">Возраст</span><span data-lang="en">Age range</span>
         <select id="q-age"><option value="">—</option><option>16-17</option><option>18-24</option><option>25-34</option><option>35-49</option><option>50+</option></select></label>
       <label><span data-lang="ky">Жазган кол</span><span data-lang="ru">Пишущая рука</span><span data-lang="en">Writing hand</span>
-        <select id="q-hand"><option value="">—</option><option value="right">оң / правая / right</option><option value="left">сол / левая / left</option></select></label>
+        <select id="q-hand"><option value="">—</option><option value="right" data-i18n="col.right">оң</option><option value="left" data-i18n="col.left">сол</option></select></label>
       <label><span data-lang="ky">Эне тили</span><span data-lang="ru">Родной язык</span><span data-lang="en">First language</span>
-        <select id="q-lang"><option value="">—</option><option value="Kyrgyz">кыргыз / кыргызский / Kyrgyz</option><option value="Russian">орус / русский / Russian</option><option value="other">башка / другой / other</option></select></label>
+        <select id="q-lang"><option value="">—</option><option value="Kyrgyz" data-i18n="col.kyrgyz">кыргыз тили</option><option value="Russian" data-i18n="col.russian">орус тили</option><option value="other" data-i18n="col.other">башка</option></select></label>
     </div>
     <p class="muted"><span data-lang="ky">Бул суроолор милдеттүү эмес («—» = көрсөтпөйм).</span><span data-lang="ru">Эти вопросы необязательны («—» = не указывать).</span><span data-lang="en">These questions are optional ("—" = prefer not to say).</span></p>
     <div class="row"><button id="start" class="primary" disabled>
@@ -110,6 +107,7 @@
       <span class="spacer"></span><span class="muted"><code id="writer"></code></span>
       <button id="signout" class="link" hidden><span data-lang="ky">Чыгуу</span><span data-lang="ru">Выйти</span><span data-lang="en">Sign out</span></button></div>
     <div class="prompt" id="prompt">…</div>
+    <p class="muted" id="short-note" data-i18n="col.shortOnly" hidden></p>
     <canvas id="draw" class="draw" aria-label="Writing area"></canvas>
     <div class="row">
       <span class="muted" id="brush-info"></span>
@@ -132,8 +130,9 @@
       <button id="download" hidden><span data-lang="ky">Үлгүлөрүмдү жүктөп алуу (JSON)</span><span data-lang="ru">Скачать мои образцы (JSON)</span><span data-lang="en">Download my samples (JSON)</span></button></div>
   </section>
 </main>
-<footer>Рахмат! · Спасибо! · Thank you for contributing to open Kyrgyz language technology.</footer>
+<footer data-i18n="col.footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js"></script>
 <script src="js/firebase-config.js"></script>
 <script src="js/preprocess.js"></script>

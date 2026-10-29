@@ -3,12 +3,15 @@
   'use strict';
   const $ = (id) => document.getElementById(id);
   const rec = new KHTR.Recognizer('model/');
+  const t = KHTR.t;
+  let statusMsg = null, statusSuffix = null;   // [key, ...args] (+ suffix key): redrawn when the language changes
+  const drawStatus = () => { if (statusMsg) $('status').textContent = t(...statusMsg) + (statusSuffix ? t(statusSuffix) : ''); };
+  const status = (key, ...a) => { statusMsg = [key, ...a]; statusSuffix = null; drawStatus(); };
   // model-loading messages only replace other loading messages, never a result or an error
-  const loaded = rec.load((t) => { if (/^(Loading|Ready)/.test($('status').textContent)) $('status').textContent = t; });
+  const loaded = rec.load((key) => { if (!statusMsg || statusMsg[0].startsWith('st.')) status(key); });
   let running = false, current = null;   // current = {seg, words: [{box, line, results}]}
   const COLORS = ['#d33', '#1a7f37', '#1f6feb', '#b35900', '#8250df', '#0a7f8f'];
 
-  const status = (t) => { $('status').textContent = t; };
   const tick = () => new Promise((r) => setTimeout(r, 0));
 
   // ---- tabs --------------------------------------------------------------------------------
@@ -37,7 +40,7 @@
   $('undo').onclick = () => ink.undo();
   $('recognize-draw').onclick = () => {
     const c = ink.renderCrop(1, 24);
-    if (!c) { $('out').hidden = false; status('Nothing written yet.'); return; }
+    if (!c) { $('out').hidden = false; status('pg.nothing'); return; }
     runPage(KHTR.pageImageData(c));
   };
   $('use-lexicon').onchange = () => { if (current && !running) readWords(current); };
@@ -50,7 +53,7 @@
     $('text').value = ''; $('word-info').textContent = '';
     setBar(0);
     try {
-      status('Finding lines and words…');
+      status('pg.finding');
       await tick();
       const t0 = performance.now();
       const seg = KHTR.segmentPage(imgData);
@@ -58,16 +61,16 @@
       seg.lines.forEach((l, li) => l.words.forEach((w) => words.push({ box: w.box, pix: w.pix, line: li, results: null })));
       current = { seg, words, imgData, tSeg: Math.round(performance.now() - t0) };
       drawOverlay();
-      if (!words.length) { status('No text lines found. Try a closer, sharper photo with dark ink.'); return; }
+      if (!words.length) { status('pg.noLines'); return; }
       await readWords(current, true);
-    } catch (e) { status('Error: ' + e.message); console.error(e); }
+    } catch (e) { status('st.error', e.message); console.error(e); }
     finally { running = false; }
   }
 
   async function readWords(cur, fresh = false) {
     running = true;
     try {
-      status('Loading model…');
+      status('st.loadingModel');
       await loaded;
       const useLex = $('use-lexicon').checked;
       const t0 = performance.now();
@@ -78,16 +81,15 @@
         w.results = r ? r.results : [];
         setBar((i + 1) / cur.words.length);
         if (i % 4 === 3 || i === cur.words.length - 1) {
-          status(`Reading words ${i + 1} / ${cur.words.length}…`);
+          status('pg.reading', i + 1, cur.words.length);
           $('text').value = transcript(cur);
           drawOverlay();
           await tick();
         }
       }
       const s = cur.seg;
-      status(`${s.lines.length} lines, ${cur.words.length} words · straightened ${s.angle.toFixed(2)}° · `
-        + `segmentation ${cur.tSeg} ms, reading ${Math.round(performance.now() - t0)} ms`
-        + (useLex ? '' : ' · model only, no word list') + (fresh ? '' : ' (re-read)'));
+      status('pg.done', s.lines.length, cur.words.length, s.angle.toFixed(2), cur.tSeg, Math.round(performance.now() - t0));
+      if (!useLex) { statusSuffix = 'pg.noLexSuffix'; drawStatus(); }
     } finally { running = false; }
   }
 
@@ -144,13 +146,15 @@
     ul.className = 'alts';
     for (const a of w.results.slice(0, 6)) {
       const li = document.createElement('li');
-      li.textContent = `${a.text.toLowerCase()} · ${(a.prob * 100).toFixed(0)}%`;
+      li.textContent = t('alts', a.text.toLowerCase(), (a.prob * 100).toFixed(0));
       ul.appendChild(li);
     }
     $('word-info').appendChild(ul);
   };
 
   $('copy').onclick = () => { navigator.clipboard && navigator.clipboard.writeText($('text').value); };
+
+  window.addEventListener('khtr:lang', drawStatus);
 
   // test hook
   window.KHTR_PAGE = { runPage, get current() { return current; }, get running() { return running; } };
